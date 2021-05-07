@@ -1,0 +1,36 @@
+.tab-bar {
+    margin-bottom: 15px;
+}
+
+.tab-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.tab-bar a,
+.tab-bar a:visited {
+    color: darkslategrey;
+    background-color:  #FFFFFF;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    width: 200px;
+    border-bottom: 1px solid #d3d3d3;
+    padding: 0 0 16px 0;
+    margin: 0 20px 0 0;
+    cursor: pointer;
+}
+
+.tab-bar a.active {
+    color: #ffffff;
+    background-color: darkslategrey;
+    width: 200px;
+    border-bottom: 3px solid firebrick;
+}
+.tab-bar a.hover {
+    background-color: #ffb619;
+    color: #ffffff;
+    transition: all .4s ease-in-out;
+}
