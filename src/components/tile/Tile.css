@@ -1,0 +1,42 @@
+
+section {
+    background-color: #e2c681;
+    font-size: 10px;
+    overflow: hidden;
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section p {
+    max-width: 200px;
+    background-color: #006bbd;
+}
+
+
+article {
+    width: 100px;
+    position: relative;
+    text-align: center;
+    margin: 16px;
+}
+
+article span {
+    background-color: #BC4C2A;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 8px;
+    padding: 4px;
+}
+
+article p {
+    font-size: 8px;
+}
