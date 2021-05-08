@@ -12,7 +12,6 @@ function ParkingLocationCentrum() {
             try {
                 const response = await axios.get('http://opd.it-t.nl/data/amsterdam/ParkingLocation.json');
                 setParkingLocations(response.data.features);
-                console.log(response.data.features);
                 toggleLoading(false);
             } catch (error) {
                 console.log(error);
@@ -130,8 +129,19 @@ function ParkingLocationCentrum() {
                         Free Places <label id="FreeShort" > {filteredParkingLocation.properties.FreeSpaceShort}</label>
                     </li>
                 ))}
-
-                    </div>
+                {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("Rokin")).map(filteredParkingLocation => (
+                    <li id="parkinglocationfilter" key={filteredParkingLocation.id}>
+                        <label id="Name">{filteredParkingLocation.properties.Name}</label><br/><br/>
+                        Free Places <label id="FreeShort" > {filteredParkingLocation.properties.FreeSpaceShort}</label>
+                    </li>
+                ))}
+                {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("IJDok")).map(filteredParkingLocation => (
+                    <li id="parkinglocationfilter" key={filteredParkingLocation.id}>
+                        <label id="Name">{filteredParkingLocation.properties.Name}</label><br/><br/>
+                        Free Places <label id="FreeShort" > {filteredParkingLocation.properties.FreeSpaceShort}</label>
+                    </li>
+                ))}
+            </div>
         </>
     );
 }

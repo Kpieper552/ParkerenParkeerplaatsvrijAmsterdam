@@ -5,21 +5,17 @@ import ParkingLocationOost from "../../components/tab/ParkingLocationOost";
 import LocationDetailsOost from "../../components/tab/LocationDetailsOost";
 
 
-
 function ParkingOost() {
-
-
     return (
         <>
             <div id="oost"><h2>Amsterdam Oost Parkeergarages | Parkeerplaats VRIJ ? | Locatie gegevens</h2>
                 <div id="tilebox">
                     <Tile/>
                     <Tile/>
-                    <Tile><ParkingLocationOost/></Tile>
-                    <Tile><LocationDetailsOost/></Tile>
+                    <Tile children={<ParkingLocationOost/>}/>
+                    <Tile children={<LocationDetailsOost/>}/>
                 </div>
             </div>
-
         </>
     );
 }

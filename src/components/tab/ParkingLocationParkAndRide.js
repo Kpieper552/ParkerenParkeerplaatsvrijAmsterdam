@@ -12,7 +12,6 @@ function ParkingLocationParkAndRide() {
             try {
                 const response = await axios.get('http://opd.it-t.nl/data/amsterdam/ParkingLocation.json');
                 setParkingLocations(response.data.features);
-                console.log(response.data.features);
                 toggleLoading(false);
             } catch (error) {
                 console.log(error);
@@ -28,12 +27,14 @@ function ParkingLocationParkAndRide() {
             <div id="penr"><h2>Park and Ride [freeplaces?]</h2>
                 {error && (<span>error </span>)}
                 {loading && (<span>Loading...</span>)}
-                {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("P+R")).map(filteredParkingLocation => (
-                    <li id="parkinglocationfilter" key={filteredParkingLocation.id}>
-                        <label id="Name">{filteredParkingLocation.properties.Name}</label><br/><br/>
-                        Free Places <label id="FreeShort" > {filteredParkingLocation.properties.FreeSpaceShort}</label>
-                    </li>
-                ))}<br/><br/>
+                {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("P+R")).map((filteredParkingLocation) => {
+                    return (
+                        <li id="parkinglocationfilter" key={filteredParkingLocation.id}>
+                            <label id="Name">{filteredParkingLocation.properties.Name}</label><br/><br/>
+                            Free Places <label id="FreeShort" > {filteredParkingLocation.properties.FreeSpaceShort}</label>
+                        </li>
+                    )
+                })}<br/><br/>
             </div>
         </>
     );

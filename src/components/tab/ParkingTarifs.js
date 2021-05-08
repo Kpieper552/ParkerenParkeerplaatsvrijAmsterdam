@@ -21,25 +21,25 @@ function ParkingTarifs() {
     console.log(parkingTarifs);
 
     return (
-        <ul>
+        parkingTarifs && parkingTarifs.map((parkingTarif) => {
+                 return (
+                     <div>
+                         <ul>
+                             <li >
+                                 {parkingTarif.tarieven}
+                             </li>
 
-        </ul>
-
-    )
-}
+                         </ul>
+                     </div>
+                )
+             })
+    );
+    }
 export default ParkingTarifs;
 
 
 
 
-//   {parkingTarifs && parkingTarifs.map((parkingTarif) => {
-//                 console.log(parkingTarif);
-//                 return (<li >
-//                         <br />
-//                        wat zijn
-//                     </li>
-//
-//                 )
-//             })}
+
 
 

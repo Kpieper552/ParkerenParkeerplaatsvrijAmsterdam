@@ -11,7 +11,6 @@ function LocationDetailsParkAndRide() {
             try {
                 const response = await axios.get('https://open.data.amsterdam.nl/ivv/parkeren/locaties.json');
                 setParkings(response.data.parkeerlocaties);
-                console.log("hallo dit is de data vanuit penr!!!!", response.data.parkeerlocaties);
             } catch (error) {
                 console.log(error);
                 setError(true);
@@ -26,12 +25,9 @@ function LocationDetailsParkAndRide() {
             <div ><h2>Amsterdam Park & Ride Parkeerplaatsen Details</h2>
                 {error && (<span>error </span>)}
                 {loading && (<span>Loading...</span>)}
-
-                {parkings.filter(parking => parking.parkeerlocatie.type.includes("P+R")).map((filteredParking) => {
-                    console.log(filteredParking);
+                {parkings.filter(parking => parking.parkeerlocatie.type.includes("P+R")).map((filteredParking, index) => {
                     return (
-                        <li id="parkinglocationdetails" key={filteredParking.id}>
-
+                        <li id="parkinglocationdetails" key={index}>
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
                             {filteredParking.parkeerlocatie.adres}<br />
@@ -45,12 +41,10 @@ function LocationDetailsParkAndRide() {
                         </li>
                     )
                 })}
-
             </div>
         </>
     );
 }
-
 export default LocationDetailsParkAndRide;
 
 

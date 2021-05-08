@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState} from 'react';
 import ReactMapGL from "react-map-gl";
-import axios from "axios";
+
 
 
 function ParkingLocationMap() {

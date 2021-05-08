@@ -11,7 +11,6 @@ function LocationDetailsOost() {
             try {
                 const response = await axios.get('https://open.data.amsterdam.nl/ivv/parkeren/locaties.json');
                 setParkings(response.data.parkeerlocaties);
-                console.log("hallo dit is de data vanuit penr!!!!", response.data.parkeerlocaties);
             } catch (error) {
                 console.log(error);
                 setError(true);
@@ -27,11 +26,9 @@ function LocationDetailsOost() {
                 {error && (<span>error </span>)}
                 {loading && (<span>Loading...</span>)}
 
-                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1093KP")).map((filteredParking) => {
-                    console.log(filteredParking);
-                    return (
-                        <li id="parkinglocationdetails" key={filteredParking.id}>
-
+                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1093KP")).map((filteredParking, index) => {
+                     return (
+                        <li id="parkinglocationdetails" key={index}>
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
                             {filteredParking.parkeerlocatie.adres}<br />
@@ -44,12 +41,9 @@ function LocationDetailsOost() {
                     )
                 })}
 
-                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1095")).map((filteredParking) => {
-                    console.log(filteredParking);
-
-                    return (
-                        <li id="parkinglocationdetails" key={filteredParking.id}>
-
+                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1095")).map((filteredParking, index) => {
+                     return (
+                        <li id="parkinglocationdetails" key={index}>
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
                             {filteredParking.parkeerlocatie.adres}<br />
@@ -61,12 +55,9 @@ function LocationDetailsOost() {
                         </li>
                     )
                 })}
-                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1097 BR")).map((filteredParking) => {
-                    console.log(filteredParking);
-
-                    return (
-                        <li id="parkinglocationdetails" key={filteredParking.id}>
-
+                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1097 BR")).map((filteredParking, index) => {
+                  return (
+                        <li id="parkinglocationdetails" key={index}>
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
                             {filteredParking.parkeerlocatie.adres}<br />
@@ -78,12 +69,9 @@ function LocationDetailsOost() {
                         </li>
                     )
                 })}
-                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1098")).map((filteredParking) => {
-                    console.log(filteredParking);
-
-                    return (
-                        <li id="parkinglocationdetails" key={filteredParking.id}>
-
+                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1098")).map((filteredParking, index) => {
+                  return (
+                        <li id="parkinglocationdetails" key={index}>
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
                             {filteredParking.parkeerlocatie.adres}<br />
@@ -95,12 +83,9 @@ function LocationDetailsOost() {
                         </li>
                     )
                 })}
-                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1019")).map((filteredParking) => {
-                    console.log(filteredParking);
-
-                    return (
-                        <li id="parkinglocationdetails" key={filteredParking.id}>
-
+                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1019")).map((filteredParking, index) => {
+                   return (
+                        <li id="parkinglocationdetails" key={index}>
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
                             {filteredParking.parkeerlocatie.adres}<br />

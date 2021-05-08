@@ -27,10 +27,10 @@ function LocationDetailsCentrum() {
                 {error && (<span>error </span>)}
                 {loading && (<span>Loading...</span>)}
 
-                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1093KP")).map((filteredParking) => {
+                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1093KP")).map((filteredParking, index) => {
                     console.log(filteredParking);
                     return (
-                        <li id="parkinglocationdetails" key={filteredParking.id}>
+                        <li id="parkinglocationdetails" key={index}>
 
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
@@ -44,11 +44,11 @@ function LocationDetailsCentrum() {
                     )
                 })}
 
-                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1095")).map((filteredParking) => {
+                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1095")).map((filteredParking, index) => {
                     console.log(filteredParking);
 
                     return (
-                        <li id="parkinglocationdetails" key={filteredParking.id}>
+                        <li id="parkinglocationdetails" key={index}>
 
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
@@ -61,11 +61,11 @@ function LocationDetailsCentrum() {
                         </li>
                     )
                 })}
-                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1097 BR")).map((filteredParking) => {
+                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1097 BR")).map((filteredParking, index) => {
                     console.log(filteredParking);
 
                     return (
-                        <li id="parkinglocationdetails" key={filteredParking.id}>
+                        <li id="parkinglocationdetails" key={index}>
 
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
@@ -78,11 +78,11 @@ function LocationDetailsCentrum() {
                         </li>
                     )
                 })}
-                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1098")).map((filteredParking) => {
+                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1098")).map((filteredParking, index) => {
                     console.log(filteredParking);
 
                     return (
-                        <li id="parkinglocationdetails" key={filteredParking.id}>
+                        <li id="parkinglocationdetails" key={index}>
 
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
@@ -95,11 +95,11 @@ function LocationDetailsCentrum() {
                         </li>
                     )
                 })}
-                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1019")).map((filteredParking) => {
+                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1019")).map((filteredParking, index) => {
                     console.log(filteredParking);
 
                     return (
-                        <li id="parkinglocationdetails" key={filteredParking.id}>
+                        <li id="parkinglocationdetails" key={index}>
 
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
@@ -112,8 +112,6 @@ function LocationDetailsCentrum() {
                         </li>
                     )
                 })}
-
-
             </div>
         </>
     );

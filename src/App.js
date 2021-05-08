@@ -1,21 +1,39 @@
 import React, { useState, useEffect} from 'react';
 import axios from 'axios';
+
 import {
     BrowserRouter as Router,
     Switch,
-    Route, NavLink,
-
+    Route,
 } from 'react-router-dom';
+import Tile from "./components/tile/Tile";
 import './App.css';
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 import Login from "./pages/Login";
 import SignUp from "./pages/Sign-Up";
 import Account from "./pages/Account";
-import ParkerenAmsterdamStadsdelenOostZuidOost from "./pages/Parkeren-Amsterdam-Stadsdelen-Oost-ZuidOost";
-import ParkerenAmsterdamCentrum from "./pages/Parkeren-Amsterdam-Centrum";
-import ParkerenAmsterdamParkenRide from "./pages/Parkeren-Amsterdam-ParkenRide";
-import ParkerenAmsterdamStadsdelenZuidWest from "./pages/Parkeren-Amsterdam-Stadsdelen-Zuid-West";
+import ParkerenAmsterdamStadsdelenOostZuidOost from "./pages/ParkerenAmsterdam StadsdelenOostZuidOoost/Parkeren-Amsterdam-Stadsdelen-Oost-ZuidOost";
+import ParkerenAmsterdamCentrum from "./pages/ParkerenAmsterdam Centrum/Parkeren-Amsterdam-Centrum";
+import ParkerenAmsterdamParkenRide from "./pages/ParkerenAmsterdam ParkenRide/Parkeren-Amsterdam-ParkenRide";
+import ParkerenAmsterdamStadsdelenZuidWest from "./pages/ParkerenAmsterdam StadsdelenZuidWest/Parkeren-Amsterdam-Stadsdelen-Zuid-West";
+import TabBarMenuZero from "./components/tabbar/TabBarMenuZero";
+import ParkingAmsterdamAll from "./pages/ParkingAmsterdamAll/ParkingAmsterdamAll";
+import ParkingTarifsAmsterdam from "./pages/Home/ParkingTarifsAmsterdam";
+import TabBarMenuSecond from "./components/tabbar/TabBarMenuSecond";
+import ParkingZuidOost from "./pages/ParkingZuidOost/ParkingZuidOost";
+import ParkingOost from "./pages/ParkingOost/ParkingOost";
+import TabBarMenuThird from "./components/tabbar/TAbBarMenuThird";
+import ParkAndRide from "./pages/ParkAndRide/ParkAndRide";
+import Fiets from "./pages/Fiets/Fiets";
+import TabBarMenuFirst from "./components/tabbar/TabBarMenuFirst";
+import ParkingCentrum from "./pages/ParkingCentrum/ParkingCentrum";
+import TabBarMenuSecondPart from "./components/tabbar/TabBarMenuSecondPart";
+import ParkingZuid from "./pages/ParkingZuid/ParkingZuid";
+import ParkingWest from "./pages/ParkingWest/ParkingWest";
+import Navigation from "./components/navigation/Navigation";
 //apikey aanmaken in env!!!!
+//REACT_MAPBOX_ACCES_TOKEN=pnpmk.eyJ1Ijoia2FyaW5hcGllcGVyIiwiYSI6ImNrb2JsbXp0MjFlNWwycXFrMmZ6NG4yOWoifQ.SCXs3rjvsATv5qSM1AZ23w
+
 function App() {
     const [error, setError] = useState(false);
     const [loading, toggleLoading] = useState(false);
@@ -23,7 +41,6 @@ function App() {
         async function fetchData() {
             setError(false);
             toggleLoading(true);
-
             try {
                 const response = await axios.get('http://opd.it-t.nl/data/amsterdam/ParkingLocation.json');
                 console.log("ik zoek de APINAAM", response.data.features);
@@ -37,74 +54,150 @@ function App() {
         fetchData();
     }, []);
 
-
-
   return (
       <>
-        {error && (<span>error </span>)}
-        {loading && (<span>loading...</span>)}
-            {/*NAVIGATION-------------------- */}
-          <nav >
-        <Router>
-            <div className="parkingAdam-header">
-            <ul >
-                <li>
-                    <NavLink to="/"><button>Home</button></NavLink>
-                </li>
-                <li>
-                    <NavLink to="/parkeren-amsterdam-centrum" activeClassName="activelink"><button>Parkeren Centrum</button></NavLink>
-                </li>
-                <li>
-                    <NavLink to="/parkeren-amsterdam-parkenride" activeClassName="activelink"><button>Park and Ride</button></NavLink>
-                </li>
-                <li>
-                    <NavLink to="/parkeren-amsterdam-stadsdelen-Oost-ZuidOost" activeClassName="activelink"><button>Parkeren in Zuid-Oost/Oost</button></NavLink>
-                </li>
-                <li>
-                    <NavLink to="/parkeren-amsterdam-stadsdelen-Zuid-West" activeClassName="activelink"><button>Parkeren in Zuid/West</button></NavLink>
-                </li>
-                <li>
-                    <NavLink to="/login" activeClassName="activelink"><button>Login</button></NavLink>
-                </li>
-                <li>
-                    <NavLink to="/account" activeClassName="activelink"><button>Account</button></NavLink>
-                </li>
-                <li>
-                    <NavLink to="/sign-up" activeClassName="activelink"><button>Registreer</button></NavLink>
-                </li>
 
-            </ul>
-            </div>
-            {/*PAGES -------------------- */}
+            {error && (<span>error </span>)}
+            {loading && (<span>loading...</span>)}
+          <nav >
+              <Router>
+                    <div  className="parkingAdam-header">
+                         <Navigation />
+                    </div>
+            {/*NAVIGATION-------------------- */}
+
             <Switch>
+                {/*PAGE -------------------- */}
                 <Route exact path="/">
                     <Home />
+                    {/*NAVIGATION-------------------- */}
+                    <nav >
+                        {/*TAB -------------------- */}
+                        <Router>
+                            <div className="parkingAdam-content">
+                                <TabBarMenuZero/>
+                                <div className="tab-wrapper">
+                                    <Switch>
+                                        <Route exact path="/Home">
+                                            {<ParkingAmsterdamAll />}
+                                        </Route>
+                                        <Route path="/ParkingTarifsAmsterdam">
+                                            {<ParkingTarifsAmsterdam />}
+                                        </Route>
+                                    </Switch>
+                                </div>
+                            </div>
+                        </Router>
+                    </nav>
                 </Route>
-                <Route path="/parkeren-amsterdam-stadsdelen-Oost-ZuidOost">
+                {/*PAGE -------------------- */}
+                <Route exact path="/parkeren-amsterdam-stadsdelen-Oost-ZuidOost">
                     <ParkerenAmsterdamStadsdelenOostZuidOost />
+                    {/*NAVIGATION-------------------- */}
+                    <nav >
+                        {/*TAB -------------------- */}
+                        <Router>
+                            <div className="parkingAdam-content">
+                                <TabBarMenuSecond/>
+                                <div className="tab-wrapper">
+                                    <Switch>
+                                        <Route exact path="/Parkeren-Amsterdam-Stadsdelen-Oost-ZuidOost">
+                                            {<ParkingZuidOost  />}
+                                        </Route>
+                                        <Route path="/ParkingOost">
+                                            {<ParkingOost  />}
+                                        </Route>
+                                    </Switch>
+                                </div>
+                            </div>
+                        </Router>
+                    </nav>
                 </Route>
-                <Route path="/parkeren-amsterdam-stadsdelen-Zuid-West">
+                {/*PAGE -------------------- */}
+                <Route exact path="/parkeren-amsterdam-stadsdelen-Zuid-West">
                     <ParkerenAmsterdamStadsdelenZuidWest />
+                    {/*NAVIGATION-------------------- */}
+                    <nav >
+                        {/*TAB -------------------- */}
+                        <Router>
+                            <div className="parkingAdam-content">
+                                <TabBarMenuSecondPart/>
+                                <div className="tab-wrapper">
+                                    <Switch>
+                                        <Route exact path="/Parkeren-Amsterdam-Stadsdelen-Zuid-West">
+                                            <Tile children={<ParkingZuid />}/>
+                                        </Route>
+                                        <Route path="/ParkingWest">
+                                            <Tile children={<ParkingWest  />}/>
+                                        </Route>
+                                    </Switch>
+                                </div>
+                            </div>
+                        </Router>
+                    </nav>
                 </Route>
-                <Route path="/parkeren-amsterdam-centrum">
+                {/*PAGE -------------------- */}
+                <Route excat path="/parkeren-amsterdam-centrum">
                     <ParkerenAmsterdamCentrum />
+                    {/*NAVIGATION-------------------- */}
+                    <nav >
+                        {/*TAB -------------------- */}
+                        <Router>
+                            <div className="parkingAdam-content">
+                                <TabBarMenuFirst/>
+                                <div className="tab-wrapper">
+                                    <Switch>
+                                        <Route exact path="/Parkeren-Amsterdam-Centrum">
+                                            <Tile children={<ParkingCentrum  />}/>
+                                        </Route>
+                                        <Route path="/Fiets">
+                                            <Tile children={<Fiets  />}/>
+                                        </Route>
+                                    </Switch>
+                                </div>
+                            </div>
+                        </Router>
+                    </nav>
                 </Route>
-                <Route path="/parkeren-amsterdam-parkenride">
+                {/*PAGE -------------------- */}
+                <Route exact path="/parkeren-amsterdam-parkenride">
                     <ParkerenAmsterdamParkenRide />
+                    {/*NAVIGATION-------------------- */}
+                    <Router>
+                        {/*TAB -------------------- */}
+                        <nav>
+                            <div className="parkingAdam-content">
+                                <TabBarMenuThird/>
+                                <div className="tab-wrapper">
+                                    <Switch>
+                                        <Route exact path="/Parkeren-Amsterdam-ParkenRide">
+                                            <Tile children={<ParkAndRide  />}/>
+                                        </Route>
+                                        <Route path="/Fiets">
+                                            <Tile children={<Fiets  />}/>
+                                        </Route>
+                                    </Switch>
+                                </div>
+                            </div>
+                        </nav>
+                    </Router>
                 </Route>
+                {/*PAGE -------------------- */}
                 <Route path="/sign-up">
                     <SignUp />
                 </Route>
+                {/*PAGE -------------------- */}
                 <Route path="/login">
                     <Login />
                 </Route>
+                {/*PAGE -------------------- */}
                 <Route path="/account">
                     <Account />
                 </Route>
             </Switch>
         </Router>
-          </nav>
-      </>
+      </nav>
+    </>
   );
 }
 export default App

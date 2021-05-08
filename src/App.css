@@ -1,6 +1,5 @@
 body {
     background-color: linen;
-
 }
 {/*APP.JS -------------------- */}
 nav {
@@ -25,8 +24,8 @@ nav ul {
     display: flex;
     justify-content: flex-end;
     box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
-
 }
+
 button {
     background-color: linen;
     height: 40px;
@@ -42,6 +41,23 @@ ul {
     flex-basis: 300px;
     flex-grow: 0;
     flex-shrink: 0;
+}
+#parkingAdam-weg {
+    display: inline-block;
+    background-color: dimgray;
+    align-content: space-around;
+    list-style-type: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 10px;
+    box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+#parkingAdam-weg-streep {
+    background-color: dimgrey;
+    color: white;
+    width: 500px;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
 }
 .parkingAdam-container {
     position: relative;
@@ -99,13 +115,12 @@ h2 {
     padding: 5px;
     margin-left: 20px;
 }
-{/*NAAR COMPONENTS -------------------- */}
+{/*NAAR COMPONENTS ------check parkinglocation op display?-------------- */}
 #parkinglocation {
-    display: inline-block;
+    display: inline-flex;
     width: 180px;
     height: fit-content;
     margin-left: 20px;
-
     background-color: #006bbd;
     border-inline-color: #FFFFFF;
     border-width: 20px;
@@ -146,7 +161,6 @@ h2 {
     margin-right: 3px;
     margin-bottom: 5px;
 
-
 }
 {/*BLIJFT IN APP.JS -------------------- */}
 #penr, #locationFree, #centrum, #zuidoost, #zuid, #fiets, #west, #noord, #oost {
@@ -160,28 +174,6 @@ h2 {
 }
 
 
-
-
-
-
-
-{/*APP.JS -------------------- */}
-#menuA {
-    background-color: #006bbd;
-    height: 20px;
-    color: #FFB619;
-    margin-left: 2px;
-}
-#tabmenu {
-    background-color: #006bbd;
-    align-content: center;
-    height: 50px;
-    font-size: 20px;
-    color: #FFB619;
-    borderradius: 5px;
-    margin-left: 2px;
-
-}
 {/*STAAT IN PAGINAS -------------------- */}
 #tilebox {
     display: flex;

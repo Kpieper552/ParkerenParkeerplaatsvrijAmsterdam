@@ -4,20 +4,13 @@ import Tile from "../../components/tile/Tile";
 import ParkingTarifs from "../../components/tab/ParkingTarifs";
 
 
-
-
-
-
 function ParkingTarifsAmsterdam() {
-
-
     return (
         <>
             <div id="zuid"><h2>Amsterdam Parkeergarages</h2>
                 <div id="tilebox">
-
                     <Tile titlearea="Parkeren in Amsterdam"/>
-                    <Tile><ParkingTarifs/></Tile>
+
                 </div>
             </div>
 
@@ -27,3 +20,4 @@ function ParkingTarifsAmsterdam() {
 export default ParkingTarifsAmsterdam;
 
 
+//             <Tile children={<ParkingTarifs/>}/>

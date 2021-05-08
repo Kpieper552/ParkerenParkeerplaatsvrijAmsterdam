@@ -12,7 +12,6 @@ function ParkingLocationWest() {
             try {
                 const response = await axios.get('http://opd.it-t.nl/data/amsterdam/ParkingLocation.json');
                 setParkingLocations(response.data.features);
-                console.log(response.data.features);
                 toggleLoading(false);
             } catch (error) {
                 console.log(error);
@@ -28,24 +27,30 @@ function ParkingLocationWest() {
             <div id="west"><h2>Parkeergarages West [freeplaces?] </h2>
                 {error && (<span>error </span>)}
                 {loading && (<span>Loading...</span>)}
-                {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("CE-P01")).map(filteredParkingLocation => (
-                    <li id="parkinglocationfilter" key={filteredParkingLocation.id}>
-                        <label id="Name">{filteredParkingLocation.properties.Name}</label><br/><br/>
-                        Free Places <label id="FreeShort" > {filteredParkingLocation.properties.FreeSpaceShort}</label>
-                    </li>
-                ))}<br/><br/>
-                {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("CE-P17")).map(filteredParkingLocation => (
-                    <li id="parkinglocationfilter" key={filteredParkingLocation.id}>
-                        <label id="Name">{filteredParkingLocation.properties.Name}</label><br/><br/>
-                        Free Places <label id="FreeShort" > {filteredParkingLocation.properties.FreeSpaceShort}</label>
-                    </li>
-                ))}<br/><br/>
-                {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("CE-P18")).map(filteredParkingLocation => (
-                    <li id="parkinglocationfilter" key={filteredParkingLocation.id}>
-                        <label id="Name">{filteredParkingLocation.properties.Name}</label><br/><br/>
-                        Free Places <label id="FreeShort" > {filteredParkingLocation.properties.FreeSpaceShort}</label>
-                    </li>
-                ))}<br/><br/>
+                {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("CE-P01")).map((filteredParkingLocation) => {
+                    return (
+                        <li id="parkinglocationfilter" key={filteredParkingLocation.id}>
+                            <label id="Name">{filteredParkingLocation.properties.Name}</label><br/><br/>
+                            Free Places <label id="FreeShort" > {filteredParkingLocation.properties.FreeSpaceShort}</label>
+                        </li>
+                    )
+                })}<br/><br/>
+                {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("CE-P17")).map((filteredParkingLocation) => {
+                    return (
+                        <li id="parkinglocationfilter" key={filteredParkingLocation.id}>
+                            <label id="Name">{filteredParkingLocation.properties.Name}</label><br/><br/>
+                            Free Places <label id="FreeShort" > {filteredParkingLocation.properties.FreeSpaceShort}</label>
+                        </li>
+                    )
+                })}<br/><br/>
+                {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("CE-P18")).map((filteredParkingLocation) => {
+                    return (
+                        <li id="parkinglocationfilter" key={filteredParkingLocation.id}>
+                            <label id="Name">{filteredParkingLocation.properties.Name}</label><br/><br/>
+                            Free Places <label id="FreeShort" > {filteredParkingLocation.properties.FreeSpaceShort}</label>
+                        </li>
+                    )
+                })}<br/><br/>
 
             </div>
         </>

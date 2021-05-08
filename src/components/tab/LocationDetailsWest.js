@@ -26,12 +26,9 @@ function LocationDetailsWest() {
             <div ><h2>Amsterdam West Parkeergarages Details</h2>
                 {error && (<span>error </span>)}
                 {loading && (<span>Loading...</span>)}
-
-                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1043DW")).map((filteredParking) => {
-                    console.log(filteredParking);
+                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1043DW")).map((filteredParking, index) => {
                     return (
-                        <li id="parkinglocationdetails">
-
+                        <li id="parkinglocationdetails" key={index}>
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
                             {filteredParking.parkeerlocatie.adres}<br />
@@ -43,13 +40,9 @@ function LocationDetailsWest() {
                         </li>
                     )
                 })}
-
-                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1051")).map((filteredParking) => {
-                    console.log(filteredParking);
-
-                    return (
-                        <li id="parkinglocationdetails" key={filteredParking.id}>
-
+                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1051")).map((filteredParking, index) => {
+                     return (
+                        <li id="parkinglocationdetails" key={index}>
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
                             {filteredParking.parkeerlocatie.adres}<br />
@@ -61,12 +54,9 @@ function LocationDetailsWest() {
                         </li>
                     )
                 })}
-                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1053 AT")).map((filteredParking) => {
-                    console.log(filteredParking);
-
+                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1053 AT")).map((filteredParking, index) => {
                     return (
-                        <li id="parkinglocationdetails" key={filteredParking.id}>
-
+                        <li id="parkinglocationdetails" key={index}>
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
                             {filteredParking.parkeerlocatie.adres}<br />
@@ -78,12 +68,9 @@ function LocationDetailsWest() {
                         </li>
                     )
                 })}
-                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1054")).map((filteredParking) => {
-                    console.log(filteredParking);
-
-                    return (
-                        <li id="parkinglocationdetails" key={filteredParking.id}>
-
+                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1054")).map((filteredParking, index) => {
+                     return (
+                        <li id="parkinglocationdetails" key={index}>
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
                             {filteredParking.parkeerlocatie.adres}<br />
@@ -95,12 +82,9 @@ function LocationDetailsWest() {
                         </li>
                     )
                 })}
-                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1055")).map((filteredParking) => {
-                    console.log(filteredParking);
-
+                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1055")).map((filteredParking, index) => {
                     return (
-                        <li id="parkinglocationdetails" key={filteredParking.id}>
-
+                        <li id="parkinglocationdetails" key={index}>
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
                             {filteredParking.parkeerlocatie.adres}<br />
@@ -112,12 +96,9 @@ function LocationDetailsWest() {
                         </li>
                     )
                 })}
-                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1057")).map((filteredParking) => {
-                    console.log(filteredParking);
-
+                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1057")).map((filteredParking, index) => {
                     return (
-                        <li id="parkinglocationdetails" key={filteredParking.id}>
-
+                        <li id="parkinglocationdetails" key={index}>
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
                             {filteredParking.parkeerlocatie.adres}<br />
@@ -129,12 +110,9 @@ function LocationDetailsWest() {
                         </li>
                     )
                 })}
-                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1062")).map((filteredParking) => {
-                    console.log(filteredParking);
-
+                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1062")).map((filteredParking, index) => {
                     return (
-                        <li id="parkinglocationdetails" key={filteredParking.id}>
-
+                        <li id="parkinglocationdetails" key={index}>
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
                             {filteredParking.parkeerlocatie.adres}<br />

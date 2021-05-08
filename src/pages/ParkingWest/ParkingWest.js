@@ -5,8 +5,6 @@ import LocationDetailsWest from "../../components/tab/LocationDetailsWest";
 import ParkingLocationWest from "../../components/tab/ParkingLocationWest";
 
 
-
-
 function ParkingWest() {
     return (
         <>
@@ -14,11 +12,10 @@ function ParkingWest() {
                 <div id="tilebox">
                     <Tile/>
                     <Tile/>
-                    <Tile ><ParkingLocationWest/></Tile>
-                    <Tile ><LocationDetailsWest/></Tile>
+                    <Tile children={<ParkingLocationWest/>}/>
+                    <Tile children={<LocationDetailsWest/>}/>
                 </div>
             </div>
-
         </>
     );
 }

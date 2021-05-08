@@ -27,10 +27,10 @@ function LocationDetailsFiets() {
                 {error && (<span>error </span>)}
                 {loading && (<span>Loading...</span>)}
 
-                {parkings.filter(parking => parking.parkeerlocatie.type.includes("Fiets")).map((filteredParking) => {
+                {parkings.filter(parking => parking.parkeerlocatie.type.includes("Fiets")).map((filteredParking, index) => {
                     console.log(filteredParking);
                     return (
-                        <li id="parkinglocationdetails" key={filteredParking.id}>
+                        <li id="parkinglocationdetails" key={index}>
 
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />

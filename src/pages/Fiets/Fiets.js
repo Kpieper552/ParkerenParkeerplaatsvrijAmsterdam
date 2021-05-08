@@ -12,8 +12,8 @@ function Fiets() {
                 <div id="tilebox">
                 <Tile/>
                 <Tile/>
-                    <Tile ><ParkingLocationFiets /></Tile>
-                    <Tile ><LocationDetailsFiets /></Tile>
+                    <Tile children={<ParkingLocationFiets />}/>
+                    <Tile children={<LocationDetailsFiets />}/>
                 </div>
             </div>
 

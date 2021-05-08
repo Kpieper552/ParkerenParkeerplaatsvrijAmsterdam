@@ -30,7 +30,7 @@ return (
     <>
         {error && (<span>error </span>)}
         {loading && (<span>Loading...</span>)}
-        <div id="penr"><h2>Amsterdam Parkeergarages [freeplaces?]</h2>
+        <div id="locationFree"><h2>Amsterdam Parkeergarages [freeplaces?]</h2>
         <ul>
             {parkingLocations && parkingLocations.sort().map((parkingLocation) => {
                 console.log(parkingLocation);
