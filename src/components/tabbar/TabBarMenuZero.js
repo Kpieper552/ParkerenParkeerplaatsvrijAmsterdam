@@ -14,8 +14,8 @@ function TabBarMenuZero() {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink activeClassName="active" to="/ParkingTarifsAmsterdam">
-                        Tarieven
+                    <NavLink activeClassName="active" to="/ParkingPlaatsenVrijTab">
+                        Vrije Plaats
                     </NavLink>
                 </li>
 

@@ -18,21 +18,37 @@ function ParkingLocationDetails() {
 
     return (
         <>
-            <div ><h2>Amsterdam Parkeergarages Details</h2>
-                    {parkings && parkings.sort().map((parking, index) => {
+            <div >
+                <h2>Amsterdam Parkeergarages Details</h2>
+                    {parkings && parkings.map((parking) => {
                         return (
-                        <li id="parkinglocationdetails" key={index}>
-                        <label id="Name">{parking.parkeerlocatie.title}</label><br />
-                            {parking.parkeerlocatie.type}<br /><br />
-                            {parking.parkeerlocatie.adres}<br />
-                            {parking.parkeerlocatie.postcode}
-                            {parking.parkeerlocatie.woonplaats}<br /><br />
-                                    {/*OPMERKINGEN BLOK-------------------- */}
-                            {parking.parkeerlocatie.opmerkingen}<br /><br />
-                                     {/*OPENBAAR VERVOER BLOK-------------------- */}
-                             </li>
+                        <li id="parkinglocationdetails" key={parking.id}>
+                            <label id="Name"><h4>{parking.parkeerlocatie.title}</h4>
+                            </label>
+                            <label id="MoreInfo">
+                            {parking.parkeerlocatie.adres}<br/>
+                            {parking.parkeerlocatie.postcode}<br/>
+                            {parking.parkeerlocatie.woonplaats}<br /><br /><br/>
+                            </label>
+                            <label id="MoreInfo">
+                                {parking.parkeerlocatie.type}<br /><br/>
+                            </label>
+                            <label id="MoreInfo">
+                                    {/*OPENBAAR VERVOER BLOK-------------------- */}
+                                    {parking.parkeerlocatie.OV_bus}<br />
+                                    {parking.parkeerlocatie.OV_tram}<br />
+                                    {parking.parkeerlocatie.OV_metro}<br />
+                                    {parking.parkeerlocatie.OV_trein}<br /><br />
+                                {/*OPMERKINGEN BLOK-------------------- */}<br/>
+                                {parking.parkeerlocatie.opmerkingen}<br /><br/>
+                            </label>
+                            <label id="MoreInfo">
+                                {parking.parkeerlocatie.url}<br />
+                                {parking.parkeerlocatie.urltitle}
+                            </label>
+                        </li>
                         )
-                    })};
+                    })}
             </div>
         </>
     );

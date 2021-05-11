@@ -13,7 +13,7 @@ function TabBarMenuSecondPart() {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink activeClassName="active" to="/ParkingWest">
+                    <NavLink activeClassName="active" to="/ParkingWestTab">
                         Amsterdam West
                     </NavLink>
                 </li>

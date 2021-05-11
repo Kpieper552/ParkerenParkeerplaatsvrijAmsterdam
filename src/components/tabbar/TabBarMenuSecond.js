@@ -13,8 +13,8 @@ function TabBarMenuSecond() {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink activeClassName="active" to="/ParkingOost">
-                         Amsterdam Oost
+                    <NavLink activeClassName="active" to="/ParkingOostTab">
+                      Amsterdam Oost
                     </NavLink>
                 </li>
             </ul>
