@@ -1,15 +1,30 @@
 body {
     background-color: linen;
-
 }
+@media screen and (min-width: 1400px) {
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}}
+.parkingAdam-header {
+    background-color: green;
+    display: flex;
+    flex-basis: 300px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: flex-end;
+    box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+
 {/*APP.JS -------------------- */}
 nav {
-    background-color: linen;
+    background-color: #e2c681;
     border-radius: 5px;
     height: 60px;
     justify-content: flex-end;
     box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
-
 }
 nav ul {
     list-style-type: none;
@@ -20,19 +35,14 @@ nav ul {
     flex-grow: 0;
     flex-shrink: 0;
 }
-.parkingAdam-header {
-    background-color: firebrick;
-    display: flex;
-    justify-content: flex-end;
-    box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
 
-}
 button {
     background-color: linen;
+    display: flex;
+    max-width: 57px;
     height: 40px;
-    width: 58px;
     color: firebrick;
-    font-size: 6px;
+    font-size: 8px;
 }
 ul {
     list-style-type: none;
@@ -43,6 +53,76 @@ ul {
     flex-grow: 0;
     flex-shrink: 0;
 }
+{/*PAGES WITH ROAD-------------------- */}
+#parkingAdam-weg {
+    display: inline-block;
+    background-color: dimgray;
+    width: fit-content;
+    min-height: 1150px;
+    max-width: 350px;
+    align-content: space-around;
+    list-style-type: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 10px;
+    border-right: 8px solid white;
+    border-left: 8px solid white;
+    box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+#home-Page-weg, #pr-Page-weg {
+    display: inline-block;
+    background-color: dimgray;
+    width: fit-content;
+    min-height: 400px;
+    max-width: 250px;
+    align-content: space-around;
+    list-style-type: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 10px;
+    border-right: 8px solid white;
+    border-left: 8px solid white;
+    box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+#parkingAdam-weg-deel {
+    display: inline-block;
+    align-items: center;
+    background-color: #e2c681;
+    height: fit-content;
+    width: 125px;
+    align-content: space-around;
+    list-style-type: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    border-top: 5px solid green;
+    border-bottom: 5px solid green;
+    font-size: 10px;
+    box-shadow: .20rem .25rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.label-weg {
+    background-color: dimgrey;
+    margin-top: 200px;
+    width: fit-content;
+    height: 80px;
+    color: white;
+    font-size: 10px;
+    border-top: 5px solid green;
+    border-bottom: 5px solid green;
+    box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+.label-weg-deel {
+    background-color: darkslategrey;
+    margin-top: 200px;
+    width: fit-content;
+    height: 80px;
+    color: white;
+    font-size: 10px;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+{/*app.js PAGES WITH ROAD-------------------- */}
 .parkingAdam-container {
     position: relative;
     width: 100%;
@@ -80,6 +160,20 @@ h2 {
 {/*NAAR COMPONENTS -------------------- */}
 #Name {
     color: #FFB619;
+
+}
+#MoreInfo {
+    color: linen;
+    width: 240px;
+    display: flex;
+    flex-basis: 8px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-left: 5px;
+    border-left: 5px solid #ffb619;
+    border-top: #ffb619;
+    box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
+
 }
 #FreeShort, #FreeLong {
     background-color: #0d0208;
@@ -99,58 +193,56 @@ h2 {
     padding: 5px;
     margin-left: 20px;
 }
-{/*NAAR COMPONENTS -------------------- */}
+{/*NAAR COMPONENTS ------check parkinglocation op display?-------------- */}
 #parkinglocation {
     display: inline-block;
     width: 180px;
     height: fit-content;
-    margin-left: 20px;
-
     background-color: #006bbd;
     border-inline-color: #FFFFFF;
-    border-width: 20px;
     border-radius: 12px;
+    border: 5px solid white;
     color: #FFFFFF;
     font-size: 10px;
     padding: 5px;
     margin-right: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 #parkinglocationdetails {
     display: inline-block;
-    width: 180px;
-    height: fit-content;
-    margin-left: 20px;
+    width: 235px;
+    flex-basis: 40px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-left: 1px;
     background-color: #006bbd;
     border-inline-color: #FFFFFF;
-    border-width: 20px;
     border-radius: 12px;
+    border: 1px solid white;
     color: #FFFFFF;
     font-size: 10px;
     padding: 5px;
     margin-right: 3px;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
 }
 {/*NAAR COMPONENTS -------------------- */}
 #parkinglocationfilter {
     display: inline-block;
-    width: 180px;
-    height: 50px;
+    width: 115px;
+    height: 60px;
     background-color: #006bbd;
     border-inline-color: #FFFFFF;
-    border-width: 20px;
     border-radius: 12px;
+    border: 1px solid white;
     color: #FFFFFF;
     font-size: 10px;
-    padding: 5px;
-    margin-right: 3px;
-    margin-bottom: 5px;
-
-
+    padding: 1px;
+    margin-bottom: 1px;
 }
 {/*BLIJFT IN APP.JS -------------------- */}
 #penr, #locationFree, #centrum, #zuidoost, #zuid, #fiets, #west, #noord, #oost {
-    display: inline-block;
+    display: block;
+    width: 120px;
     align-content: space-around;
     list-style-type: none;
     background-color: darkslategrey;
@@ -158,40 +250,23 @@ h2 {
     color: #FFFFFF;
     font-size: 10px;
 }
-
-
-
-
-
-
-
-{/*APP.JS -------------------- */}
-#menuA {
-    background-color: #006bbd;
-    height: 20px;
-    color: #FFB619;
-    margin-left: 2px;
+#penr-details, #centrum-details, #zuidoost-details, #zuid-details, #fiets-details, #west-details, #oost-details
+{
+    display: inline-block;
+    list-style-type: none;
+    width: fit-content;
+    background-color: darkslategrey;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 10px;
 }
-#tabmenu {
-    background-color: #006bbd;
-    align-content: center;
-    height: 50px;
-    font-size: 20px;
-    color: #FFB619;
-    borderradius: 5px;
-    margin-left: 2px;
 
-}
 {/*STAAT IN PAGINAS -------------------- */}
 #tilebox {
     display: flex;
-    margin-left: 30px;
-    margin-right: 30px;
-    alignment: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
-
 #tilebox-p {
     display: flex;
     alignment: center;

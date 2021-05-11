@@ -9,7 +9,6 @@ function ParkingLocationDetails() {
             try {
                 const response = await axios.get('https://open.data.amsterdam.nl/ivv/parkeren/locaties.json');
                 setParkings(response.data.parkeerlocaties);
-                console.log("hallo dit is de data vanuit penr!!!!", response.data.parkeerlocaties);
             } catch (error) {
                 console.log(error);
             }
@@ -19,31 +18,44 @@ function ParkingLocationDetails() {
 
     return (
         <>
-            <div ><h2>Amsterdam Parkeergarages Details</h2>
-
-                    {parkings && parkings.sort().map((parking) => {
-                        console.log(parking, "details");
+            <div >
+                <h2>Amsterdam Parkeergarages Details</h2>
+                    {parkings && parkings.map((parking) => {
                         return (
-                            <li id="parkinglocationdetails" key={parking.id}>
-
-                    <label id="Name">{parking.parkeerlocatie.title}</label><br />
-                            {parking.parkeerlocatie.type}<br /><br />
-                        {parking.parkeerlocatie.adres}<br />
-                        {parking.parkeerlocatie.postcode}
-                        {parking.parkeerlocatie.woonplaats}<br /><br />
-                            {/*OPMERKINGEN BLOK-------------------- */}
-                            {parking.parkeerlocatie.opmerkingen}<br /><br />
-                            {/*OPENBAAR VERVOER BLOK-------------------- */}
-                            </li>
+                        <li id="parkinglocationdetails" key={parking.id}>
+                            <label id="Name"><h4>{parking.parkeerlocatie.title}</h4>
+                            </label>
+                            <label id="MoreInfo">
+                            {parking.parkeerlocatie.adres}<br/>
+                            {parking.parkeerlocatie.postcode}<br/>
+                            {parking.parkeerlocatie.woonplaats}<br /><br /><br/>
+                            </label>
+                            <label id="MoreInfo">
+                                {parking.parkeerlocatie.type}<br /><br/>
+                            </label>
+                            <label id="MoreInfo">
+                                    {/*OPENBAAR VERVOER BLOK-------------------- */}
+                                    {parking.parkeerlocatie.OV_bus}<br />
+                                    {parking.parkeerlocatie.OV_tram}<br />
+                                    {parking.parkeerlocatie.OV_metro}<br />
+                                    {parking.parkeerlocatie.OV_trein}<br /><br />
+                                {/*OPMERKINGEN BLOK-------------------- */}<br/>
+                                {parking.parkeerlocatie.opmerkingen}<br /><br/>
+                            </label>
+                            <label id="MoreInfo">
+                                {parking.parkeerlocatie.url}<br />
+                                {parking.parkeerlocatie.urltitle}
+                            </label>
+                        </li>
                         )
                     })}
-
             </div>
         </>
     );
 }
 
-            export default ParkingLocationDetails;
+export default ParkingLocationDetails;
+
 
 
 

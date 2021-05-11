@@ -9,12 +9,12 @@ function TabBarMenuSecond() {
             <ul>
                 <li>
                 <NavLink activeClassName="active" to="/Parkeren-Amsterdam-Stadsdelen-Oost-ZuidOost">
-                        🅿️ Amsterdam Zuid-Oost
+                     Amsterdam Zuid-Oost
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink activeClassName="active" to="/ParkingOost">
-                        🅿️ Amsterdam Oost
+                    <NavLink activeClassName="active" to="/ParkingOostTab">
+                      Amsterdam Oost
                     </NavLink>
                 </li>
             </ul>

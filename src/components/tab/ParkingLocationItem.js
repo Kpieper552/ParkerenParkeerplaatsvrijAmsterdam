@@ -30,26 +30,44 @@ return (
     <>
         {error && (<span>error </span>)}
         {loading && (<span>Loading...</span>)}
-        <div id="penr"><h2>Amsterdam Parkeergarages [freeplaces?]</h2>
-        <ul>
-            {parkingLocations && parkingLocations.sort().map((parkingLocation) => {
+        <div id="locationFree"><h2>Parkeerplaats VRIJ?</h2>
+            {parkingLocations && parkingLocations.map((parkingLocation) => {
                 console.log(parkingLocation);
                 return (
-                    <li id="parkinglocation" key={parkingLocation.id} >
+                    <li id="parkinglocationdetails" key={parkingLocation.id} >
                       <label id="Name" >{parkingLocation.properties.Name}</label><br/><br/>
-                        Free Places <label  id="FreeShort" >
-                            {parkingLocation.properties.FreeSpaceShort}
+                        <label  id="MoreInfo" >
+                            Free Places
+                            <label id="FreeShort">
+                                {parkingLocation.properties.FreeSpaceShort}<br/>
+                            </label><br/>
+                        </label><br/>
+                        <label  id="MoreInfo" >
+                            Total Capacity
+                            <label id="FreeShort">
+                                {parkingLocation.properties.ShortCapacity}<br/><br/>
+                            </label><br/>
                         </label>
+
                     </li>
                 )
             })}
-        </ul>
+
         </div>
     </>
 );
 }
 export default ParkingLocationItem;
 
-//                    FreePlacesLong<button type="text" id="FreeLong" >{parkingLocation.properties.FreeSpaceLong}</button><br/><br/>
-//                     TotalPlacesLong<button type="text" id="CapLong" >{parkingLocation.properties.LongCapacity}</button><br/><br/>
-//
+//                        <label  id="MoreInfo" >
+//                             Free Places
+//                             <label id="FreeShort">
+//                                 {parkingLocation.properties.FreeSpaceLong}<br/><br/>
+//                             </label><br/>
+//                         </label>
+//                         <label  id="MoreInfo" >
+//                             Total Capacity
+//                             <label id="FreeShort">
+//                                  {parkingLocation.properties.LongCapacity}<br/><br/>
+//                             </label><br/>
+//                         </label>
