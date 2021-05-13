@@ -1,9 +1,8 @@
 import React, { useState} from 'react';
 import ReactMapGL from "react-map-gl";
 
-
-
-function ParkingLocationMap() {
+const mapboxApiAccesToken='pk.eyJ1Ijoia2FyaW5hcGllcGVyIiwiYSI6ImNrb2JsbXp0MjFlNWwycXFrMmZ6NG4yOWoifQ.SCXs3rjvsATv5qSM1AZ23w'
+function ParkingLocationMaps() {
     const [viewport, setViewport] = useState({
         latitude: 52.37403,
         longitude: 4.88969,
@@ -13,8 +12,7 @@ function ParkingLocationMap() {
     });
 
 
-
-//console.log(process.env.REACT_APP_MAPBOX_TOKEN, "token map!!!");
+//console.log(mapboxApiAccesToken, "token map!!!");
 //de console log en token heb ik even uitgezet.
     return (
         <>
@@ -31,6 +29,6 @@ function ParkingLocationMap() {
         </>
     );
 }
-export default ParkingLocationMap;
+export default ParkingLocationMaps;
 
 

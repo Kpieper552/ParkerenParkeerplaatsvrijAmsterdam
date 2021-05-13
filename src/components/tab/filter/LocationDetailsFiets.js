@@ -28,18 +28,20 @@ function LocationDetailsFiets() {
                 {loading && (<span>Loading...</span>)}
 
                 {parkings.filter(parking => parking.parkeerlocatie.type.includes("Fiets")).map((filteredParking, index) => {
-                    console.log(filteredParking);
+                    console.log(filteredParking, "fietsen");
                     return (
-                        <li id="parkinglocationdetails" key={index}>
+                        <li id="parkinglocationdetails" key={filteredParking.parkeerlocatie.adres}>
 
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
-                            {filteredParking.parkeerlocatie.type}<br /><br />
-                            {filteredParking.parkeerlocatie.adres}<br />
-                            {filteredParking.parkeerlocatie.postcode}
-                            {filteredParking.parkeerlocatie.woonplaats}<br /><br />
-                            {/*OPMERKINGEN BLOK-------------------- */}
-                            {filteredParking.parkeerlocatie.opmerkingen}<br /><br />
-                            {/*OPENBAAR VERVOER BLOK-------------------- */}
+                            <label id="MoreInfo">
+                                {filteredParking.parkeerlocatie.adres} |
+                                {filteredParking.parkeerlocatie.postcode} |
+                                {filteredParking.parkeerlocatie.woonplaats}<br />
+                            </label><br />
+                            <label id="MoreInfo">{filteredParking.parkeerlocatie.type}<br />
+                                {/*OPMERKINGEN BLOK-------------------- */}
+                                {filteredParking.parkeerlocatie.opmerkingen}<br /><br />
+                            </label>
                         </li>
                     )
                 })}

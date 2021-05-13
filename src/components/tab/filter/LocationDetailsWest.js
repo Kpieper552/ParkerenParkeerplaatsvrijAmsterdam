@@ -29,98 +29,98 @@ function LocationDetailsWest() {
                 {loading && (<span>Loading...</span>)}
                 {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1043DW")).map((filteredParking, index) => {
                     return (
-                        <li id="parkinglocationdetails" key={index}>
+                        <li id="parkinglocationdetails" key={filteredParking.parkeerlocatie.adres+index}>
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
-                            {filteredParking.parkeerlocatie.adres}<br />
-                            {filteredParking.parkeerlocatie.postcode}
+                            {filteredParking.parkeerlocatie.adres} |
+                            {filteredParking.parkeerlocatie.postcode} |
                             {filteredParking.parkeerlocatie.woonplaats}<br /><br />
                             {/*OPMERKINGEN BLOK-------------------- */}
-                            {filteredParking.parkeerlocatie.opmerkingen}<br /><br />
+                            {filteredParking.parkeerlocatie.opmerkingen}
                             {/*OPENBAAR VERVOER BLOK-------------------- */}
                         </li>
                     )
                 })}
                 {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1051")).map((filteredParking, index) => {
                      return (
-                        <li id="parkinglocationdetails" key={index}>
+                        <li id="parkinglocationdetails" key={filteredParking.parkeerlocatie.adres+index}>
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
-                            {filteredParking.parkeerlocatie.adres}<br />
-                            {filteredParking.parkeerlocatie.postcode}
+                            {filteredParking.parkeerlocatie.adres} |
+                            {filteredParking.parkeerlocatie.postcode} |
                             {filteredParking.parkeerlocatie.woonplaats}<br /><br />
                             {/*OPMERKINGEN BLOK-------------------- */}
-                            {filteredParking.parkeerlocatie.opmerkingen}<br /><br />
+                            {filteredParking.parkeerlocatie.opmerkingen}
                             {/*OPENBAAR VERVOER BLOK-------------------- */}
                         </li>
                     )
                 })}
                 {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1053 AT")).map((filteredParking, index) => {
                     return (
-                        <li id="parkinglocationdetails" key={index}>
+                        <li id="parkinglocationdetails" key={filteredParking.parkeerlocatie.adres+index}>
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
-                            {filteredParking.parkeerlocatie.adres}<br />
-                            {filteredParking.parkeerlocatie.postcode}
+                            {filteredParking.parkeerlocatie.adres} |
+                            {filteredParking.parkeerlocatie.postcode} |
                             {filteredParking.parkeerlocatie.woonplaats}<br /><br />
                             {/*OPMERKINGEN BLOK-------------------- */}
-                            {filteredParking.parkeerlocatie.opmerkingen}<br /><br />
+                            {filteredParking.parkeerlocatie.opmerkingen}
                             {/*OPENBAAR VERVOER BLOK-------------------- */}
                         </li>
                     )
                 })}
                 {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1054")).map((filteredParking, index) => {
                      return (
-                        <li id="parkinglocationdetails" key={index}>
+                        <li id="parkinglocationdetails" key={filteredParking.parkeerlocatie.adres+index}>
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
-                            {filteredParking.parkeerlocatie.adres}<br />
-                            {filteredParking.parkeerlocatie.postcode}
+                            {filteredParking.parkeerlocatie.adres} |
+                            {filteredParking.parkeerlocatie.postcode} |
                             {filteredParking.parkeerlocatie.woonplaats}<br /><br />
                             {/*OPMERKINGEN BLOK-------------------- */}
-                            {filteredParking.parkeerlocatie.opmerkingen}<br /><br />
+                            {filteredParking.parkeerlocatie.opmerkingen}
                             {/*OPENBAAR VERVOER BLOK-------------------- */}
                         </li>
                     )
                 })}
                 {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1055")).map((filteredParking, index) => {
                     return (
-                        <li id="parkinglocationdetails" key={index}>
+                        <li id="parkinglocationdetails" key={filteredParking.parkeerlocatie.adres+index}>
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
-                            {filteredParking.parkeerlocatie.adres}<br />
-                            {filteredParking.parkeerlocatie.postcode}
+                            {filteredParking.parkeerlocatie.adres} |
+                            {filteredParking.parkeerlocatie.postcode} |
                             {filteredParking.parkeerlocatie.woonplaats}<br /><br />
                             {/*OPMERKINGEN BLOK-------------------- */}
-                            {filteredParking.parkeerlocatie.opmerkingen}<br /><br />
+                            {filteredParking.parkeerlocatie.opmerkingen}
                             {/*OPENBAAR VERVOER BLOK-------------------- */}
                         </li>
                     )
                 })}
                 {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1057")).map((filteredParking, index) => {
                     return (
-                        <li id="parkinglocationdetails" key={index}>
+                        <li id="parkinglocationdetails" key={filteredParking.parkeerlocatie.adres+index}>
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
-                            {filteredParking.parkeerlocatie.adres}<br />
-                            {filteredParking.parkeerlocatie.postcode}
+                            {filteredParking.parkeerlocatie.adres} |
+                            {filteredParking.parkeerlocatie.postcode} |
                             {filteredParking.parkeerlocatie.woonplaats}<br /><br />
                             {/*OPMERKINGEN BLOK-------------------- */}
-                            {filteredParking.parkeerlocatie.opmerkingen}<br /><br />
+                            {filteredParking.parkeerlocatie.opmerkingen}
                             {/*OPENBAAR VERVOER BLOK-------------------- */}
                         </li>
                     )
                 })}
                 {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1062")).map((filteredParking, index) => {
                     return (
-                        <li id="parkinglocationdetails" key={index}>
+                        <li id="parkinglocationdetails" key={filteredParking.parkeerlocatie.adres+index}>
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
-                            {filteredParking.parkeerlocatie.adres}<br />
-                            {filteredParking.parkeerlocatie.postcode}
+                            {filteredParking.parkeerlocatie.adres} |
+                            {filteredParking.parkeerlocatie.postcode} |
                             {filteredParking.parkeerlocatie.woonplaats}<br /><br />
                             {/*OPMERKINGEN BLOK-------------------- */}
-                            {filteredParking.parkeerlocatie.opmerkingen}<br /><br />
+                            {filteredParking.parkeerlocatie.opmerkingen}
                             {/*OPENBAAR VERVOER BLOK-------------------- */}
                         </li>
                     )

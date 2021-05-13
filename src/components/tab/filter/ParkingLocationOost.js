@@ -23,30 +23,28 @@ function ParkingLocationOost() {
     }, []);
 
     return (
-        <>
             <div id="oost">
                 {error && (<span>error </span>)}
                 {loading && (<span>Loading...</span>)}
-                <h4>Zeeburg</h4>
-                {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("CE-P16")).map((filteredParkingLocation) => {
+                {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("CE-P16")).map((filteredParkingLocation, index) => {
                     return (
-                        <li id="parkinglocationfilter" key={filteredParkingLocation.id}>
+                        <li id="parkinglocationfilter" key={filteredParkingLocation.properties.Name+index}>
                             <label id="Name">{filteredParkingLocation.properties.Name}</label><br/><br/>
-                            Free Places <label id="FreeShort" > {filteredParkingLocation.properties.FreeSpaceShort}</label>
+                            |>VRIJ <label id="FreeShort" > {filteredParkingLocation.properties.FreeSpaceShort}</label>
                         </li>
                     )
                 })}<br/><br/>
                 <h4>Oostpoort</h4>
-                {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("CE-P20")).map((filteredParkingLocation) => {
+                {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("CE-P20")).map((filteredParkingLocation, index) => {
                     return (
-                        <li id="parkinglocationfilter" key={filteredParkingLocation.id}>
+                        <li id="parkinglocationfilter" key={filteredParkingLocation.properties.Name+index}>
                             <label id="Name">{filteredParkingLocation.properties.Name}</label><br/><br/>
-                            Free Places <label id="FreeShort" > {filteredParkingLocation.properties.FreeSpaceShort}</label>
+                            |>VRIJ <label id="FreeShort" > {filteredParkingLocation.properties.FreeSpaceShort}</label>
                         </li>
                     )
                 })}<br/><br/>
             </div>
-        </>
+
     );
 }
 export default ParkingLocationOost;

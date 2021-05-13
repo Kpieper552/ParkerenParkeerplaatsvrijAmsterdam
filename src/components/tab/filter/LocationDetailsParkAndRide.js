@@ -27,19 +27,15 @@ function LocationDetailsParkAndRide() {
                 {loading && (<span>Loading...</span>)}
                 {parkings.filter(parking => parking.parkeerlocatie.type.includes("P+R")).map((filteredParking, index) => {
                     return (
-                        <li id="parkinglocationdetails" key={index}>
+                        <li id="parkinglocationdetails" key={filteredParking.parkeerlocatie.adres+index}>
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
-                            {filteredParking.parkeerlocatie.type}<br /><br />
-                            {filteredParking.parkeerlocatie.adres}<br />
+                            <label id="MoreInfo">
+                            {filteredParking.parkeerlocatie.adres}
                             {filteredParking.parkeerlocatie.postcode}
                             {filteredParking.parkeerlocatie.woonplaats}<br /><br />
-                            {/*OPMERKINGEN BLOK-------------------- */}
-                            {filteredParking.parkeerlocatie.opmerkingen}
-                            {/*OPENBAAR VERVOER BLOK-------------------- */}
-                            {filteredParking.parkeerlocatie.OV_bus}<br /><br />
-                            {filteredParking.parkeerlocatie.OV_tram}<br /><br />
-                            {filteredParking.parkeerlocatie.OV_metro}<br /><br />
-                            {filteredParking.parkeerlocatie.OV_trein}<br /><br />
+                            </label><br />
+                            <label id="MoreInfo">{filteredParking.parkeerlocatie.type}<br />
+                            </label>
                         </li>
                     )
                 })}
@@ -50,7 +46,13 @@ function LocationDetailsParkAndRide() {
 export default LocationDetailsParkAndRide;
 
 
-
+//                            {/*OPMERKINGEN BLOK-------------------- */}
+//                             {filteredParking.parkeerlocatie.opmerkingen}
+//                             {/*OPENBAAR VERVOER BLOK-------------------- */}
+//                             {filteredParking.parkeerlocatie.OV_bus}<br /><br />
+//                             {filteredParking.parkeerlocatie.OV_tram}<br /><br />
+//                             {filteredParking.parkeerlocatie.OV_metro}<br /><br />
+//                             {filteredParking.parkeerlocatie.OV_trein}<br /><br />
 
 
 

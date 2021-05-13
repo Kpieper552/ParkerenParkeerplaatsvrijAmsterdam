@@ -1,9 +1,10 @@
 import React from 'react';
 import '../../App.css';
 import Tile from "../../components/tile/Tile";
-import ParkingLocationDetails from "../../components/tab/ParkingLocationDetails";
-import carparking from "../../assets/carparking.jpg";
-import ParkingLocationItem from "../../components/tab/ParkingLocationItem";
+import ParkingLocationDetailsAdres from "../../components/tab/parkinglocationdetails/ParkingLocationDetailsAdres";
+import ParkingLocationsDetailsName from "../../components/tab/parkinglocationdetails/ParkingLocationsDetailsName";
+
+
 
 
 
@@ -12,12 +13,19 @@ function ParkingAmsterdamTab() {
 
     return (
         <>
-               <div id="zuidoost-details"> <h2>Amsterdam  Parkeergarages | Locatie gegevens</h2>
-                   <Tile img={carparking} imgDescription={carparking}/>
-                   <Tile titlearea={"PARKEREN AMSTERDAM "}/>
-                            <Tile children={<ParkingLocationDetails />} />
+            <div>
+              <Tile>
+                  <div id="parkingAdam-weg-deel">
+                      <ParkingLocationsDetailsName /><br/>
+                  </div>
+                  <div id="parkingAdam-weg-deel" >
+                      <ParkingLocationDetailsAdres/><br/>
+                  </div>
+                  <div >
 
-                </div>
+                  </div>
+              </Tile>
+        </div>
 
         </>
     );

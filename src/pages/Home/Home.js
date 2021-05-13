@@ -1,41 +1,48 @@
 import React  from 'react';
 import '../../App.css';
 import Tile from "../../components/tile/Tile";
-import ParkingLocationFiets from "../../components/tab/ParkingLocationFiets";
-import amsterdam from "../../assets/amsterdam.JPG";
 import carparking from "../../assets/carparking.jpg";
+import kaart from "../../assets/kaart.jpg"
 
 
 function Home() {
     return (
         <>
-            <Tile img={amsterdam} imgDescription={amsterdam}/>
-            <div><h1>Parkeren Amsterdam</h1>
-            <div>
+            <Tile img={kaart} imgDescription={kaart}/>
+            <div><h1>Parkeren Amsterdam</h1></div>
                 <Tile img={carparking} imgDescription={carparking}/>
                 <Tile titlearea={"PARKEREN AMSTERDAM "}/>
-                <Tile titlearea={"PlAATSEN VRIJ ? "}/>
-                <Tile titlearea={"CONTENT"}/>
-             <Tile>
-                 <div id="parkingAdam-weg-deel">informatie<br/><br/>
-                 <ParkingLocationFiets/>
-                     informatie<br/><br/>
-                     informatie<br/><br/>
-                 </div><br/>
-                 <div id="home-Page-weg" >
-                     <div className="label-weg"> <h1> </h1>in Amsterdam is niet duur</div><br/>
-                     <div className="label-weg"> <h1> </h1>in Amsterdam is niet duur</div><br/>
-                 </div><br/>
-                <div id="parkingAdam-weg-deel"> informatie<br/><br/>
-                    <ParkingLocationFiets/>
-                    informatie<br/><br/>
-                    informatie<br/><br/>
-                </div>
-                </Tile>
+                <Tile titlearea={"PlAATSEN VRIJ content ? "}/>
+                <Tile>
+                     <div id="parkingAdam-weg-deel">
+                         <div className="label-weg"> Kort Parkeren in Amsterdam</div><br/>
+                         informatie<br/><br/>
+                         <br/><label id="button-page">Locaties kort parkeren Centrum</label>
+                         informatie<br/><br/>
+                         <br/><label id="button-page">Locaties kort parkeren Park & Ride</label>
+                         informatie<br/><br/>
+                         <div className="label-weg"> Login en/of Registreer voor meer toegang</div><br/>
+                         <br/><label id="button-page">Login / Register </label>
+                     </div>
 
-            </div>
-            </div>
+                    <div id="home-Page-weg">
+                        <div className="label-weg">Kort Parkeren in Amsterdam</div><br/>
+                        informatie<br/><br/>
+                        <div className="label-weg">Lang Parkeren in Amsterdam</div><br/>
+                    </div><br/>
 
+                     <div id="parkingAdam-weg-deel">
+                         <div className="label-weg">Kort Parkeren in Amsterdam</div><br/>                         informatie<br/><br/>
+
+                         <br/><label id="button-page">Locaties kort parkeren Stadsdelen Zuid en Zuid-Oost</label>
+                         informatie<br/><br/>
+                         <br/><label id="button-page">Locaties kort parkeren Stadsdelen Zuid en West</label>
+                         informatie<br/><br/>
+                         <div className="label-weg"> Lang Parkeren in Amsterdam</div><br/>
+                         <br/><label id="button-page">Locaties Lang parkeren</label>
+                    </div>
+               </Tile>
+            <Tile img={carparking} imgDescription={carparking}/>
         </>
     );
 }
