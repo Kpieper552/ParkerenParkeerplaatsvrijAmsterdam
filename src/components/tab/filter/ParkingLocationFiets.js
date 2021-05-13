@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import axios from 'axios';
-import '../../App.css';
+import '../../../App.css';
 
 
 function ParkingLocationFiets() {
@@ -11,7 +11,6 @@ function ParkingLocationFiets() {
         async function fetchData() {
             try {
                 const response = await axios.get('http://opd.it-t.nl/data/amsterdam/ParkingLocation.json');
-                console.log(response.data.features);
                 setParkingLocations(response.data.features);
                 toggleLoading(false);
             } catch (error) {
@@ -24,13 +23,12 @@ function ParkingLocationFiets() {
     }, []);
 
     return (
-        <>
             <div >
                 {error && (<span>error </span>)}
                 {loading && (<span>Loading...</span>)}
-                {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("Fiets")).map((filteredParkingLocation) => {
+                {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("Fiets")).map((filteredParkingLocation, index) => {
                     return (
-                        <li id="parkinglocationfilter" key={filteredParkingLocation.id}>
+                        <li id="parkinglocationfilter" key={filteredParkingLocation.properties.Name+index}>
                         {filteredParkingLocation.properties.Name}
                         Free Places
                         {filteredParkingLocation.properties.FreeSpaceShort}
@@ -38,7 +36,6 @@ function ParkingLocationFiets() {
                     )
                 })}
             </div>
-        </>
     );
 }
 export default ParkingLocationFiets;

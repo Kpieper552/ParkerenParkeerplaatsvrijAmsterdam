@@ -4,13 +4,13 @@ import Tile from "../../components/tile/Tile";
 import ParkingLocationWest from "../../components/tab/filter/ParkingLocationWest";
 import ParkingLocationZuid from "../../components/tab/filter/ParkingLocationZuid";
 import carparking from "../../assets/carparking.jpg";
-import amsterdam from "../../assets/amsterdam.JPG";
+import kaart from "../../assets/kaart.jpg";
 
 
 function ParkerenAmsterdamStadsdelenZuidWest() {
     return (
         <>
-            <Tile img={amsterdam} imgDescription={amsterdam}/>
+            <Tile img={kaart} imgDescription={kaart}/>
             <div ><h1>Parkeren Amsterdam Zuid en West </h1>
                 <Tile img={carparking} imgDescription={carparking}/>
                 <Tile titlearea={" +"}/>

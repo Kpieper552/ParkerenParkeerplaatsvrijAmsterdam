@@ -1,10 +1,8 @@
 import React  from 'react';
 import '../../App.css';
 import Tile from "../../components/tile/Tile";
-import amsterdam from "../../assets/amsterdam.JPG";
 import carparking from "../../assets/carparking.jpg";
-import ParkingLocationFiets from "../../components/tab/ParkingLocationFiets";
-import ParkingLocationItem from "../../components/tab/ParkingLocationItem";
+import ParkingLocationItem from "../../components/tab/parkinglocationplacesfree/ParkingLocationItem";
 
 
 
@@ -13,12 +11,10 @@ function ParkingPlaatsenVrijTab() {
         <>
             <div>
                 <div>
-                    <Tile img={carparking} imgDescription={carparking}/>
                      <Tile>
-                        <div id="parkingAdam-weg">informatie<br/><br/>
-
+                        <div id="parkingAdam-weg-deel">
                               <ParkingLocationItem/>
-                              informatie<br/><br/>
+                              <br/><br/>
                         </div>
                     </Tile>
                 </div>

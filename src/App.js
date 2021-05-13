@@ -43,8 +43,7 @@ function App() {
             setError(false);
             toggleLoading(true);
             try {
-                const response = await axios.get('http://opd.it-t.nl/data/amsterdam/ParkingLocation.json');
-                console.log("ik zoek de APINAAM", response.data.features);
+                //const response = await axios.get('http://opd.it-t.nl/data/amsterdam/ParkingLocation.json');
                 toggleLoading(false);
             } catch (error) {
                 console.log(error);
@@ -69,9 +68,7 @@ function App() {
                 {/*PAGE -------------------- */}
                 <Route exact path="/">
                     <Home />
-
                     {/*NAVIGATION-------------------- */}
-
                     <Router>
                         {/*TAB -------------------- */}
                             <div className="parkingAdam-content">
@@ -195,6 +192,20 @@ function App() {
                 {/*PAGE -------------------- */}
                 <Route path="/account">
                     <Account />
+                    {/*TAB -------------------- */}
+                    <div className="parkingAdam-content">
+                        <TabBarMenuZero/>
+                        <div className="tab-wrapper">
+                            <Switch>
+                                <Route exact path="/Home">
+                                    <ParkingAmsterdamTab/>
+                                </Route>
+                                <Route path="/parkingplaatsenvrijtab">
+                                    <ParkingPlaatsenVrijTab />
+                                </Route>
+                            </Switch>
+                        </div>
+                    </div>
                 </Route>
             </Switch>
                   <div  className="parkingAdam-header">

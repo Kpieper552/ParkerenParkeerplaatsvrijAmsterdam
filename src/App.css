@@ -1,7 +1,7 @@
 body {
     background-color: linen;
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1800px) {
 body {
     display: flex;
     justify-content: center;
@@ -39,11 +39,33 @@ nav ul {
 button {
     background-color: linen;
     display: flex;
-    max-width: 57px;
+    max-width: 80px;
     height: 40px;
     color: firebrick;
     font-size: 8px;
 }
+#button-tab {
+    background-color: #006bbd;
+    display: flex;
+    max-width: 75px;
+    height: 0.85cm;
+    color: white;
+    font-size: 8px;
+}
+#button-page{
+    background-color: #006bbd;
+    display: flex;
+    align-content: center;
+    max-width: 200px;
+    height: 60px;
+    color: white;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+}
+
 ul {
     list-style-type: none;
     padding: 0 16px;
@@ -69,12 +91,13 @@ ul {
     border-left: 8px solid white;
     box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
+
 #home-Page-weg, #pr-Page-weg {
     display: inline-block;
     background-color: dimgray;
     width: fit-content;
-    min-height: 400px;
-    max-width: 250px;
+    min-height: 800px;
+    max-width: 350px;
     align-content: space-around;
     list-style-type: none;
     border-radius: 5px;
@@ -160,11 +183,13 @@ h2 {
 {/*NAAR COMPONENTS -------------------- */}
 #Name {
     color: #FFB619;
+    font-size: 8px;
+    width:5px;
 
 }
 #MoreInfo {
     color: linen;
-    width: 240px;
+    width: 225px;
     display: flex;
     flex-basis: 8px;
     flex-grow: 0;
@@ -173,7 +198,7 @@ h2 {
     border-left: 5px solid #ffb619;
     border-top: #ffb619;
     box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
-
+    font-size: 8px;
 }
 #FreeShort, #FreeLong {
     background-color: #0d0208;
@@ -181,7 +206,7 @@ h2 {
     height: 15px;
     color: #FFB619;
     padding: 5px;
-    margin-left: 30px;
+    margin-left: 10px;
 
 }
 {/*NAAR COMPONENTS -------------------- */}
@@ -210,14 +235,14 @@ h2 {
 }
 #parkinglocationdetails {
     display: inline-block;
-    width: 235px;
+    width: 225px;
     flex-basis: 40px;
     flex-grow: 0;
     flex-shrink: 0;
     margin-left: 1px;
     background-color: #006bbd;
     border-inline-color: #FFFFFF;
-    border-radius: 12px;
+    border-radius: 11px;
     border: 1px solid white;
     color: #FFFFFF;
     font-size: 10px;

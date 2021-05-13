@@ -2,9 +2,9 @@ import React from 'react';
 import '../../App.css';
 import Tile from "../../components/tile/Tile";
 import ParkingLocationParkAndRide from "../../components/tab/filter/ParkingLocationParkAndRide";
-import amsterdam from "../../assets/amsterdam.JPG";
 import carparking from "../../assets/carparking.jpg";
-import CAR from "../../assets/CAR.jpg";
+import kaart from "../../assets/kaart.jpg";
+
 
 
 
@@ -12,7 +12,7 @@ import CAR from "../../assets/CAR.jpg";
 function ParkerenAmsterdamParkenRide() {
     return (
         <>
-            <Tile img={amsterdam} imgDescription={amsterdam}/>
+            <Tile img={kaart} imgDescription={kaart}/>
             <div ><h1>Parkeren Park & Ride </h1>
                 <Tile img={carparking} imgDescription={carparking}/>
                 <Tile titlearea={"Park & Ride Plaasten vrij "}/>

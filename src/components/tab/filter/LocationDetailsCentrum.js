@@ -30,15 +30,15 @@ function LocationDetailsCentrum() {
                 {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1093KP")).map((filteredParking, index) => {
                     console.log(filteredParking);
                     return (
-                        <li id="parkinglocationdetails" key={index}>
+                        <li id="parkinglocationdetails" key={filteredParking.parkeerlocatie.adres+index}>
 
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
-                            {filteredParking.parkeerlocatie.adres}<br />
-                            {filteredParking.parkeerlocatie.postcode}
+                            {filteredParking.parkeerlocatie.adres} |
+                            {filteredParking.parkeerlocatie.postcode} |
                             {filteredParking.parkeerlocatie.woonplaats}<br /><br />
                             {/*OPMERKINGEN BLOK-------------------- */}
-                            {filteredParking.parkeerlocatie.opmerkingen}<br /><br />
+                            {filteredParking.parkeerlocatie.opmerkingen}
                             {/*OPENBAAR VERVOER BLOK-------------------- */}
                         </li>
                     )
@@ -48,15 +48,15 @@ function LocationDetailsCentrum() {
                     console.log(filteredParking);
 
                     return (
-                        <li id="parkinglocationdetails" key={index}>
+                        <li id="parkinglocationdetails" key={filteredParking.parkeerlocatie.adres+index}>
 
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
-                            {filteredParking.parkeerlocatie.adres}<br />
-                            {filteredParking.parkeerlocatie.postcode}
+                            {filteredParking.parkeerlocatie.adres} |
+                            {filteredParking.parkeerlocatie.postcode} |
                             {filteredParking.parkeerlocatie.woonplaats}<br /><br />
                             {/*OPMERKINGEN BLOK-------------------- */}
-                            {filteredParking.parkeerlocatie.opmerkingen}<br /><br />
+                            {filteredParking.parkeerlocatie.opmerkingen}
                             {/*OPENBAAR VERVOER BLOK-------------------- */}
                         </li>
                     )
@@ -65,32 +65,31 @@ function LocationDetailsCentrum() {
                     console.log(filteredParking);
 
                     return (
-                        <li id="parkinglocationdetails" key={index}>
+                        <li id="parkinglocationdetails" key={filteredParking.parkeerlocatie.adres+index}>
 
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
-                            {filteredParking.parkeerlocatie.adres}<br />
-                            {filteredParking.parkeerlocatie.postcode}
+                            {filteredParking.parkeerlocatie.adres} |
+                            {filteredParking.parkeerlocatie.postcode} |
                             {filteredParking.parkeerlocatie.woonplaats}<br /><br />
                             {/*OPMERKINGEN BLOK-------------------- */}
-                            {filteredParking.parkeerlocatie.opmerkingen}<br /><br />
+                            {filteredParking.parkeerlocatie.opmerkingen}
                             {/*OPENBAAR VERVOER BLOK-------------------- */}
                         </li>
                     )
                 })}
                 {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1098")).map((filteredParking, index) => {
                     console.log(filteredParking);
-
                     return (
-                        <li id="parkinglocationdetails" key={index}>
+                        <li id="parkinglocationdetails" key={filteredParking.parkeerlocatie.adres+index}>
 
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
-                            {filteredParking.parkeerlocatie.adres}<br />
-                            {filteredParking.parkeerlocatie.postcode}
+                            {filteredParking.parkeerlocatie.adres} |
+                            {filteredParking.parkeerlocatie.postcode} |
                             {filteredParking.parkeerlocatie.woonplaats}<br /><br />
                             {/*OPMERKINGEN BLOK-------------------- */}
-                            {filteredParking.parkeerlocatie.opmerkingen}<br /><br />
+                            {filteredParking.parkeerlocatie.opmerkingen}
                             {/*OPENBAAR VERVOER BLOK-------------------- */}
                         </li>
                     )
@@ -99,15 +98,15 @@ function LocationDetailsCentrum() {
                     console.log(filteredParking);
 
                     return (
-                        <li id="parkinglocationdetails" key={index}>
+                        <li id="parkinglocationdetails" key={filteredParking.parkeerlocatie.adres+index}>
 
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
-                            {filteredParking.parkeerlocatie.adres}<br />
-                            {filteredParking.parkeerlocatie.postcode}
+                            {filteredParking.parkeerlocatie.adres} |
+                            {filteredParking.parkeerlocatie.postcode} |
                             {filteredParking.parkeerlocatie.woonplaats}<br /><br />
                             {/*OPMERKINGEN BLOK-------------------- */}
-                            {filteredParking.parkeerlocatie.opmerkingen}<br /><br />
+                            {filteredParking.parkeerlocatie.opmerkingen}
                             {/*OPENBAAR VERVOER BLOK-------------------- */}
                         </li>
                     )

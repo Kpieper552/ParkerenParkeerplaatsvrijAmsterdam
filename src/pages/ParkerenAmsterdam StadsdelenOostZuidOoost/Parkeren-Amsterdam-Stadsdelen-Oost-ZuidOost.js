@@ -3,14 +3,14 @@ import '../../App.css';
 import Tile from "../../components/tile/Tile";
 import ParkingLocationZuidOost from "../../components/tab/filter/ParkingLocationZuidOost";
 import ParkingLocationOost from "../../components/tab/filter/ParkingLocationOost";
-import amsterdam from "../../assets/amsterdam.JPG";
 import carparking from "../../assets/carparking.jpg";
+import kaart from "../../assets/kaart.jpg";
 
 
 function ParkerenAmsterdamStadsdelenOostZuidOost() {
     return (
         <>
-            <Tile img={amsterdam} imgDescription={amsterdam}/>
+            <Tile img={kaart} imgDescription={kaart}/>
             <div ><h1>Parkeren Amsterdam zuidoost en oost</h1>
                 <Tile img={carparking} imgDescription={carparking}/>
                 <Tile titlearea={"+"}/>
