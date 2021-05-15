@@ -7,28 +7,28 @@ function Navigation() {
 
             <ul >
                 <li>
-                    <NavLink to="/"><button>Home</button></NavLink>
+                    <NavLink to="/"><button><h6>Home</h6></button></NavLink>
                 </li>
                 <li>
-                    <NavLink to="/parkeren-amsterdam-centrum" activeClassName="activelink"><button>P| Centrum</button></NavLink>
+                    <NavLink to="/parkeren-amsterdam-centrum" activeClassName="activelink"><button><h6>| P | Centrum</h6></button></NavLink>
                 </li>
                 <li>
-                    <NavLink to="/parkeren-amsterdam-stadsdelen-Oost-ZuidOost" activeClassName="activelink"><button>P| ZOost/Oost</button></NavLink>
+                    <NavLink to="/parkeren-amsterdam-stadsdelen-Oost-ZuidOost" activeClassName="activelink"><button><h6>| P | ZOost/Oost</h6></button></NavLink>
                 </li>
                 <li>
-                    <NavLink to="/parkeren-amsterdam-stadsdelen-Zuid-West" activeClassName="activelink"><button>P| Zuid/West</button></NavLink>
+                    <NavLink to="/parkeren-amsterdam-stadsdelen-Zuid-West" activeClassName="activelink"><button><h6>| P | Zuid/West</h6></button></NavLink>
                 </li>
                 <li>
-                    <NavLink to="/parkeren-amsterdam-parkenride" activeClassName="activelink"><button>Park&Ride</button></NavLink>
+                    <NavLink to="/parkeren-amsterdam-parkenride" activeClassName="activelink"><button><h6>| P | Park&Ride</h6></button></NavLink>
                 </li>
                 <li>
-                    <NavLink to="/sign-up" activeClassName="activelink"><button>Registreer</button></NavLink>
+                    <NavLink to="/sign-up" activeClassName="activelink"><button><h6>Registreer</h6></button></NavLink>
                 </li>
                 <li>
-                    <NavLink to="/login" activeClassName="activelink"><button>Login</button></NavLink>
+                    <NavLink to="/login" activeClassName="activelink"><button><h6>Login</h6></button></NavLink>
                 </li>
                 <li>
-                    <NavLink to="/account" activeClassName="activelink"><button>Account</button></NavLink>
+                    <NavLink to="/account" activeClassName="activelink"><button><h6>Account</h6></button></NavLink>
                 </li>
 
             </ul>

@@ -26,7 +26,8 @@ function ParkingLocationZuid() {
             <div id="zuid">
                 {error && (<span>error </span>)}
                 {loading && (<span>Loading...</span>)}
-                <h4>de pijp</h4>
+                <h3>Zuid</h3>
+                <h4>de Pijp</h4>
                 {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("DP-FP")).map((filteredParkingLocation, index) => {
                     return (
                         <li id="parkinglocationfilter" key={filteredParkingLocation.properties.Name+index}>
@@ -56,7 +57,7 @@ function ParkingLocationZuid() {
                         </li>
                     )
                 })}
-                <h4>overig</h4>
+                <h4>Overig</h4>
                 {parkingLocations.filter
                 (parkingLocation => parkingLocation.properties.Name.includes("ZU-FP")).map((filteredParkingLocation, index) => (
                     <li id="parkinglocationfilter" key={filteredParkingLocation.properties.Name+index}>
@@ -72,7 +73,7 @@ function ParkingLocationZuid() {
                         </li>
                     )
                 })}
-                <h4>???</h4>
+                <h4>Julianaplein</h4>
                 {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("FP Juliana")).map((filteredParkingLocation, index) => {
                     return (
                         <li id="parkinglocationfilter" key={filteredParkingLocation.properties.Name+index}>

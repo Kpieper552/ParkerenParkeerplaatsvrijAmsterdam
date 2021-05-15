@@ -1,8 +1,7 @@
 import React  from 'react';
 import '../../App.css';
 import Tile from "../../components/tile/Tile";
-import carparking from "../../assets/carparking.jpg";
-import ParkingLocationItem from "../../components/tab/parkinglocationplacesfree/ParkingLocationItem";
+import ParkingLocationItemFreeShort from "../../components/tab/parkinglocationplacesfree/ParkingLocationItemFreeShort";
 
 
 
@@ -13,7 +12,7 @@ function ParkingPlaatsenVrijTab() {
                 <div>
                      <Tile>
                         <div id="parkingAdam-weg-deel">
-                              <ParkingLocationItem/>
+                              <ParkingLocationItemFreeShort/>
                               <br/><br/>
                         </div>
                     </Tile>

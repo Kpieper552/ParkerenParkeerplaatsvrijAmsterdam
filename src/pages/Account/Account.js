@@ -1,7 +1,8 @@
 import React from 'react';
 import '../../App.css';
 import Tile from "../../components/tile/Tile";
-import kaart from "../../assets/kaart.jpg";
+import amsterdam from "../../assets/amsterdam.JPG.png";
+import {NavLink} from "react-router-dom";
 //import {Link} from "react-router-dom";
 //import React, { useContext } from 'react';
 //import { SignupContext } from "../context/SignupContext";
@@ -9,19 +10,31 @@ import kaart from "../../assets/kaart.jpg";
 //PAGINA PROFILE OVERGENOMEN UIT PRACTICE PROJECT
 function Account() {
     //const { user } = useContext(SignupContext)
-    console.log("je bent nu op de profielpagina");
+    console.log("je bent nu op de accountpagina");
     return (
         <>
-            <Tile img={kaart} imgDescription={kaart}/>
-            <h1>ACCOUNT</h1>
+            <Tile img={amsterdam} imgDescription={amsterdam}/>
+            <h1>Account</h1>
             <section>
-                <div>
-                    <Tile titlearea={"ACCOUNT"}/>
-                    <Tile titlearea={"ACCOUNT"}/>
-                    <Tile titlearea={"ACCOUNT"}/>
-                    <h1>Profiel Pagina</h1>
-                    <h2>Gegevens user</h2>
-                </div>
+               <div id="parkingAdam-weg-deel" >
+                   <h2>Gegevens USER</h2>
+                   <label id="parkinglocation">
+                       <h2>Email</h2>
+
+                   </label>
+                   <br/>
+                   <br/>
+                   <label id="parkinglocation">
+                       <h2>Password</h2>
+
+                   </label>
+                   <br/>
+                   <label id="parkinglocation">
+                       <h2>Password</h2>
+
+                   </label>
+                   <NavLink to="/"> |> Home</NavLink><br/>
+               </div>
             </section>
         </>
     );

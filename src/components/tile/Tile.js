@@ -8,7 +8,6 @@ function Tile({ img, imgDescription, titlearea, textarea, children }) {
             <h2>{titlearea}</h2>
             <p>{textarea}</p>
             {children}
-
         </section>
     );
 }

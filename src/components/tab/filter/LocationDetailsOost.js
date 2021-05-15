@@ -97,8 +97,6 @@ function LocationDetailsOost() {
                         </li>
                     )
                 })}
-
-
             </div>
         </>
     );

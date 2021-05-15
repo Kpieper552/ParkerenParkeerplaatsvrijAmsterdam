@@ -2,8 +2,8 @@ import React, { useState, useEffect }  from 'react';
 import axios from "axios";
 
 
-
-function ParkingLocationItemFreeLong() {
+//tarieven per tarief soort maken via api opendata overheid amsterdam
+function ParkingLocationItem() {
     const [parkingLocations, setParkingLocations] = useState([]);
     const [error, setError] = useState(false);
     const [loading, toggleLoading] = useState(false);
@@ -29,25 +29,18 @@ function ParkingLocationItemFreeLong() {
         <div>
             {error && (<span>error </span>)}
             {loading && (<span>Loading...</span>)}
-            <div><h2>Parkeerplaats</h2>
-                {parkingLocations && parkingLocations.map((parkingLocation, index) => {
-                    return (
-                        <li id="parkinglocationdetails" key={parkingLocation.properties.Name+index} >
-                            <label id="Name" >{parkingLocation.properties.Name}</label>
-                            <label  id="MoreInfo" >
-                                |>VRIJ - parkeren kort
-                                <label id="FreeLong">
-                                    {parkingLocation.properties.FreeSpaceLong}</label>
-                                |> Capaciteit
-                                <label id="CapLong">
-                                    {parkingLocation.properties.LongCapacity}</label>
-                            </label>
+            <div>
+                {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("Artis")).map((filteredParkingLocation, index) => (
+                    <li  key={filteredParkingLocation.properties.Name+index} >
+                            <label >{filteredParkingLocation.properties.Name}</label>
+                                |>VRIJ
+                                <label id="FreeShort">
+                                    {filteredParkingLocation.properties.FreeSpaceShort}</label>
                         </li>
-                    )
-                })}
+                ))}
             </div>
         </div>
     );
 }
-export default ParkingLocationItemFreeLong;
+export default ParkingLocationItem;
 

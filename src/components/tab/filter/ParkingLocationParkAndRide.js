@@ -23,11 +23,10 @@ function ParkingLocationParkAndRide() {
     }, []);
 
     return (
-
                 <div id="penr">
                 {error && (<span>error </span>)}
                 {loading && (<span>Loading...</span>)}
-                <h4>P&R Locaties</h4>
+                <h3>Park & Ride</h3>
                 {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("P+R Zeeburg")).map((filteredParkingLocation, index) => {
                     console.log(filteredParkingLocation, "PR");
                     return (
@@ -37,31 +36,7 @@ function ParkingLocationParkAndRide() {
                         </li>
                     )
                 })}<br/><br/>
-                {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("P+R Olympisch")).map((filteredParkingLocation, index) => {
-                    return (
-                        <li id="parkinglocationfilter" key={filteredParkingLocation.properties.Name+index}>
-                            <label id="Name">{filteredParkingLocation.properties.Name}</label><br/><br/>
-                            |>VRIJ <label id="FreeShort" > {filteredParkingLocation.properties.FreeSpaceShort}</label>
-                        </li>
-                    )
-                })}<br/><br/>
-                {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("P+R Arena")).map((filteredParkingLocation, index) => {
-                    return (
-                        <li id="parkinglocationfilter" key={filteredParkingLocation.properties.Name+index}>
-                            <label id="Name">{filteredParkingLocation.properties.Name}</label><br/><br/>
-                            |>VRIJ <label id="FreeShort" > {filteredParkingLocation.properties.FreeSpaceShort}</label>
-                        </li>
-                    )
-                })}<br/><br/>
-                {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("P+R Noord")).map((filteredParkingLocation, index) => {
-                    return (
-                        <li id="parkinglocationfilter" key={filteredParkingLocation.properties.Name+index}>
-                            <label id="Name">{filteredParkingLocation.properties.Name}</label><br/><br/>
-                            |>VRIJ <label id="FreeShort" > {filteredParkingLocation.properties.FreeSpaceShort}</label>
-                        </li>
-                    )
-                })}<br/><br/>
-            </div>
+             </div>
 
     );
 }

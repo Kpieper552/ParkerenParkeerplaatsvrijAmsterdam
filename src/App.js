@@ -1,6 +1,4 @@
 import React, { useState, useEffect} from 'react';
-import axios from 'axios';
-
 import {
     BrowserRouter as Router,
     Switch,
@@ -30,10 +28,6 @@ import ParkingZuidTab from "./pages/ParkingZuidTab/ParkingZuidTab";
 import ParkingWestTab from "./pages/ParkingWestTab/ParkingWestTab";
 import Navigation from "./components/navigation/Navigation";
 import ParkingPlaatsenVrijTab from "./pages/ParkingPlaatsenVrijTab/ParkingPlaatsenVrijTab";
-
-
-//apikey aanmaken in env!!!!
-//REACT_MAPBOX_ACCES_TOKEN=pnpmk.eyJ1Ijoia2FyaW5hcGllcGVyIiwiYSI6ImNrb2JsbXp0MjFlNWwycXFrMmZ6NG4yOWoifQ.SCXs3rjvsATv5qSM1AZ23w
 
 function App() {
     const [error, setError] = useState(false);

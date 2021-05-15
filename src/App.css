@@ -17,7 +17,6 @@ body {
     box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
 
-
 {/*APP.JS -------------------- */}
 nav {
     background-color: #e2c681;
@@ -39,25 +38,29 @@ nav ul {
 button {
     background-color: linen;
     display: flex;
-    max-width: 80px;
+    width: 40px;
     height: 40px;
+    font-size: 8px;
     color: firebrick;
-    font-size: 8px;
 }
-#button-tab {
-    background-color: #006bbd;
-    display: flex;
-    max-width: 75px;
-    height: 0.85cm;
+
+.form {
+    background-color: green;
+    width: 500px;
+    height: 50px;
     color: white;
-    font-size: 8px;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
+
 #button-page{
     background-color: #006bbd;
     display: flex;
-    align-content: center;
-    max-width: 200px;
-    height: 60px;
+    alignment-baseline: center;
+    max-width: 500px;
+    height: 50px;
     color: white;
     border-top: 5px solid white;
     border-bottom: 5px solid white;
@@ -125,9 +128,9 @@ ul {
 
 .label-weg {
     background-color: dimgrey;
-    margin-top: 200px;
+    margin-top: 100px;
     width: fit-content;
-    height: 80px;
+    height: 100px;
     color: white;
     font-size: 10px;
     border-top: 5px solid green;
@@ -145,7 +148,7 @@ ul {
     border-bottom: 5px solid white;
     box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
-{/*app.js PAGES WITH ROAD-------------------- */}
+{/*app.js PAGES WITH ROAD---end----------------- */}
 .parkingAdam-container {
     position: relative;
     width: 100%;
@@ -179,17 +182,15 @@ h2 {
 
 }
 
-
 {/*NAAR COMPONENTS -------------------- */}
 #Name {
     color: #FFB619;
     font-size: 8px;
     width:5px;
-
 }
 #MoreInfo {
     color: linen;
-    width: 225px;
+    width: 240px;
     display: flex;
     flex-basis: 8px;
     flex-grow: 0;
@@ -207,9 +208,9 @@ h2 {
     color: #FFB619;
     padding: 5px;
     margin-left: 10px;
-
 }
 {/*NAAR COMPONENTS -------------------- */}
+
 #CapShort, #CapLong {
     background-color: #0d0208;
     width: 20px;
@@ -221,7 +222,7 @@ h2 {
 {/*NAAR COMPONENTS ------check parkinglocation op display?-------------- */}
 #parkinglocation {
     display: inline-block;
-    width: 180px;
+    width: 200px;
     height: fit-content;
     background-color: #006bbd;
     border-inline-color: #FFFFFF;
@@ -235,7 +236,7 @@ h2 {
 }
 #parkinglocationdetails {
     display: inline-block;
-    width: 225px;
+    width: 239px;
     flex-basis: 40px;
     flex-grow: 0;
     flex-shrink: 0;

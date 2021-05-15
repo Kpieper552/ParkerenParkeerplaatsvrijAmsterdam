@@ -27,8 +27,9 @@ function ParkingLocationDetailsName() {
                         <li id="parkinglocationdetails" key={parking.parkeerlocatie.adres+index}>
                             <label id="Name">{parking.parkeerlocatie.title}</label>
                             <label id="MoreInfo">
-                                <label id="button-tab"> LOGIN: toegang meer locatie info </label>
-                                <label id="button-tab">  </label>
+                                |> <br/>
+                                LOGIN: <br/>
+                                toegang meer locatie info
                             </label>
                         </li>
                     )

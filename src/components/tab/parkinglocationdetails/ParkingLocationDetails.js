@@ -9,7 +9,6 @@ function ParkingLocationDetails() {
             try {
                 const response = await axios.get('https://open.data.amsterdam.nl/ivv/parkeren/locaties.json');
                 setParkings(response.data.parkeerlocaties);
-                console.log(response.data.parkeerlocaties);
          } catch (error) {
                 console.log(error);
             }
@@ -32,7 +31,7 @@ function ParkingLocationDetails() {
                             {parking.parkeerlocatie.woonplaats} |
                             </label><br/>
                             <label id="MoreInfo">
-                                {parking.parkeerlocatie.type}
+                                |> {parking.parkeerlocatie.type}
                                     {/*OPENBAAR VERVOER BLOK-------------------- */}<br/>
                                     {parking.parkeerlocatie.OV_bus} <br/>
                                     {parking.parkeerlocatie.OV_tram} <br/>
@@ -41,8 +40,8 @@ function ParkingLocationDetails() {
                                     {/*OPMERKINGEN BLOK-------------------- */}<br/>
                                     {parking.parkeerlocatie.opmerkingen}
                                     {/*externe verwijzing BLOK-------------------- */}<br />
-                                    {parking.parkeerlocatie.url}<br />
-                                    {parking.parkeerlocatie.urltitle}
+                                |> {parking.parkeerlocatie.url}<br />
+                                |> {parking.parkeerlocatie.urltitle}
                             </label>
                         </li>
                         )
