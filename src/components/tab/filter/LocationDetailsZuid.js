@@ -97,10 +97,8 @@ function LocationDetailsZuid() {
                 })}
                 {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1081 LA")).map((filteredParking, index) => {
                     console.log(filteredParking);
-
                     return (
                         <li id="parkinglocationdetails" key={filteredParking.parkeerlocatie.adres+index}>
-
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
                             {filteredParking.parkeerlocatie.adres} |
@@ -115,7 +113,6 @@ function LocationDetailsZuid() {
                 {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1082 GC")).map((filteredParking, index) => {
                     return (
                         <li id="parkinglocationdetails" key={filteredParking.parkeerlocatie.adres+index}>
-
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             {filteredParking.parkeerlocatie.type}<br /><br />
                             {filteredParking.parkeerlocatie.adres} |
@@ -142,10 +139,8 @@ function LocationDetailsZuid() {
                         </li>
                     )
                 })}
-
                 {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1082 MD")).map((filteredParking, index) => {
                     console.log(filteredParking);
-
                     return (
                         <li id="parkinglocationdetails" key={filteredParking.parkeerlocatie.adres+index}>
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
@@ -159,8 +154,7 @@ function LocationDetailsZuid() {
                         </li>
                     )
                 })}
-
-                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1083HN")).map((filteredParking, index) => {
+                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1182 AG")).map((filteredParking, index) => {
                     return (
                         <li id="parkinglocationdetails" key={filteredParking.parkeerlocatie.adres+index}>
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
@@ -203,7 +197,6 @@ function LocationDetailsZuid() {
                         </li>
                     )
                 })}
-
             </div>
         </>
     );

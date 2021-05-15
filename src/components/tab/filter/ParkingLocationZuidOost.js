@@ -26,6 +26,7 @@ function ParkingLocationZuidOost() {
             <div id="zuidoost">
                 {error && (<span>error </span>)}
                 {loading && (<span>Loading...</span>)}
+                <h3>Zuid-Oost</h3>
                 <h4>Arena</h4>
                 {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("ZO-P0")).map((filteredParkingLocation, index) => {
                         return (

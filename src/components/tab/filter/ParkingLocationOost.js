@@ -26,7 +26,9 @@ function ParkingLocationOost() {
             <div id="oost">
                 {error && (<span>error </span>)}
                 {loading && (<span>Loading...</span>)}
-                {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("CE-P16")).map((filteredParkingLocation, index) => {
+                <h3>Oost</h3>
+                <h4>Zeeburg</h4>
+                {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("Zeeburg")).map((filteredParkingLocation, index) => {
                     return (
                         <li id="parkinglocationfilter" key={filteredParkingLocation.properties.Name+index}>
                             <label id="Name">{filteredParkingLocation.properties.Name}</label><br/><br/>

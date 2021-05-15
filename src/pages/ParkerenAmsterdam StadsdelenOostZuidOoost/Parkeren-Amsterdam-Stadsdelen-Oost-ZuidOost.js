@@ -4,33 +4,36 @@ import Tile from "../../components/tile/Tile";
 import ParkingLocationZuidOost from "../../components/tab/filter/ParkingLocationZuidOost";
 import ParkingLocationOost from "../../components/tab/filter/ParkingLocationOost";
 import carparking from "../../assets/carparking.jpg";
-import kaart from "../../assets/kaart.jpg";
+import amsterdam from "../../assets/amsterdam.JPG.png";
+import {NavLink} from "react-router-dom";
 
 
 function ParkerenAmsterdamStadsdelenOostZuidOost() {
     return (
         <>
-            <Tile img={kaart} imgDescription={kaart}/>
-            <div ><h1>Parkeren Amsterdam zuidoost en oost</h1>
+            <Tile img={amsterdam} imgDescription={amsterdam}/>
+            <div ><h1>Parkeren Amsterdam Zuid-Oost en Oost</h1>
                 <Tile img={carparking} imgDescription={carparking}/>
                 <Tile titlearea={"+"}/>
                 <Tile titlearea={"+"}/>
                 <div id="tilebox">
                     <Tile>
-                        <div id="parkingAdam-weg-deel">informatie<br/><br/>hallo dit is ide informatie<br/><br/><ParkingLocationZuidOost/>
+                        <div id="parkingAdam-weg-deel">
+                            <br/><br/>
+                            <br/><br/><ParkingLocationZuidOost/>
+                            <NavLink to="/"> |> Home</NavLink><br/>
                         </div><br/>
                         <div id="parkingAdam-weg">
                             <div className="label-weg">stadsdelen zuid oost of oost</div>
                             <div className="label-weg"></div>
                             <br/>
                         </div>
-                        <div id="parkingAdam-weg-deel">informatie<br/><br/><ParkingLocationOost/>
+                        <div id="parkingAdam-weg-deel">
+                            <br/><br/><ParkingLocationOost/>
+                            <NavLink to="/"> |> Home</NavLink><br/>
                         </div>
                     </Tile>
                 </div>
-
-
-
             </div>
         </>
     );

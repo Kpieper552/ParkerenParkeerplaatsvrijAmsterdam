@@ -11,7 +11,6 @@ function LocationDetailsFiets() {
             try {
                 const response = await axios.get('https://open.data.amsterdam.nl/ivv/parkeren/locaties.json');
                 setParkings(response.data.parkeerlocaties);
-                console.log("hallo dit is de data vanuit penr!!!!", response.data.parkeerlocaties);
             } catch (error) {
                 console.log(error);
                 setError(true);

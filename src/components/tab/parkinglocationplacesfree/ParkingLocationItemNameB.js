@@ -3,7 +3,7 @@ import axios from "axios";
 
 
 //tarieven per tarief soort maken via api opendata overheid amsterdam
-function ParkingLocationItem() {
+function ParkingLocationItemNameB() {
     const [parkingLocations, setParkingLocations] = useState([]);
     const [error, setError] = useState(false);
     const [loading, toggleLoading] = useState(false);
@@ -22,32 +22,25 @@ function ParkingLocationItem() {
                 setError(true);
                 toggleLoading(false);
             }
-            }
+        }
         fetchData();
     }, []);
-return (
+    return (
         <div>
             {error && (<span>error </span>)}
             {loading && (<span>Loading...</span>)}
-            <div><h2>Parkeerplaats</h2>
-                {parkingLocations && parkingLocations.map((parkingLocation, index) => {
-                return (
-                        <li id="parkinglocationdetails" key={parkingLocation.properties.Name+index} >
-                            <label id="Name" >{parkingLocation.properties.Name}</label>
-                            <label  id="MoreInfo" >
-                                |>VRIJ - parkeren kort
-                                <label id="FreeShort">
-                                    {parkingLocation.properties.FreeSpaceShort}</label>
-                                |> Capaciteit
-                                <label id="FreeShort">
-                                    {parkingLocation.properties.ShortCapacity}</label>
-                            </label>
-                        </li>
-                        )
-                 })}
+            <div>
+                {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("Leidseplein")).map((filteredParkingLocation, index) => (
+                    <li key={filteredParkingLocation.properties.Name+index} >
+                        <label >{filteredParkingLocation.properties.Name}</label>
+                        |>VRIJ
+                        <label id="FreeShort">
+                            {filteredParkingLocation.properties.FreeSpaceShort}</label>
+                    </li>
+                ))}
             </div>
         </div>
-);
+    );
 }
-export default ParkingLocationItem;
+export default ParkingLocationItemNameB;
 

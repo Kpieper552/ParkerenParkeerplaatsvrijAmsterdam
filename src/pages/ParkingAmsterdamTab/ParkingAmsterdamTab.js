@@ -19,7 +19,7 @@ function ParkingAmsterdamTab() {
                       <ParkingLocationsDetailsName /><br/>
                   </div>
                   <div id="parkingAdam-weg-deel" >
-                      <ParkingLocationDetailsAdres/><br/>
+                      <ParkingLocationDetailsAdres /><br/>
                   </div>
                   <div >
 

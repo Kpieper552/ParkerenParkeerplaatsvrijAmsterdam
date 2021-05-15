@@ -21,12 +21,13 @@ function ParkingLocationCentrum() {
         }
         fetchData();
     }, []);
-//concat array maken
+
     return (
         <>
             <div id="centrum">
                 {error && (<span>error </span>)}
                 {loading && (<span>Loading...</span>)}
+                <h3>Centrum</h3>
                 <h4>Museumplein 5</h4>
                 {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("CE-P06")).map((filteredParkingLocation, index) => (
                     <li id="parkinglocationfilter" key={filteredParkingLocation.properties.Name+index}>
@@ -38,7 +39,7 @@ function ParkingLocationCentrum() {
                     <label id="Name">{filteredParkingLocation.properties.Name}</label><br/><br/>
                     |> VRIJ  <label id="FreeShort" > {filteredParkingLocation.properties.FreeSpaceShort}</label>
                 </li>
-            ))}
+                ))}
                 {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("CE-P33")).map((filteredParkingLocation, index) => (
                     <li id="parkinglocationfilter" key={filteredParkingLocation.properties.Name+index}>
                         <label id="Name">{filteredParkingLocation.properties.Name}</label><br/><br/>
@@ -71,7 +72,6 @@ function ParkingLocationCentrum() {
                         |> VRIJ  <label id="FreeShort" > {filteredParkingLocation.properties.FreeSpaceShort}</label>
                     </li>
                 ))}
-
                 <h4>Overig </h4>
                 {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("CE-P13")).map((filteredParkingLocation, index) => (
                     <li id="parkinglocationfilter" key={filteredParkingLocation.properties.Name+index}>
@@ -90,14 +90,13 @@ function ParkingLocationCentrum() {
                         |> VRIJ <label id="FreeShort" > {filteredParkingLocation.properties.FreeSpaceShort}</label>
                     </li>
                 ))}
-
                 {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("CE-P32")).map((filteredParkingLocation, index) => (
                     <li id="parkinglocationfilter" key={filteredParkingLocation.properties.Name+index}>
                         <label id="Name">{filteredParkingLocation.properties.Name}</label><br/><br/>
                         |> VRIJ <label id="FreeShort" > {filteredParkingLocation.properties.FreeSpaceShort}</label>
                     </li>
                 ))}
-            </div>
+             </div>
         </>
     );
 }

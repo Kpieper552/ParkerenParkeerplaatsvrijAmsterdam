@@ -2,8 +2,8 @@ import React, { useState, useEffect }  from 'react';
 import axios from "axios";
 
 
-
-function ParkingLocationItemFreeLong() {
+//tarieven per tarief soort maken via api opendata overheid amsterdam
+function ParkingLocationItemFreeShort() {
     const [parkingLocations, setParkingLocations] = useState([]);
     const [error, setError] = useState(false);
     const [loading, toggleLoading] = useState(false);
@@ -22,32 +22,32 @@ function ParkingLocationItemFreeLong() {
                 setError(true);
                 toggleLoading(false);
             }
-        }
+            }
         fetchData();
     }, []);
-    return (
+return (
         <div>
             {error && (<span>error </span>)}
             {loading && (<span>Loading...</span>)}
             <div><h2>Parkeerplaats</h2>
                 {parkingLocations && parkingLocations.map((parkingLocation, index) => {
-                    return (
+                return (
                         <li id="parkinglocationdetails" key={parkingLocation.properties.Name+index} >
                             <label id="Name" >{parkingLocation.properties.Name}</label>
                             <label  id="MoreInfo" >
-                                |>VRIJ - parkeren kort
-                                <label id="FreeLong">
-                                    {parkingLocation.properties.FreeSpaceLong}</label>
+                                |>VRIJ
+                                <label id="FreeShort">
+                                    {parkingLocation.properties.FreeSpaceShort}</label>
                                 |> Capaciteit
-                                <label id="CapLong">
-                                    {parkingLocation.properties.LongCapacity}</label>
+                                <label id="CapShort">
+                                    {parkingLocation.properties.ShortCapacity}</label>
                             </label>
                         </li>
-                    )
-                })}
+                        )
+                 })}
             </div>
         </div>
-    );
+);
 }
-export default ParkingLocationItemFreeLong;
+export default ParkingLocationItemFreeShort;
 

@@ -26,6 +26,7 @@ function ParkingLocationWest() {
             <div id="west">
                 {error && (<span>error </span>)}
                 {loading && (<span>Loading...</span>)}
+                <h3>West</h3>
                 <h4>Sloterdijk</h4>
                 {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("CE-P01")).map((filteredParkingLocation, index) => {
                     return (
