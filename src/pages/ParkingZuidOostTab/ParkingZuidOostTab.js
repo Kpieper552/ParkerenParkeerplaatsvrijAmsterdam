@@ -6,7 +6,7 @@ import LocationDetailsZuidOost from "../../components/tab/filter/LocationDetails
 function ParkingZuidOostTab() {
     return (
         <>
-            <div id="zuidoost-details"> <h2>Amsterdam Zuid-Oost Parkeergarages | Parkeerplaats VRIJ ?| Locatie gegevens</h2>
+            <div id="zuidoost-details"> <h2>Amsterdam Zuid-Oost Parkeergarages | Locatie gegevens</h2>
                 <div id="tilebox">
                     <Tile children={<LocationDetailsZuidOost />} />
                 </div>

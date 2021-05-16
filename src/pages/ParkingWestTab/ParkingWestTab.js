@@ -7,7 +7,7 @@ import LocationDetailsWest from "../../components/tab/filter/LocationDetailsWest
 function ParkingWestTab() {
     return (
         <>
-            <div id="west-details"><h2>Amsterdam West Parkeergarages | Parkeerplaats VRIJ ?| Locatie gegevens</h2>
+            <div id="west-details"><h2>Amsterdam West Parkeergarages | Locatie gegevens</h2>
                 <div id="tilebox">
                     <Tile children={<LocationDetailsWest/>} />
                 </div>

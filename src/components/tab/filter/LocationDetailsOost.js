@@ -22,10 +22,9 @@ function LocationDetailsOost() {
 
     return (
         <>
-            <div ><h2>Amsterdam Oost Parkeergarages Details</h2>
+            <div >
                 {error && (<span>error </span>)}
                 {loading && (<span>Loading...</span>)}
-
                 {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1093KP")).map((filteredParking, index) => {
                      return (
                         <li id="parkinglocationdetails" key={filteredParking.parkeerlocatie.adres+index}>

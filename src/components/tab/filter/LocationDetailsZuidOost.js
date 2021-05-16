@@ -22,7 +22,7 @@ function LocationDetailsZuidOost() {
 
     return (
         <>
-            <div ><h2>Amsterdam Zuid-Oost Parkeergarages Details</h2>
+            <div >
                 {error && (<span>error </span>)}
                 {loading && (<span>Loading...</span>)}
 

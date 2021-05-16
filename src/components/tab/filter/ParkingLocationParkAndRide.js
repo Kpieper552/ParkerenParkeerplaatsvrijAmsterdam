@@ -28,7 +28,6 @@ function ParkingLocationParkAndRide() {
                 {loading && (<span>Loading...</span>)}
                 <h3>Park & Ride</h3>
                 {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("P+R Zeeburg")).map((filteredParkingLocation, index) => {
-                    console.log(filteredParkingLocation, "PR");
                     return (
                         <li id="parkinglocationfilter" key={filteredParkingLocation.properties.Name+index}>
                             <label id="Name">{filteredParkingLocation.properties.Name}</label><br/><br/>

@@ -1,13 +1,13 @@
 import React from 'react';
 import '../../App.css';
 import Tile from "../../components/tile/Tile";
-import amsterdam from "../../assets/amsterdam.JPG.png";
+import amsterdam from "../../assets/amsterdam.JPG";
 import {NavLink} from "react-router-dom";
 //import {Link} from "react-router-dom";
 //import React, { useContext } from 'react';
 //import { SignupContext } from "../context/SignupContext";
 
-//PAGINA PROFILE OVERGENOMEN UIT PRACTICE PROJECT
+
 function Account() {
     //const { user } = useContext(SignupContext)
     console.log("je bent nu op de accountpagina");

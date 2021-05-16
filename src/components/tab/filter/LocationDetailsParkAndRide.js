@@ -22,7 +22,7 @@ function LocationDetailsParkAndRide() {
 
     return (
         <>
-            <div ><h2>Amsterdam Park & Ride Parkeerplaatsen Details</h2>
+            <div >
                 {error && (<span>error </span>)}
                 {loading && (<span>Loading...</span>)}
                 {parkings.filter(parking => parking.parkeerlocatie.type.includes("P+R")).map((filteredParking, index) => {
