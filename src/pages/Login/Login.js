@@ -1,7 +1,7 @@
 import React, { useState, useContext, } from 'react';
 import '../../App.css';
 import Tile from "../../components/tile/Tile";
-import amsterdam from "../../assets/amsterdam.JPG.png";
+import amsterdam from "../../assets/amsterdam.JPG";
 import { NavLink } from "react-router-dom";
 //import { SignupContext } from '../context/SignupContext';
 import { useForm, } from 'react-hook-form';
@@ -12,18 +12,15 @@ function Login() {
     const {register, handleSubmit} = useForm();
     const [error, toggleError] = useState(false);
     const [success, toggleRegisterSuccess] = useState(false);
-    //
-    // const { login } = useContext(SignupContext);
-    const host = 'http://localhost:3000';
-    //console.log(login);
+
     async function onSubmit(data) {
     toggleError(false);
 
     //console.log(result, "hallo dit is verzonden");
     try {
-        const result = await axios.post(`${host}/login`, data);
+        const result = await axios.post();
         console.log(result);
-        localStorage.setItem('JWT_token', result.data.accesToken);
+        localStorage.setItem();
         toggleRegisterSuccess(true);
 
     } catch(e) {

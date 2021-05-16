@@ -24,7 +24,7 @@ function LocationDetailsWest() {
 
     return (
         <>
-            <div ><h2>Amsterdam West Parkeergarages Details</h2>
+            <div >
                 {error && (<span>error </span>)}
                 {loading && (<span>Loading...</span>)}
                 {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1043DW")).map((filteredParking, index) => {

@@ -10,7 +10,6 @@ function ParkingLocationDetailsName() {
             try {
                 const response = await axios.get('https://open.data.amsterdam.nl/ivv/parkeren/locaties.json');
                 setParkings(response.data.parkeerlocaties);
-                console.log(response.data.parkeerlocaties);
             } catch (error) {
                 console.log(error);
             }

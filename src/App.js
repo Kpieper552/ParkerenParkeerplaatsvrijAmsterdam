@@ -28,6 +28,10 @@ import ParkingZuidTab from "./pages/ParkingZuidTab/ParkingZuidTab";
 import ParkingWestTab from "./pages/ParkingWestTab/ParkingWestTab";
 import Navigation from "./components/navigation/Navigation";
 import ParkingPlaatsenVrijTab from "./pages/ParkingPlaatsenVrijTab/ParkingPlaatsenVrijTab";
+import AccountParkingAmsterdam from "./pages/Account/AccountParkingAmsterdam";
+import AccountParkingAmsterdamFreePlaces from "./pages/Account/AccountParkingAmsterdamFreePlaces";
+import TabBarMenuAccount from "./components/tabbar/TabBarMenuAccount";
+//import AuthProvider from ".././src/context/SignupContext";
 
 function App() {
     const [error, setError] = useState(false);
@@ -50,7 +54,7 @@ function App() {
 
   return (
       <>
-          {error && (<span>error </span>)}
+         {error && (<span>error </span>)}
             {loading && (<span>loading...</span>)}
           <nav >
               <Router>
@@ -188,14 +192,14 @@ function App() {
                     <Account />
                     {/*TAB -------------------- */}
                     <div className="parkingAdam-content">
-                        <TabBarMenuZero/>
+                        <TabBarMenuAccount/>
                         <div className="tab-wrapper">
                             <Switch>
-                                <Route exact path="/Home">
-                                    <ParkingAmsterdamTab/>
+                                <Route exact path="/account">
+                                    <AccountParkingAmsterdam/>
                                 </Route>
-                                <Route path="/parkingplaatsenvrijtab">
-                                    <ParkingPlaatsenVrijTab />
+                                <Route path="/AccountParkingAmsterdamFreePlaces">
+                                    <AccountParkingAmsterdamFreePlaces />
                                 </Route>
                             </Switch>
                         </div>

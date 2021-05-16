@@ -30,7 +30,7 @@ function ParkingLocationItemNameA() {
             {error && (<span>error </span>)}
             {loading && (<span>Loading...</span>)}
             <div>
-                {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("Bijenkorf")).map((filteredParkingLocation, index) => (
+                {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("Kalverstraat")).map((filteredParkingLocation, index) => (
                     <li key={filteredParkingLocation.properties.Name+index} >
                         <label>{filteredParkingLocation.properties.Name}</label>
                         |>VRIJ

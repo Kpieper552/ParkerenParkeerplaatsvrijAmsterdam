@@ -3,19 +3,19 @@ import { NavLink } from 'react-router-dom';
 import './TabBarMenu.css';
 
 
-function TabBarMenuZero() {
+function TabBarMenuAccount() {
     return (
         <nav className="tab-bar">
             <ul>
 
                 <li>
-                    <NavLink activeClassName="active" to="/">
+                    <NavLink activeClassName="active" to="/Account">
                         Parkeren Amsterdam
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink activeClassName="active" to="/ParkingPlaatsenVrijTab">
-                        Vrije Plaats
+                    <NavLink activeClassName="active" to="/AccountParkingAmsterdamFreePlaces">
+                        Vrije Plaats Lang Parkeren
                     </NavLink>
                 </li>
 
@@ -24,4 +24,4 @@ function TabBarMenuZero() {
     );
 };
 
-export default TabBarMenuZero;
+export default TabBarMenuAccount;

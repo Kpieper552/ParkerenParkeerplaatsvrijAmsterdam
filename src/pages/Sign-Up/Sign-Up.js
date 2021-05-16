@@ -1,7 +1,7 @@
 import React, { useState, useRef, useContext } from 'react';
 import '../../App.css';
 import Tile from "../../components/tile/Tile";
-import amsterdam from "../../assets/amsterdam.JPG.png";
+import amsterdam from "../../assets/amsterdam.JPG";
 import {useHistory, NavLink } from "react-router-dom";
 //import { useauth } from '../firebase'
 import { useForm } from 'react-hook-form';
@@ -9,18 +9,18 @@ import { useForm } from 'react-hook-form';
 
 
 function SignUp() {
-    const emailRef = useRef()
-    const passwordRef = useRef()
-    const passwordConfirmRef = useRef()
+    //const emailRef = useRef()
+    //const passwordRef = useRef()
+    //const passwordConfirmRef = useRef()
     //const { signup } = useAuth()
     const { register, handleSubmit } = useForm();
-    const [error, toggleError] = useState(false);
-    const history = useHistory();
+    //const [error, toggleError] = useState(false);
+    //const history = useHistory();
     const [registerSuccess, toggleRegisterSuccess] = useState(false);
 
     async function onSubmit(data) {
 
-    }
+  }
     console.log("hallo dit is een registerform");
 
     return (
@@ -28,7 +28,7 @@ function SignUp() {
             <Tile img={amsterdam} imgDescription={amsterdam}/>
             <div ><h1>Registreer</h1>
             <Tile >
-            <form id="parkingAdam-weg-deel" onSubmit={handleSubmit(onSubmit)}>
+                <form id="parkingAdam-weg-deel" onSubmit={handleSubmit(onSubmit)}>
                 <br/>
                 <h2>Registeer </h2>
                 <label id="parkinglocation">

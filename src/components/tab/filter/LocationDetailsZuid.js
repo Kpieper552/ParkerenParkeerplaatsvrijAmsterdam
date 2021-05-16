@@ -22,7 +22,7 @@ function LocationDetailsZuid() {
 
     return (
         <>
-            <div ><h2>Amsterdam Zuid Parkeergarages Details</h2>
+            <div >
                 {error && (<span>error </span>)}
                 {loading && (<span>Loading...</span>)}
                 {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1071AP")).map((filteredParking, index) => {
@@ -96,7 +96,6 @@ function LocationDetailsZuid() {
                     )
                 })}
                 {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1081 LA")).map((filteredParking, index) => {
-                    console.log(filteredParking);
                     return (
                         <li id="parkinglocationdetails" key={filteredParking.parkeerlocatie.adres+index}>
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
@@ -169,7 +168,6 @@ function LocationDetailsZuid() {
                     )
                 })}
                 {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1083HN")).map((filteredParking, index) => {
-                    console.log(filteredParking);
                     return (
                         <li id="parkinglocationdetails" key={filteredParking.parkeerlocatie.adres+index}>
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />

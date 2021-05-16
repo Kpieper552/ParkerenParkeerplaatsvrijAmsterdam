@@ -4,7 +4,7 @@ import Tile from "../../components/tile/Tile";
 import ParkingLocationWest from "../../components/tab/filter/ParkingLocationWest";
 import ParkingLocationZuid from "../../components/tab/filter/ParkingLocationZuid";
 import carparking from "../../assets/carparking.jpg";
-import amsterdam from "../../assets/amsterdam.JPG.png";
+import amsterdam from "../../assets/amsterdam.JPG";
 import {NavLink} from "react-router-dom";
 
 
@@ -14,8 +14,7 @@ function ParkerenAmsterdamStadsdelenZuidWest() {
             <Tile img={amsterdam} imgDescription={amsterdam}/>
             <div ><h1>Parkeren Amsterdam Zuid en West </h1>
                 <Tile img={carparking} imgDescription={carparking}/>
-                <Tile titlearea={" +"}/>
-                <Tile titlearea={" +"}/>
+                <Tile titlearea={"Plaatsen VRIJ"}/>
                 <div id="tilebox">
                     <Tile>
                         <div id="parkingAdam-weg-deel"><br/>
@@ -23,7 +22,7 @@ function ParkerenAmsterdamStadsdelenZuidWest() {
                             <NavLink to="/"> |> Home</NavLink><br/>
                         </div><br/>
                         <div id="parkingAdam-weg">
-                            <div className="label-weg">parkeren in zuid of west</div>
+                            <div className="label-weg">parkeren in Zuid of West</div>
                             <div className="label-weg"></div>
                             <div className="label-weg"></div>
                             <br/>
@@ -34,15 +33,9 @@ function ParkerenAmsterdamStadsdelenZuidWest() {
                         </div>
                     </Tile>
                 </div>
-                <Tile img={carparking} imgDescription={carparking}/>
-
-
         </div>
-
-
-
-        </>
-    );
+     </>
+   );
 }
 export default ParkerenAmsterdamStadsdelenZuidWest;
 

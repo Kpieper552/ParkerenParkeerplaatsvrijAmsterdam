@@ -25,9 +25,7 @@ function LocationDetailsFiets() {
             <div >
                 {error && (<span>error </span>)}
                 {loading && (<span>Loading...</span>)}
-
                 {parkings.filter(parking => parking.parkeerlocatie.type.includes("Fiets")).map((filteredParking, index) => {
-                    console.log(filteredParking, "fietsen");
                     return (
                         <li id="parkinglocationdetails" key={filteredParking.parkeerlocatie.adres}>
 

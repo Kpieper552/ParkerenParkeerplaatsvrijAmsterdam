@@ -7,7 +7,7 @@ import LocationDetailsZuid from "../../components/tab/filter/LocationDetailsZuid
 function ParkingZuidTab() {
     return (
         <>
-            <div id="zuid-details"><h2>Amsterdam Zuid Parkeergarages | Parkeerplaats VRIJ ?| Locatie gegevens</h2>
+            <div id="zuid-details"><h2>Amsterdam Zuid Parkeergarages | Locatie gegevens</h2>
                 <div id="tilebox-tab">
                     <Tile children={<LocationDetailsZuid />} />
                 </div>

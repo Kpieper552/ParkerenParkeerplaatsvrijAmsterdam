@@ -149,6 +149,7 @@ ul {
     box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
 {/*app.js PAGES WITH ROAD---end----------------- */}
+
 .parkingAdam-container {
     position: relative;
     width: 100%;
@@ -231,6 +232,7 @@ h2 {
     color: #FFFFFF;
     font-size: 10px;
     padding: 5px;
+    margin-left: 6px;
     margin-right: 10px;
     margin-bottom: 3px;
 }

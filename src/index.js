@@ -5,7 +5,7 @@ import App from './App';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-//import SignupContextProvider from "./context/SignupContext";
+import SignupContextProvider from "./context/SignupContext";
 
 ReactDOM.render(
     <React.StrictMode>
