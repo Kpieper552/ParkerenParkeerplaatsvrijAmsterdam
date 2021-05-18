@@ -7,7 +7,7 @@ import {
 import './App.css';
 import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
-import SignUp from "./pages/Sign-Up/Sign-Up";
+import Registreer from "./pages/Registreer/Registreer";
 import Account from "./pages/Account/Account";
 import ParkerenAmsterdamStadsdelenOostZuidOost from "./pages/ParkerenAmsterdam StadsdelenOostZuidOoost/Parkeren-Amsterdam-Stadsdelen-Oost-ZuidOost";
 import ParkerenAmsterdamCentrum from "./pages/ParkerenAmsterdam Centrum/Parkeren-Amsterdam-Centrum";
@@ -31,7 +31,7 @@ import ParkingPlaatsenVrijTab from "./pages/ParkingPlaatsenVrijTab/ParkingPlaats
 import AccountParkingAmsterdam from "./pages/Account/AccountParkingAmsterdam";
 import AccountParkingAmsterdamFreePlaces from "./pages/Account/AccountParkingAmsterdamFreePlaces";
 import TabBarMenuAccount from "./components/tabbar/TabBarMenuAccount";
-//import AuthProvider from ".././src/context/SignupContext";
+import Amsterdam from "./components/fotoarea/Amsterdam";
 
 function App() {
     const [error, setError] = useState(false);
@@ -60,7 +60,10 @@ function App() {
               <Router>
                     <div  className="parkingAdam-header">
                          <Navigation />
-                    </div>
+                     </div>
+                      <div>
+                          <Amsterdam/>
+                      </div>
             {/*NAVIGATION-------------------- */}
             <Switch>
                 {/*PAGE -------------------- */}
@@ -180,8 +183,8 @@ function App() {
                         </Router>
                 </Route>
                 {/*PAGE -------------------- */}
-                <Route path="/sign-up">
-                    <SignUp />
+                <Route path="/registreer">
+                    <Registreer />
                 </Route>
                 {/*PAGE -------------------- */}
                 <Route path="/login">
@@ -198,7 +201,7 @@ function App() {
                                 <Route exact path="/account">
                                     <AccountParkingAmsterdam/>
                                 </Route>
-                                <Route path="/AccountParkingAmsterdamFreePlaces">
+                                <Route path="/account/AccountParkingAmsterdamFreePlaces">
                                     <AccountParkingAmsterdamFreePlaces />
                                 </Route>
                             </Switch>

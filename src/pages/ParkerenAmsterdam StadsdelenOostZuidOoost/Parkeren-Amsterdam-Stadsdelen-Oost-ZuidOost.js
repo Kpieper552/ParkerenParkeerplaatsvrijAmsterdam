@@ -4,14 +4,12 @@ import Tile from "../../components/tile/Tile";
 import ParkingLocationZuidOost from "../../components/tab/filter/ParkingLocationZuidOost";
 import ParkingLocationOost from "../../components/tab/filter/ParkingLocationOost";
 import carparking from "../../assets/carparking.jpg";
-import amsterdam from "../../assets/amsterdam.JPG";
 import {NavLink} from "react-router-dom";
 
 
 function ParkerenAmsterdamStadsdelenOostZuidOost() {
     return (
         <>
-            <Tile img={amsterdam} imgDescription={amsterdam}/>
             <div ><h1>Parkeren Amsterdam Zuid-Oost en Oost</h1>
                 <Tile img={carparking} imgDescription={carparking}/>
                 <Tile titlearea={"Plaatsen VRIJ"}/>

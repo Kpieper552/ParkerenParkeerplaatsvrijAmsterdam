@@ -3,7 +3,6 @@ import '../../App.css';
 import Tile from "../../components/tile/Tile";
 import ParkingLocationParkAndRide from "../../components/tab/filter/ParkingLocationParkAndRide";
 import carparking from "../../assets/carparking.jpg";
-import amsterdam from "../../assets/amsterdam.JPG";
 import ParkingLocationParkAndRidePart from "../../components/tab/filter/ParkingLocationParkandRidePart";
 import {NavLink} from "react-router-dom";
 
@@ -14,7 +13,6 @@ import {NavLink} from "react-router-dom";
 function ParkerenAmsterdamParkenRide() {
     return (
         <>
-            <Tile img={amsterdam} imgDescription={amsterdam}/>
             <div ><h1>Parkeren Park & Ride </h1>
                 <Tile img={carparking} imgDescription={carparking}/>
                 <Tile titlearea={"Plaasten VRIJ "}/>

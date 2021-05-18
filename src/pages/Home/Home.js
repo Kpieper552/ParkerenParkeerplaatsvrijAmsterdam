@@ -2,7 +2,6 @@ import React  from 'react';
 import '../../App.css';
 import Tile from "../../components/tile/Tile";
 import carparking from "../../assets/carparking.jpg";
-import amsterdam from "../../assets/amsterdam.JPG";
 import ParkingLocationItemNameC from "../../components/tab/parkinglocationplacesfree/ParkingLocationItemNameC";
 import ParkingLocationItemNameB from "../../components/tab/parkinglocationplacesfree/ParkingLocationItemNameB";
 import ParkingLocationItemNameA from "../../components/tab/parkinglocationplacesfree/ParkingLocationItemNameA";
@@ -11,7 +10,6 @@ import {NavLink} from "react-router-dom";
 function Home() {
     return (
         <>
-            <Tile img={amsterdam} imgDescription={amsterdam}/>
             <div><h1>Parkeren Amsterdam</h1></div>
                 <Tile img={carparking} imgDescription={carparking}/>
                 <Tile titlearea={"PARKEREN AMSTERDAM "}/>
