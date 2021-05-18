@@ -14,7 +14,7 @@ function TabBarMenuAccount() {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink activeClassName="active" to="/AccountParkingAmsterdamFreePlaces">
+                    <NavLink activeClassName="active" to="/Account/AccountParkingAmsterdamFreePlaces">
                         Vrije Plaats Lang Parkeren
                     </NavLink>
                 </li>

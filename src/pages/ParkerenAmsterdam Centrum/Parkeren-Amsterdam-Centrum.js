@@ -4,14 +4,12 @@ import Tile from "../../components/tile/Tile";
 import ParkingLocationCentrum from "../../components/tab/filter/ParkingLocationCentrum";
 import ParkingLocationCentrumPart from "../../components/tab/filter/ParkingLocationCentrumPart";
 import carparking from "../../assets/carparking.jpg";
-import amsterdam from "../../assets/amsterdam.JPG";
 import {NavLink} from "react-router-dom";
 
 
 function ParkerenAmsterdamCentrum() {
     return (
         <>
-            <Tile img={amsterdam} imgDescription={amsterdam}/>
             <div ><h1>Parkeren Centrum</h1>
                 <Tile img={carparking} imgDescription={carparking}/>
                 <Tile titlearea={"Plaatsen VRIJ"}/>

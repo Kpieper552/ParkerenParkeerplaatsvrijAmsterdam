@@ -22,7 +22,7 @@ function Navigation() {
                     <NavLink to="/parkeren-amsterdam-parkenride" activeClassName="activelink"><button><h6>| P | Park&Ride</h6></button></NavLink>
                 </li>
                 <li>
-                    <NavLink to="/sign-up" activeClassName="activelink"><button><h6>Registreer</h6></button></NavLink>
+                    <NavLink to="/registreer" activeClassName="activelink"><button><h6>Registreer</h6></button></NavLink>
                 </li>
                 <li>
                     <NavLink to="/login" activeClassName="activelink"><button><h6>Login</h6></button></NavLink>
