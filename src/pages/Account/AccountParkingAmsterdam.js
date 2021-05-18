@@ -16,10 +16,9 @@ function AccountParkingAmsterdam() {
                 <Tile>
                     <div id="parkingAdam-weg-deel">
                         <ParkingLocationDetails /><br/>
-                    </div>
+                     </div>
                 </Tile>
             </div>
-
         </>
     );
 }

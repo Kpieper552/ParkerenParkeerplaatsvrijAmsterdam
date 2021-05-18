@@ -23,19 +23,18 @@ function SignUp() {
 
     return (
         <>
-            <div ><h1>Registreer</h1>
-                < >
-                    <form id="parkingAdam-weg-deel" onSubmit={handleSubmit(onSubmit)}>
+                 < >
+                    <form id="parkingAdam-form-deel" onSubmit={handleSubmit(onSubmit)}>
                         <br/>
                         <h2>Registeer </h2>
-                        <label id="parkinglocation">
+                        <label id="parkinglocation-form">
                             <h2>Email</h2>
                             <input type="text"
                                    {...register("email")}
                                    name="email" placeholder="email"/>
                         </label>
                         <br/><br/>
-                        <label id="parkinglocation">
+                        <label id="parkinglocation-form">
                             <h2>Password</h2>
                             <input type="text"
                                    {...register("password")}
@@ -43,14 +42,14 @@ function SignUp() {
                         </label>
                         <br/>
                         <br/>
-                        <button id="parkinglocationdetails" type="submit">
+                        <button id="parkinglocationdetails-form" type="submit">
                             <label  >REGISTREER</label>
                         </button><br/>
                         <NavLink to="/login">Al geregistreerd? |>Login</NavLink>
                         {registerSuccess === true && <p>Registeren is gelukt! Je wordt nu doorgestuurd naar de login pagina!</p> }
                     </form>
                 </>
-            </div>
+
         </>
     );
 }

@@ -12,20 +12,20 @@ function MyAccount() {
     return (
         <>
             <>
-                <div id="parkingAdam-weg-deel" >
+                <div id="parkingAdam-form-deel" >
                     <h2>Gegevens USER</h2>
-                    <label id="parkinglocation">
+                    <label id="parkinglocation-form">
                         <h2>Email</h2>
 
                     </label>
                     <br/>
                     <br/>
-                    <label id="parkinglocation">
+                    <label id="parkinglocation-form">
                         <h2>Password</h2>
 
                     </label>
                     <br/>
-                    <label id="parkinglocation">
+                    <label id="parkinglocation-form">
                         <h2>Password</h2>
 
                     </label>

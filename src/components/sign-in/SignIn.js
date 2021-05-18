@@ -28,11 +28,11 @@ function SignIn() {
     return (
         <>
             <>
-                <form id="parkingAdam-weg-deel" onSubmit={handleSubmit(onSubmit)}>
+                <form id="parkingAdam-form-deel" onSubmit={handleSubmit(onSubmit)}>
                     {success ?  (<NavLink to="/account"  > d </NavLink>, <h2>Inloggen is gelukt! Je wordt nu doorgestuurd </h2> )  :
                         (<>
                             <h2>Login </h2>
-                            <label id="parkinglocation">
+                            <label id="parkinglocation-form">
                                 <h2>Email</h2>
 
                                 <input type="text"
@@ -41,14 +41,14 @@ function SignIn() {
                             </label>
                             <br/>
                             <br/>
-                            <label id="parkinglocation">
+                            <label id="parkinglocation-form">
                                 <h2>Password</h2>
                                 <input type="text"
                                        {...register("password")}
                                        name="password" placeholder="wachtwoord"/>
                             </label>
                             <br/><br/>
-                            <button id="parkinglocationdetails" type="submit">
+                            <button id="parkinglocationdetails-form" type="submit">
                                 <label >LOGIN</label>
                             </button><br/>
                             <NavLink to="/sign-up">Geen Account> |>Registreer</NavLink>
