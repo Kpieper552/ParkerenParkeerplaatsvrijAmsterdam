@@ -3,7 +3,7 @@ import '../../App.css';
 import { useAuth } from '../../context/SignupContext';
 import { useHistory, NavLink } from 'react-router-dom';
 
-function SignUp(currentUser) {
+function SignUp() {
     const emailRef = useRef()
     const passwordRef = useRef()
     const passwordConfirmRef = useRef()
@@ -33,7 +33,6 @@ function SignUp(currentUser) {
 
     return (
             <>
-            {currentUser.email}
             {error && (error) }
             {loading && loading}
              <form id="parkingAdam-form-deel" onSubmit={handleSubmit}>
@@ -60,9 +59,8 @@ function SignUp(currentUser) {
                         <button default={loading} id="parkinglocationdetails-form" type="submit">
                             <label  >REGISTREER</label>
                         </button><br/><br/>
-                 <NavLink to="/login">  Al een Account |> Ga naar Login</NavLink><br/>
+                 <NavLink to="/login">  Al een Account |> Ga naar Login</NavLink><br/><br/>
              </form>
-
         </>
     );
 }
