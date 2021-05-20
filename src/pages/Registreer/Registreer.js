@@ -9,7 +9,7 @@ function Registreer() {
     console.log("je bent nu op de registreerpagina");
     return (
         <>
-        <h1>Registreer</h1>
+        <h3>Registreer</h3>
         <div>
             <SignUp/>
         </div>

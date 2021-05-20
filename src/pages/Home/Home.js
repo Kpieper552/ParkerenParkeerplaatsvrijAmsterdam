@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom';
 function Home() {
     return (
         <>
-            <div><h1>Parkeren Amsterdam</h1></div>
+            <div><h3>Parkeren Amsterdam</h3></div>
                 <Tile img={carparking} imgDescription={carparking}/>
                 <Tile titlearea={"PARKEREN AMSTERDAM "}/>
                 <Tile>

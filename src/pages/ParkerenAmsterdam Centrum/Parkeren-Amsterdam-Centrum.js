@@ -10,7 +10,7 @@ import {NavLink} from "react-router-dom";
 function ParkerenAmsterdamCentrum() {
     return (
         <>
-            <div ><h1>Parkeren Centrum en Noord</h1>
+            <div ><h3>Parkeren Centrum en Noord</h3>
                 <Tile img={carparking} imgDescription={carparking}/>
                 <Tile titlearea={"Plaatsen VRIJ"}/>
                 <div id="tilebox">

@@ -8,7 +8,10 @@ function Content() {
 
     return (
         <>
-            <div id="label-weg">dit is content content conten </div>
+            <div id="parkingAdam-content-deel">
+                <h1>Parkeerplaats actueel beschikbaar Amsterdam</h1>
+                <h4>dit is content content conten</h4>
+            </div>
         </>
     );
 }
