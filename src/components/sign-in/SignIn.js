@@ -4,7 +4,7 @@ import { useAuth } from '../../context/SignupContext';
 import { useHistory, NavLink } from 'react-router-dom';
 
 
-function SignIn(currentUser) {
+function SignIn() {
     const emailRef = useRef()
     const passwordRef = useRef()
     const { login,  } = useAuth()
@@ -30,7 +30,6 @@ function SignIn(currentUser) {
 
     return (
         <>
-            {currentUser.email}
             {error && (error) }
             {loading && loading}
             <form id="parkingAdam-form-deel" onSubmit={handleSubmit}>
@@ -51,9 +50,8 @@ function SignIn(currentUser) {
                 <button default={loading} id="parkinglocationdetails-form" type="submit">
                     <label  >Login</label>
                 </button><br/><br/>
-                <NavLink to="/registreer">  Geen Account |> Registreer</NavLink><br/>
+                <NavLink to="/registreer">  Geen Account |> Registreer</NavLink><br/><br/>
             </form>
-
         </>
     );
 }

@@ -36,7 +36,7 @@ import Parking from "./components/parking/Parking";
 import Content from "./components/parking/Content";
 import ParkingFirst from "./components/parking/ParkingFirst";
 import ParkingSecond from "./components/parking/ParkingSecond";
-
+import PrivateRoute from "./components/privateroute/PrivateRoute";
 
 function App() {
     const [error, setError] = useState(false);
