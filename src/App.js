@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect, } from 'react';
 import {
     BrowserRouter as Router,
     Switch,
@@ -32,6 +32,11 @@ import AccountParkingAmsterdam from "./pages/Account/AccountParkingAmsterdam";
 import AccountParkingAmsterdamFreePlaces from "./pages/Account/AccountParkingAmsterdamFreePlaces";
 import TabBarMenuAccount from "./components/tabbar/TabBarMenuAccount";
 import Amsterdam from "./components/fotoarea/Amsterdam";
+import Parking from "./components/parking/Parking";
+import Content from "./components/parking/Content";
+import ParkingFirst from "./components/parking/ParkingFirst";
+import ParkingSecond from "./components/parking/ParkingSecond";
+
 
 function App() {
     const [error, setError] = useState(false);
@@ -58,16 +63,24 @@ function App() {
             {loading && (<span>loading...</span>)}
           <nav >
               <Router>
-                    <div  className="parkingAdam-header">
-                         <Navigation />
+                  <div  className="parkingAdam-header">
+                         <Navigation /><br/>
                      </div>
-                      <div>
-                          <Amsterdam/>
-                      </div>
+                  <div>
+                      <Amsterdam/>
+                      <Content/>
+                  </div>
+                  <div className="parkingAdam-header">
+                       <Parking/>
+                  </div>
+                  <div className="parkingAdam-header">
+                      <ParkingFirst/>
+                  </div>
+
             {/*NAVIGATION-------------------- */}
             <Switch>
                 {/*PAGE -------------------- */}
-                <Route exact path="/">
+                <Route exact path="/home">
                     <Home />
                     {/*NAVIGATION-------------------- */}
                     <Router>
@@ -76,7 +89,7 @@ function App() {
                                 <TabBarMenuZero/>
                                 <div className="tab-wrapper">
                                     <Switch>
-                                        <Route exact path="/Home">
+                                        <Route exact path="/home">
                                             <ParkingAmsterdamTab/>
                                          </Route>
                                         <Route path="/parkingplaatsenvrijtab">
@@ -209,6 +222,12 @@ function App() {
                     </div>
                 </Route>
             </Switch>
+                  <div>
+                      <Content/>
+                  </div>
+                  <div className="parkingAdam-header">
+                      <ParkingSecond/>
+                  </div>
                   <div  className="parkingAdam-header">
                       <Navigation />
                   </div>

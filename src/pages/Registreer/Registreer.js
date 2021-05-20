@@ -9,11 +9,12 @@ function Registreer() {
     console.log("je bent nu op de registreerpagina");
     return (
         <>
-            <h1>Account</h1>
-            <div>
-                <SignUp/>
-            </div>
+        <h3>Registreer</h3>
+        <div>
+            <SignUp/>
+        </div>
         </>
+
     );
 }
 export default Registreer;

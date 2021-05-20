@@ -10,7 +10,7 @@ import {NavLink} from "react-router-dom";
 function ParkerenAmsterdamStadsdelenZuidWest() {
     return (
         <>
-            <div ><h1>Parkeren Amsterdam Zuid en West </h1>
+            <div ><h3>Parkeren Amsterdam Zuid en West </h3>
                 <Tile img={carparking} imgDescription={carparking}/>
                 <Tile titlearea={"Plaatsen VRIJ"}/>
                 <div id="tilebox">
@@ -20,8 +20,8 @@ function ParkerenAmsterdamStadsdelenZuidWest() {
                             <NavLink to="/"> |> Home</NavLink><br/>
                         </div><br/>
                         <div id="parkingAdam-weg">
-                            <div className="label-weg">parkeren in Zuid of West</div>
-                            <div className="label-weg"></div>
+                            <div className="label-weg">parkeren in Zuid</div>
+                            <div className="label-weg">parkeren in West</div>
                             <div className="label-weg"></div>
                             <br/>
                         </div><br/>

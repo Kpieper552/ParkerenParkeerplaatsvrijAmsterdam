@@ -11,7 +11,7 @@ function ParkingPlaatsenVrijTab() {
             <div>
                 <div>
                      <Tile>
-                        <div id="parkingAdam-weg-deel">
+                        <div id="parkingAdam-weg">
                               <ParkingLocationItemFreeShort/>
                               <br/><br/>
                         </div>

@@ -35,7 +35,7 @@ function ParkingLocationItemFreeLong() {
                         <li id="parkinglocationdetails" key={parkingLocation.properties.Name+index} >
                             <label id="Name" >{parkingLocation.properties.Name}</label>
                             <label  id="MoreInfo" >
-                                |>VRIJ - parkeren lang
+                                |>VRIJ -
                                 <label id="FreeLong">
                                     {parkingLocation.properties.FreeSpaceLong}</label>
                                 |> Capaciteit

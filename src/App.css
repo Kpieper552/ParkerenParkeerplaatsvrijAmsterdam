@@ -1,12 +1,13 @@
 body {
     background-color: linen;
 }
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1900px) {
 body {
     display: flex;
     justify-content: center;
     align-items: center;
 }}
+
 .parkingAdam-header {
     background-color: green;
     display: flex;
@@ -41,6 +42,16 @@ button {
     width: 40px;
     height: 40px;
     font-size: 8px;
+    color: firebrick;
+}
+#button-parking {
+    background-color: linen;
+    display: flex;
+    width: 120px;
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 10px;
     color: firebrick;
 }
 
@@ -83,7 +94,7 @@ ul {
     display: inline-block;
     background-color: dimgray;
     width: fit-content;
-    min-height: 1150px;
+    min-height: 1200px;
     max-width: 350px;
     align-content: space-around;
     list-style-type: none;
@@ -99,7 +110,7 @@ ul {
     display: inline-block;
     background-color: dimgray;
     width: fit-content;
-    min-height: 800px;
+    min-height: 500px;
     max-width: 350px;
     align-content: space-around;
     list-style-type: none;
@@ -115,7 +126,7 @@ ul {
     align-items: center;
     background-color: #e2c681;
     height: fit-content;
-    width: 125px;
+    width: 128px;
     align-content: space-around;
     list-style-type: none;
     border-radius: 5px;
@@ -175,12 +186,13 @@ ul {
 
 }
 h1 {  margin-left: 25px;
-    color: firebrick;
-
+    color: #ffffff;
 }
-h2 {
+h3 {  margin-left: 25px;
+    color: #e2c681;
+}
+h2, h4 {
     margin-left: 25px;
-
 }
 
 {/*NAAR COMPONENTS -------------------- */}
@@ -223,7 +235,7 @@ h2 {
 {/*NAAR COMPONENTS ------check parkinglocation op display?-------------- */}
 #parkinglocation {
     display: inline-block;
-    width: 200px;
+    width: 500px;
     height: fit-content;
     background-color: #006bbd;
     border-inline-color: #FFFFFF;
@@ -238,10 +250,7 @@ h2 {
 }
 #parkinglocationdetails {
     display: inline-block;
-    width: 239px;
-    flex-basis: 40px;
-    flex-grow: 0;
-    flex-shrink: 0;
+    width: 300px;
     margin-left: 1px;
     background-color: #006bbd;
     border-inline-color: #FFFFFF;
@@ -307,4 +316,65 @@ h2 {
     display: flex;
     background-color: #e2c681;
 }
+#parkingAdam-form-deel {
+    display: inline-block;
+    background-color: #e2c681;
+    width: 98%;
+    min-height: 100px;
+    align-content: center;
+    list-style-type: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 10px;
+    border-right: 2px solid green;
+    border-left: 2px solid green;
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+    box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
 
+#parkinglocation-form {
+    display: inline-block;
+    width: 200px;
+    height: fit-content;
+    background-color: #006bbd;
+    border-inline-color: #FFFFFF;
+    border-radius: 12px;
+    border: 5px solid white;
+    color: #FFFFFF;
+    font-size: 10px;
+    padding: 5px;
+    margin-left: 70px;
+    margin-right: 10px;
+    margin-bottom: 3px;
+}
+#parkinglocationdetails-form {
+    display: inline-block;
+    width: 239px;
+    flex-basis: 40px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: #006bbd;
+    border-inline-color: #FFFFFF;
+    border-radius: 11px;
+    border: 1px solid white;
+    color: #FFFFFF;
+    font-size: 10px;
+    padding: 5px;
+    margin-right: 3px;
+    margin-left: 60px;
+    margin-bottom: 1px;
+}
+#parkingAdam-content-deel {
+    display: inline-block;
+    background-color: #e2c681;
+    width: 100%;
+    min-height: 100px;
+    align-content: center;
+    list-style-type: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 10px;
+    border-top: 2px solid green;;
+    box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
