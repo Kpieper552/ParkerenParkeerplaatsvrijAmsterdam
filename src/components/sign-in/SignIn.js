@@ -1,60 +1,59 @@
-import React, { useState, useContext, } from 'react';
+import React, { useState, useRef,  } from 'react';
 import '../../App.css';
-import { NavLink } from "react-router-dom";
-//import { SignupContext } from '../context/SignupContext';
-import { useForm, } from 'react-hook-form';
-import axios from 'axios';
+import { useAuth } from '../../context/SignupContext';
+import { useHistory, NavLink } from 'react-router-dom';
 
 
-function SignIn() {
-    const {register, handleSubmit} = useForm();
-    const [error, toggleError] = useState(false);
-    const [success, toggleRegisterSuccess] = useState(false);
+function SignIn(currentUser) {
+    const emailRef = useRef()
+    const passwordRef = useRef()
+    const { login,  } = useAuth()
+    const [error, setError] = useState("")
+    const [loading, setLoading] = useState(false)
+    const history = useHistory();
 
-    async function onSubmit(data) {
-        toggleError(false);
 
-        //console.log(result, "hallo dit is verzonden");
+    async function handleSubmit(e) {
+        e.preventDefault()
+
         try {
-            const result = await axios.post();
-            console.log(result);
-            localStorage.setItem();
-            toggleRegisterSuccess(true);
-
-        } catch(e) {
-            console.error(error)
+            setError("")
+            setLoading(true)
+            await login(emailRef.current.value, passwordRef.current.value)
+            history.push("/account")
+        } catch {
+            setError("failed to login")
         }
+        setLoading(false)
     }
+    console.log("hallo dit is een signinform");
+
     return (
         <>
-            <>
-                <form id="parkingAdam-form-deel" onSubmit={handleSubmit(onSubmit)}>
-                    {success ?  (<NavLink to="/account"  > d </NavLink>, <h2>Inloggen is gelukt! Je wordt nu doorgestuurd </h2> )  :
-                        (<>
-                            <h2>Login </h2>
-                            <label id="parkinglocation-form">
-                                <h2>Email</h2>
+            {currentUser.email}
+            {error && (error) }
+            {loading && loading}
+            <form id="parkingAdam-form-deel" onSubmit={handleSubmit}>
+                <br/><br/>
+                <label id="parkinglocation-form">
+                    <h2>Login
+                    Email</h2>
+                    <input type="text" ref={emailRef} required
+                           name="email" placeholder="email"/>
+                </label>
+                <br/><br/>
+                <label id="parkinglocation-form">
+                    <h2>Password</h2>
+                    <input type="text"  ref={passwordRef} required
+                           name="password" placeholder="wachtwoord"/>
+                </label>
+                <br/><br/>
+                <button default={loading} id="parkinglocationdetails-form" type="submit">
+                    <label  >Login</label>
+                </button><br/><br/>
+                <NavLink to="/registreer">  Geen Account |> Registreer</NavLink><br/>
+            </form>
 
-                                <input type="text"
-                                       {...register("email")}
-                                       name="email" placeholder="email"/>
-                            </label>
-                            <br/>
-                            <br/>
-                            <label id="parkinglocation-form">
-                                <h2>Password</h2>
-                                <input type="text"
-                                       {...register("password")}
-                                       name="password" placeholder="wachtwoord"/>
-                            </label>
-                            <br/><br/>
-                            <button id="parkinglocationdetails-form" type="submit">
-                                <label >LOGIN</label>
-                            </button><br/>
-                            <NavLink to="/sign-up">Geen Account> |>Registreer</NavLink>
-                        </>)}
-                </form>
-            </>
         </>
     );
 }

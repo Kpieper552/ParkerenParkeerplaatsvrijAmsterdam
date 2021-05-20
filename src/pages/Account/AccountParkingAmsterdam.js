@@ -14,7 +14,7 @@ function AccountParkingAmsterdam() {
         <>
             <div>
                 <Tile>
-                    <div id="parkingAdam-weg-deel">
+                    <div id="parkingAdam-weg">
                         <ParkingLocationDetails /><br/>
                      </div>
                 </Tile>

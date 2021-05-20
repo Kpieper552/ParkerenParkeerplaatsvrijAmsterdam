@@ -20,8 +20,8 @@ function ParkerenAmsterdamStadsdelenZuidWest() {
                             <NavLink to="/"> |> Home</NavLink><br/>
                         </div><br/>
                         <div id="parkingAdam-weg">
-                            <div className="label-weg">parkeren in Zuid of West</div>
-                            <div className="label-weg"></div>
+                            <div className="label-weg">parkeren in Zuid</div>
+                            <div className="label-weg">parkeren in West</div>
                             <div className="label-weg"></div>
                             <br/>
                         </div><br/>

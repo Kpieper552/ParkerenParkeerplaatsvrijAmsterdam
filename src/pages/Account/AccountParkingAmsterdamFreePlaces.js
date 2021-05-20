@@ -11,7 +11,7 @@ function AccountParkingAmsterdamFreePlaces() {
             <div>
                 <div>
                     <Tile>
-                        <div id="parkingAdam-weg-deel">
+                        <div id="parkingAdam-weg" >
                             <ParkingLocationItemFreeLong/>
                             <br/><br/>
                         </div>

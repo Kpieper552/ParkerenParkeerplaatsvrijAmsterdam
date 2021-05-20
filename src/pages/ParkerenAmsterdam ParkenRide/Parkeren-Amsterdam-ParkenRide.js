@@ -24,7 +24,7 @@ function ParkerenAmsterdamParkenRide() {
                         </div><br/>
                         <div id="pr-Page-weg">
                             <div className="label-weg">Park & Ride Amsterdam</div><br/>
-                            <div className="label-weg">Park & Ride Amsterdam</div><br/>
+                            <div className="label-weg">+ Voordelig OV naar het Centrum</div><br/>
                         </div>
                         <div id="parkingAdam-weg-deel"> <br/><br/>
                             <ParkingLocationParkAndRidePart/>

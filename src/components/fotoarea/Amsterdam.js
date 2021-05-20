@@ -6,8 +6,7 @@ import amsterdam from "../../assets/amsterdam.JPG";
 
 
 function Amsterdam() {
-    //const { user } = useContext(SignupContext)
-    console.log("je bent nu op de accountpagina");
+
     return (
         <>
             <Tile img={amsterdam} imgDescription={amsterdam}/>

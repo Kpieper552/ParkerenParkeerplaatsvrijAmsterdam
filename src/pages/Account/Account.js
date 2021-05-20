@@ -10,9 +10,9 @@ function Account() {
     return (
         <>
             <h1>Account</h1>
-            <div>
-              <MyAccount/>
-            </div>
+                <div>
+                    <MyAccount/>
+                </div>
         </>
     );
 }
