@@ -2,6 +2,7 @@ import React  from 'react';
 import '../../App.css';
 import Tile from "../../components/tile/Tile";
 import carparking from "../../assets/carparking.jpg";
+import Content from "../../components/parking/Content";
 import { NavLink } from 'react-router-dom';
 
 function Home() {
@@ -9,36 +10,28 @@ function Home() {
         <>
             <div><h3>Parkeren Amsterdam</h3></div>
                 <Tile img={carparking} imgDescription={carparking}/>
-                <Tile titlearea={"PARKEREN AMSTERDAM "}/>
+                <Tile titlearea={"PARKEREN PER STADSDEEL "}/>
                 <Tile>
-                     <div id="parkingAdam-weg-deel">
+                     <div id="home-Page-weg">
                          <div className="label-weg">
-                             Parkeerplaatsen<br/>
-                             |> VRIJ  |> Actueel beschikbaar<br/>
-                             |> Locatie informatie
                          </div>
-                         <NavLink to="/parkeren-amsterdam-centrum" id="button-page"><h3>|>Locaties Centrum</h3></NavLink>
-                         <NavLink to="/parkeren-amsterdam-Stadsdelen-Oost-ZuidOost" id="button-page"><h3>|>Locaties Oost</h3></NavLink>
-                         <NavLink to="/parkeren-amsterdam-Stadsdelen-Zuid-West" id="button-page"><h3>|>Locaties West</h3></NavLink>
+                         <NavLink to="/parkeren-amsterdam-centrum" id="button-page"><h4>|>Locaties Centrum</h4></NavLink>
+                         <NavLink to="/parkeren-amsterdam-Stadsdelen-Oost-ZuidOost" id="button-page"><h4>|>Locaties Oost</h4></NavLink>
+                         <NavLink to="/parkeren-amsterdam-Stadsdelen-Zuid-West" id="button-page"><h4>|>Locaties West</h4></NavLink>
                          <div id="LocationFree">
                          </div>
                      </div>
                     <div id="home-Page-weg">
-                        <div className="label-weg">
-                            <br/>
-                            |>Parkeren in Amsterdam<br/>
-                            |>per Stadsdeel
+                        <div>
+                            <Content/>
                         </div>
                     </div>
-                     <div id="parkingAdam-weg-deel">
+                     <div id="home-Page-weg">
                          <div className="label-weg">
-                             Parkeerplaatsen<br/>
-                             |> VRIJ |> Actueel beschikbaar <br/>
-                             |> Locatie informatie
                          </div>
-                         <NavLink to="/parkeren-amsterdam-centrum" id="button-page"><h3>|>Locaties Noord</h3></NavLink>
-                         <NavLink to="/parkeren-amsterdam-Stadsdelen-Zuid-West" id="button-page"><h3>|>Locaties Zuid</h3></NavLink>
-                         <NavLink to="/parkeren-amsterdam-Stadsdelen-Oost-ZuidOost" id="button-page"><h3>|>Locaties Zuid-Oost</h3></NavLink>
+                         <NavLink to="/parkeren-amsterdam-centrum" id="button-page"><h4>|>Locaties Noord</h4></NavLink>
+                         <NavLink to="/parkeren-amsterdam-Stadsdelen-Zuid-West" id="button-page"><h4>|>Locaties Zuid</h4></NavLink>
+                         <NavLink to="/parkeren-amsterdam-Stadsdelen-Oost-ZuidOost" id="button-page"><h4>|>Locaties Zuid-Oost</h4></NavLink>
                          <div id="LocationFree">
                          </div>
                     </div>

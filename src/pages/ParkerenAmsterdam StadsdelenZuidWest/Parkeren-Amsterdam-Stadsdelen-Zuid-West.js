@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../App.css';
 import Tile from "../../components/tile/Tile";
+import Content from "../../components/parking/Content";
 import ParkingLocationWest from "../../components/tab/filter/ParkingLocationWest";
 import ParkingLocationZuid from "../../components/tab/filter/ParkingLocationZuid";
 import carparking from "../../assets/carparking.jpg";
@@ -15,19 +16,17 @@ function ParkerenAmsterdamStadsdelenZuidWest() {
                 <Tile titlearea={"Plaatsen VRIJ"}/>
                 <div id="tilebox">
                     <Tile>
-                        <div id="parkingAdam-weg-deel"><br/>
+                        <div id="parkingAdam-weg">
                             <ParkingLocationZuid/>
-                            <NavLink to="/"> |> Home</NavLink><br/>
+                            <NavLink to="/home"> |> Home</NavLink><br/>
                         </div><br/>
                         <div id="parkingAdam-weg">
-                            <div className="label-weg">parkeren in Zuid</div>
-                            <div className="label-weg">parkeren in West</div>
-                            <div className="label-weg"></div>
+                            <div><Content/></div>
                             <br/>
                         </div><br/>
-                        <div id="parkingAdam-weg-deel"><br/><br/>
+                        <div id="parkingAdam-weg">
                             <ParkingLocationWest/>
-                            <NavLink to="/"> |> Home</NavLink><br/>
+                            <NavLink to="/home"> |> Home</NavLink><br/>
                         </div>
                     </Tile>
                 </div>

@@ -9,13 +9,14 @@ body {
 }}
 
 .parkingAdam-header {
-    background-color: green;
+    overflow: hidden;
+    position: fixed;
+    top:0;
+    background-color: transparent;
     display: flex;
-    flex-basis: 300px;
-    flex-grow: 0;
-    flex-shrink: 0;
+    width: 100%;
     justify-content: flex-end;
-    box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
+
 }
 
 {/*APP.JS -------------------- */}
@@ -48,7 +49,7 @@ button {
     background-color: linen;
     display: flex;
     width: 120px;
-    height: 40px;
+    height: 60px;
     margin-right: 10px;
     margin-left: 10px;
     font-size: 10px;
@@ -103,6 +104,7 @@ ul {
     font-size: 10px;
     border-right: 8px solid white;
     border-left: 8px solid white;
+    margin-bottom: 10px;
     box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -165,10 +167,10 @@ ul {
     position: relative;
     width: 100%;
     height: 100%;
+    margin-top: 70px;
     display: flex;
-    background-color: #006bbd;
-    border-radius: 10px;
-    box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    border-radius: 2px;
 }
 
 .tab-wrapper {
@@ -185,20 +187,29 @@ ul {
     list-style-type: none;
 
 }
-h1 {  margin-left: 25px;
-    color: firebrick;
+h1 {
+    margin-left: 10px;
+    color: linen;
 }
-h3 {  margin-left: 25px;
+h3 {
+    margin-left: 15px;
+    margin-top: 50px;
     color: #e2c681;
 }
-h2, h4 {
+h2 {
     margin-left: 25px;
+
+}
+h5, h4 {
+    margin-left: 5px;
+    margin-right: 5px;
+
 }
 
 {/*NAAR COMPONENTS -------------------- */}
 #Name {
     color: #FFB619;
-    font-size: 8px;
+    font-size: 7px;
     width:5px;
 }
 #MoreInfo {
@@ -245,13 +256,13 @@ h2, h4 {
     font-size: 10px;
     padding: 5px;
     margin-left: 6px;
-    margin-right: 10px;
+    margin-right: 6px;
     margin-bottom: 3px;
 }
 #parkinglocationdetails {
     display: inline-block;
     width: 300px;
-    margin-left: 1px;
+
     background-color: #006bbd;
     border-inline-color: #FFFFFF;
     border-radius: 11px;
@@ -259,8 +270,10 @@ h2, h4 {
     color: #FFFFFF;
     font-size: 10px;
     padding: 5px;
+    margin-left: 1px;
     margin-right: 3px;
-    margin-bottom: 1px;
+    margin-top: 3px;
+    margin-bottom: 10px;
 }
 {/*NAAR COMPONENTS -------------------- */}
 #parkinglocationfilter {
@@ -320,7 +333,7 @@ h2, h4 {
     display: inline-block;
     background-color: #e2c681;
     width: 100%;
-    min-height: 100px;
+    min-height: 150px;
     align-content: center;
     list-style-type: none;
     border-radius: 5px;
@@ -348,6 +361,7 @@ h2, h4 {
 #parkinglocationdetails-form {
     display: inline-block;
     width: 200px;
+    height: fit-content;
     flex-basis: 40px;
     flex-grow: 0;
     flex-shrink: 0;
@@ -364,16 +378,13 @@ h2, h4 {
 }
 #parkingAdam-content-deel {
     display: inline-block;
-    background-color: #e2c681;
+    background-color: transparent;
+    margin-top: 25px;
     width: 100%;
     min-height: 100px;
     align-content: center;
     list-style-type: none;
     border-radius: 5px;
-    color: #FFFFFF;
+    color: #e2c681;
     font-size: 10px;
-    border-top: 1px solid green;
-    border-left: 1px solid #e2c681;
-    border-bottom: 1px solid #e2c681;
-    box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
 }

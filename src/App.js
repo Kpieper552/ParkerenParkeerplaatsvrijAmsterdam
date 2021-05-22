@@ -63,20 +63,21 @@ function App() {
             {loading && (<span>loading...</span>)}
           <nav >
               <Router>
-                  <div  className="parkingAdam-header">
-                         <Navigation /><br/>
-                     </div>
-                  <div>
+                  <div className="parkingAdam-header">
                       <Amsterdam/>
+                  </div>
+                  <div className="parkingAdam-container">
                       <Content/>
                   </div>
-                  <div className="parkingAdam-header">
+                  <div className="parkingAdam-container">
                        <Parking/>
                   </div>
-                  <div className="parkingAdam-header">
+                  <div className="parkingAdam-container">
                       <ParkingFirst/>
                   </div>
-
+                  <div className="parkingAdam-container">
+                      <ParkingSecond/>
+                  </div>
             {/*NAVIGATION-------------------- */}
             <Switch>
                 {/*PAGE -------------------- */}
@@ -99,13 +100,11 @@ function App() {
                                 </div>
                             </div>
                     </Router>
-
                 </Route>
                 {/*PAGE -------------------- */}
                 <Route exact path="/parkeren-amsterdam-stadsdelen-Oost-ZuidOost">
                     <ParkerenAmsterdamStadsdelenOostZuidOost />
                     {/*NAVIGATION-------------------- */}
-
                         <Router>
                         {/*TAB -------------------- */}
                         <>
@@ -124,13 +123,11 @@ function App() {
                             </div>
                         </>
                         </Router>
-
                 </Route>
                 {/*PAGE -------------------- */}
                 <Route exact path="/parkeren-amsterdam-stadsdelen-Zuid-West">
                     <ParkerenAmsterdamStadsdelenZuidWest />
                     {/*NAVIGATION-------------------- */}
-
                     <Router>
                         {/*TAB -------------------- */}
 
@@ -148,13 +145,11 @@ function App() {
                                 </div>
                             </div>
                         </Router>
-
                 </Route>
                 {/*PAGE -------------------- */}
                 <Route excat path="/parkeren-amsterdam-centrum">
                     <ParkerenAmsterdamCentrum />
                     {/*NAVIGATION-------------------- */}
-
                         <Router>
                             {/*TAB -------------------- */}
                             <div className="parkingAdam-content">
@@ -171,13 +166,11 @@ function App() {
                                 </div>
                             </div>
                         </Router>
-
                 </Route>
                 {/*PAGE -------------------- */}
                 <Route exact path="/parkeren-amsterdam-parkenride">
                     <ParkerenAmsterdamParkenRide />
                     {/*NAVIGATION-------------------- */}
-
                         <Router>
                         {/*TAB -------------------- */}
                             <div className="parkingAdam-content">
@@ -222,16 +215,11 @@ function App() {
                     </div>
                 </Route>
             </Switch>
-                  <div>
-                      <Content/>
-                  </div>
-                  <div className="parkingAdam-header">
-                      <ParkingSecond/>
-                  </div>
                   <div  className="parkingAdam-header">
                       <Navigation />
                   </div>
         </Router>
+
       </nav>
     </>
   );

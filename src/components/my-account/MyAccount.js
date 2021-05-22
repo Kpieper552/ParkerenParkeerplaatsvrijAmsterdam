@@ -27,10 +27,12 @@ function MyAccount() {
                 <br/><br/>
                 <label id="parkinglocationdetails-form">
                     <h2>Welkom </h2> <h2>MY ACCOUNT</h2><h3>| Login email |> </h3>
-                     </label><br/>
+                     </label>
+                     <br/><br/>
                     <Link to="/update-profile"><button id="parkinglocationdetails-form">Update MyAccount</button></Link>
-                  </div>
+                     <br/><br/>
                 <button onClick={handlelogout} type="link" id="parkinglocationdetails-form"> |> Logout</button><br/><br/>
+                </div><br/><br/>
              </>
     );
 }
