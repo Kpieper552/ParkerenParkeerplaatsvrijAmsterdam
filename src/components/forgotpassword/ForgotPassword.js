@@ -1,59 +1,53 @@
 import React, { useState, useRef,  } from 'react';
 import '../../App.css';
 import { useAuth } from '../../context/SignupContext';
-import { useHistory, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-
-function SignIn() {
+function ForgotPassword() {
     const emailRef = useRef()
-    const passwordRef = useRef()
-    const { login,  } = useAuth()
+    const { resetPassword  } = useAuth()
     const [error, setError] = useState("")
+    const [message, setMessage] = useState("")
     const [loading, setLoading] = useState(false)
-    const history = useHistory();
-
 
     async function handleSubmit(e) {
         e.preventDefault()
 
         try {
+            setMessage("")
             setError("")
             setLoading(true)
-            await login(emailRef.current.value, passwordRef.current.value)
-            history.push("/account")
+            await resetPassword(emailRef.current.value)
+            setMessage("check je email inbox voor verdere insturcties")
+
         } catch {
-            setError("failed to login")
+            setError("failed to reset password")
         }
         setLoading(false)
     }
-    console.log("hallo dit is een signinform");
+
 
     return (
         <>
             {error && (error) }
             {loading && loading}
+            {message && (message)}
             <form id="parkingAdam-form-deel" onSubmit={handleSubmit}>
                 <br/><br/>
                 <label id="parkinglocation-form">
-                    <h2>Login
-                    Email</h2>
+                    <h2>Password Reset
+                        Email</h2>
                     <input type="text" ref={emailRef} required
                            name="email" placeholder="email"/>
                 </label>
                 <br/><br/>
-                <label id="parkinglocation-form">
-                    <h2>Password</h2>
-                    <input type="text"  ref={passwordRef} required
-                           name="password" placeholder="wachtwoord"/>
-                </label>
-                <br/><br/>
                 <button default={loading} id="parkinglocationdetails-form" type="submit">
-                    <label  >Login</label>
+                    <label  >Reset Password</label>
                 </button><br/><br/>
-                <NavLink to="/passwordvergeten">  Password vergeten? </NavLink><br/><br/>
+                <NavLink to="/login"> Login </NavLink><br/><br/>
                 <NavLink to="/registreer">  Geen Account |> Registreer</NavLink><br/><br/>
             </form>
         </>
     );
 }
-export default SignIn;
+export default ForgotPassword;

@@ -17,7 +17,7 @@ function SignUp() {
         e.preventDefault()
         if (passwordRef.current.value !==
         passwordConfirmRef.current.value) {
-            return setError("password do not match")
+            return setError("password do not match | password requires 7 characters")
             }
             try {
                 setError("")
