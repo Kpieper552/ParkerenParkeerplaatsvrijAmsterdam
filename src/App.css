@@ -193,7 +193,7 @@ h1 {
 }
 h3 {
     margin-left: 15px;
-    margin-top: 50px;
+    margin-top: 80px;
     color: #e2c681;
 }
 h2 {
@@ -201,6 +201,7 @@ h2 {
 
 }
 h5, h4 {
+    font-size: 10px;
     margin-left: 5px;
     margin-right: 5px;
 
@@ -211,6 +212,12 @@ h5, h4 {
     color: #FFB619;
     font-size: 7px;
     width:5px;
+}
+#Content {
+    color: #e2c681;
+    font-size: 8px;
+    margin-left: 1px;
+    margin-right: 1px;
 }
 #MoreInfo {
     color: linen;
@@ -273,7 +280,7 @@ h5, h4 {
     margin-left: 1px;
     margin-right: 3px;
     margin-top: 3px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 {/*NAAR COMPONENTS -------------------- */}
 #parkinglocationfilter {
@@ -360,9 +367,9 @@ h5, h4 {
 }
 #parkinglocationdetails-form {
     display: inline-block;
-    width: 200px;
+    width: 250px;
     height: fit-content;
-    flex-basis: 40px;
+    flex-basis: 50px;
     flex-grow: 0;
     flex-shrink: 0;
     background-color: #006bbd;
@@ -384,7 +391,6 @@ h5, h4 {
     min-height: 100px;
     align-content: center;
     list-style-type: none;
-    border-radius: 5px;
+    border-radius: 1px;
     color: #e2c681;
-    font-size: 10px;
 }

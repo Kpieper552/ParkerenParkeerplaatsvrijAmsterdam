@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../App.css';
 import Tile from "../../components/tile/Tile";
-import Content from "../../components/parking/Content";
+import Content1 from "../../components/content/Content1";
 import ParkingLocationWest from "../../components/tab/filter/ParkingLocationWest";
 import ParkingLocationZuid from "../../components/tab/filter/ParkingLocationZuid";
 import carparking from "../../assets/carparking.jpg";
@@ -21,7 +21,7 @@ function ParkerenAmsterdamStadsdelenZuidWest() {
                             <NavLink to="/home"> |> Home</NavLink><br/>
                         </div><br/>
                         <div id="parkingAdam-weg">
-                            <div><Content/></div>
+                            <div><Content1/></div>
                             <br/>
                         </div><br/>
                         <div id="parkingAdam-weg">

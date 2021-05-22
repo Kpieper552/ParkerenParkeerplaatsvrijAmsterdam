@@ -8,15 +8,16 @@ function MyAccount() {
     const { currentUser, logout } = useAuth()
     const history = useHistory();
 
-    async function handlelogout() {
+    async function handleLogout() {
         setError("")
         try {
+
             await logout()
             history.push("/login")
         } catch {
             setError("failed to logout")
         }
-
+        console.log("ik ben uitgelogd")
     }
 
     console.log("je bent in my account");
@@ -26,12 +27,11 @@ function MyAccount() {
                  <div id="parkingAdam-form-deel" >
                 <br/><br/>
                 <label id="parkinglocationdetails-form">
-                    <h2>Welkom </h2> <h2>MY ACCOUNT</h2><h3>| Login email |> </h3>
+                    <h2>Welkom  </h2><h2>MY ACCOUNT</h2><h3>| Login email |> </h3>
                      </label>
                      <br/><br/>
-                    <Link to="/update-profile"><button id="parkinglocationdetails-form">Update MyAccount</button></Link>
-                     <br/><br/>
-                <button onClick={handlelogout} type="link" id="parkinglocationdetails-form"> |> Logout</button><br/><br/>
+
+                <button onClick={handleLogout} type="link" id="parkinglocationdetails-form"> |> Logout</button><br/><br/>
                 </div><br/><br/>
              </>
     );

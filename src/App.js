@@ -7,6 +7,7 @@ import {
 import './App.css';
 import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
+import Passwordvergeten from "./pages/passwordvergeten/Passwordvergeten";
 import Registreer from "./pages/Registreer/Registreer";
 import Account from "./pages/Account/Account";
 import ParkerenAmsterdamStadsdelenOostZuidOost from "./pages/ParkerenAmsterdam StadsdelenOostZuidOoost/Parkeren-Amsterdam-Stadsdelen-Oost-ZuidOost";
@@ -33,7 +34,7 @@ import AccountParkingAmsterdamFreePlaces from "./pages/Account/AccountParkingAms
 import TabBarMenuAccount from "./components/tabbar/TabBarMenuAccount";
 import Amsterdam from "./components/fotoarea/Amsterdam";
 import Parking from "./components/parking/Parking";
-import Content from "./components/parking/Content";
+import Content from "./components/content/Content";
 import ParkingFirst from "./components/parking/ParkingFirst";
 import ParkingSecond from "./components/parking/ParkingSecond";
 import PrivateRoute from "./components/privateroute/PrivateRoute";
@@ -195,6 +196,9 @@ function App() {
                 {/*PAGE -------------------- */}
                 <Route path="/login">
                     <Login />
+                </Route>
+                <Route path="/passwordvergeten">
+                    <Passwordvergeten />
                 </Route>
                 {/*PAGE -------------------- */}
                 <Route path="/account">

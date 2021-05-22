@@ -2,7 +2,7 @@ import React  from 'react';
 import '../../App.css';
 import Tile from "../../components/tile/Tile";
 import carparking from "../../assets/carparking.jpg";
-import Content from "../../components/parking/Content";
+import Content1 from "../../components/content/Content1";
 import { NavLink } from 'react-router-dom';
 
 function Home() {
@@ -23,7 +23,7 @@ function Home() {
                      </div>
                     <div id="home-Page-weg">
                         <div>
-                            <Content/>
+                            <Content1/>
                         </div>
                     </div>
                      <div id="home-Page-weg">
