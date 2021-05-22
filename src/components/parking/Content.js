@@ -9,10 +9,13 @@ function Content() {
     return (
         <>
             <div id="parkingAdam-content-deel">
-                <h1>Parkeerplaats VRIJ Amsterdam</h1>
-                <h4>dit is content content conten</h4>
+            <br/>
+                <h1>PARKEREN AMSTERDAM</h1>
+                <h4> content content </h4>
             </div>
         </>
     );
 }
 export default Content;
+
+// <h4> content content content content content content content content content content </h4>
