@@ -1,7 +1,7 @@
 import React from 'react';
 //import '../../App.css';
 import Tile from "../../components/tile/Tile";
-import amsterdam from "../../assets/amsterdam.JPG";
+import amsterdam from "../../assets/amsterdam.png";
 
 
 

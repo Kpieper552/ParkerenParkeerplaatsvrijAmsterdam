@@ -17,19 +17,20 @@ function SignUp() {
         e.preventDefault()
         if (passwordRef.current.value !==
         passwordConfirmRef.current.value) {
-            return setError("password do not match | password requires 7 characters")
+            return setError("password komt niet overeen | password dient te bestaan uit 7 karakters")
             }
             try {
                 setError("")
                 setLoading(true)
                 await signup(emailRef.current.value, passwordRef.current.value)
+                //console.log(signup, "hallo je bent signup");
                 history.push("/account")
             } catch {
-                setError("failed to create account")
+                setError("het is niet gelukt een account aan te maken")
             }
             setLoading(false)
     }
-    console.log("hallo dit is een registerform");
+
 
     return (
             <>

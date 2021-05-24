@@ -20,13 +20,14 @@ function SignIn() {
             setError("")
             setLoading(true)
             await login(emailRef.current.value, passwordRef.current.value)
+            console.log(login, "je wordt doorgezonden naar my account");
             history.push("/account")
         } catch {
-            setError("failed to login")
+            setError("login is niet gelukt")
         }
         setLoading(false)
     }
-    console.log("hallo dit is een signinform");
+
 
     return (
         <>

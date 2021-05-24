@@ -4,7 +4,7 @@ import '../../App.css';
 
 
 
-function Content() {
+function ContentFooter() {
 
     return (
         <>
@@ -14,5 +14,5 @@ function Content() {
         </>
     );
 }
-export default Content;
+export default ContentFooter;
 

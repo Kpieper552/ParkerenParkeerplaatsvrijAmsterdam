@@ -5,7 +5,6 @@ import SignUp from "../../components/sign-up/SignUp";
 
 
 function Registreer() {
-
     return (
         <>
         <h3>Registreer</h3>

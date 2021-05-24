@@ -13,7 +13,7 @@ function ParkerenAmsterdamCentrum() {
         <>
             <div ><h3>Parkeren Amsterdam Centrum en Noord</h3>
                 <Tile img={carparking} imgDescription={carparking}/>
-                <Tile titlearea={"Plaatsen VRIJ"}/>
+                <Tile titlearea={"Parkeerplaatsen VRIJ"}/>
                 <div id="tilebox">
                     <Tile>
                         <div id="parkingAdam-weg">

@@ -35,6 +35,8 @@ import TabBarMenuAccount from "./components/tabbar/TabBarMenuAccount";
 import Amsterdam from "./components/fotoarea/Amsterdam";
 import Parking from "./components/parking/Parking";
 import Content from "./components/content/Content";
+import Content1 from "./components/content/Content1";
+import ContentFooter from "./components/content/ContentFooter";
 import ParkingFirst from "./components/parking/ParkingFirst";
 import ParkingSecond from "./components/parking/ParkingSecond";
 import PrivateRoute from "./components/privateroute/PrivateRoute";
@@ -79,6 +81,9 @@ function App() {
                   <div className="parkingAdam-container">
                       <ParkingSecond/>
                   </div>
+                  <div className="parkingAdam-container">
+                      <Content1/>
+                     </div>
             {/*NAVIGATION-------------------- */}
             <Switch>
                 {/*PAGE -------------------- */}
@@ -194,14 +199,14 @@ function App() {
                     <Registreer />
                 </Route>
                 {/*PAGE -------------------- */}
-                <Route path="/login">
+                <Route path="/login"  >
                     <Login />
                 </Route>
                 <Route path="/passwordvergeten">
                     <Passwordvergeten />
                 </Route>
                 {/*PAGE -------------------- */}
-                <Route path="/account">
+                <PrivateRoute path="/account" >
                     <Account />
                     {/*TAB -------------------- */}
                     <div className="parkingAdam-content">
@@ -217,13 +222,19 @@ function App() {
                             </Switch>
                         </div>
                     </div>
-                </Route>
+                </PrivateRoute>
             </Switch>
                   <div  className="parkingAdam-header">
                       <Navigation />
                   </div>
-        </Router>
+                  <div >
+                        <Content1 />
+                  </div>
+                  <div className="parkingAdam-container">
+                      <ContentFooter/>
+                  </div>
 
+        </Router>
       </nav>
     </>
   );

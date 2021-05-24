@@ -18,10 +18,11 @@ function ForgotPassword() {
             setError("")
             setLoading(true)
             await resetPassword(emailRef.current.value)
-            setMessage("check je email inbox voor verdere insturcties")
+            //console.log(resetPassword, "reset")
+            setMessage("check je email inbox voor verdere instructies")
 
         } catch {
-            setError("failed to reset password")
+            setError("reset password is niet gelukt")
         }
         setLoading(false)
     }
@@ -42,7 +43,7 @@ function ForgotPassword() {
                 </label>
                 <br/><br/>
                 <button default={loading} id="parkinglocationdetails-form" type="submit">
-                    <label  >Reset Password</label>
+                    <label>Reset Password</label>
                 </button><br/><br/>
                 <NavLink to="/login"> Login </NavLink><br/><br/>
                 <NavLink to="/registreer">  Geen Account |> Registreer</NavLink><br/><br/>

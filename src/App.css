@@ -112,7 +112,7 @@ ul {
     display: inline-block;
     background-color: dimgray;
     width: fit-content;
-    min-height: 500px;
+    min-height: 400px;
     max-width: 350px;
     align-content: space-around;
     list-style-type: none;
@@ -141,7 +141,7 @@ ul {
 
 .label-weg {
     background-color: dimgrey;
-    margin-top: 100px;
+    margin-top: 40px;
     width: fit-content;
     height: 100px;
     color: white;
@@ -188,12 +188,11 @@ ul {
 
 }
 h1 {
-    margin-left: 10px;
+    margin-left: 15px;
     color: linen;
 }
 h3 {
     margin-left: 15px;
-    margin-top: 80px;
     color: #e2c681;
 }
 h2 {
@@ -202,7 +201,8 @@ h2 {
 }
 h5, h4 {
     font-size: 10px;
-    margin-left: 5px;
+    color: linen;
+    margin-left: 10px;
     margin-right: 5px;
 
 }
@@ -336,6 +336,14 @@ h5, h4 {
     display: flex;
     background-color: #e2c681;
 }
+
+error {
+    background-color: red;
+}
+
+message {
+    background-color: lightgreen;
+}
 #parkingAdam-form-deel {
     display: inline-block;
     background-color: #e2c681;
@@ -385,12 +393,11 @@ h5, h4 {
 }
 #parkingAdam-content-deel {
     display: inline-block;
-    background-color: transparent;
-    margin-top: 25px;
+    background-color: dimgrey;
     width: 100%;
-    min-height: 100px;
+    height: fit-content;
     align-content: center;
     list-style-type: none;
-    border-radius: 1px;
-    color: #e2c681;
+    border-radius: 3px;
+
 }

@@ -10,7 +10,7 @@ function Home() {
         <>
             <div><h3>Parkeren Amsterdam</h3></div>
                 <Tile img={carparking} imgDescription={carparking}/>
-                <Tile titlearea={"PARKEREN PER STADSDEEL "}/>
+                <Tile titlearea={"KORT PARKEREN PER STADSDEEL "}/>
                 <Tile>
                      <div id="home-Page-weg">
                          <div className="label-weg">
@@ -36,7 +36,7 @@ function Home() {
                          </div>
                     </div>
                 </Tile>
-            <Tile img={carparking} imgDescription={carparking}/>
+            <Tile />
         </>
     );
 }
