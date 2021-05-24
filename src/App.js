@@ -213,12 +213,12 @@ function App() {
                         <TabBarMenuAccount/>
                         <div className="tab-wrapper">
                             <Switch>
-                                <Route exact path="/account">
+                                <PrivateRoute exact path="/account">
                                     <AccountParkingAmsterdam/>
-                                </Route>
-                                <Route path="/account/AccountParkingAmsterdamFreePlaces">
+                                </PrivateRoute>
+                                <PrivateRoute path="/account/AccountParkingAmsterdamFreePlaces">
                                     <AccountParkingAmsterdamFreePlaces />
-                                </Route>
+                                </PrivateRoute>
                             </Switch>
                         </div>
                     </div>
