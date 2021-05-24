@@ -4,7 +4,6 @@ import ForgotPassword from "../../components/forgotpassword/ForgotPassword";
 
 
 function Passwordvergeten() {
-    console.log("je bent nu op ");
     return (
         <>
             <h3>Reset Password</h3>

@@ -16,7 +16,7 @@ function ParkerenAmsterdamParkenRide() {
         <>
             <div ><h3>Parkeren Amsterdam Park & Ride </h3>
                 <Tile img={carparking} imgDescription={carparking}/>
-                <Tile titlearea={"Plaasten VRIJ "}/>
+                <Tile titlearea={"Parkeerplaasten VRIJ "}/>
                 <div id="tilebox">
                     <Tile>
                         <div id="pr-Page-weg"> <br/><br/>

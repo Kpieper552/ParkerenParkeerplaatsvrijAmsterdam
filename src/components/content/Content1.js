@@ -9,8 +9,8 @@ function Content1() {
     return (
         <>
             <div id="parkingAdam-content-deel">
-                <br/>
-                <div id="Content"> content content content content content content content content content conten content content  content content  content  content content  content content </div>
+                <h4>De parkeerroute naar parkeerplaats VRIJ | Actueel beschikbaar in de parkeergarages van Amsterdam |
+                    Parkeergarage locatie gegevens |</h4>
             </div>
         </>
     );
