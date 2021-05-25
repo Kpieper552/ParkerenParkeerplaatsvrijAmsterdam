@@ -19,7 +19,7 @@ function ParkingLocationDetails() {
     return (
         <>
             <div >
-                <h2>Amsterdam Parkeergarages</h2>
+                <h2>Parkeergarages Locatie detail informatie</h2>
                     {parkings && parkings.map((parking, index) => {
                         return (
                         <li id="parkinglocationdetails" key={parking.parkeerlocatie.adres+index}>
