@@ -19,7 +19,7 @@ function SignIn() {
         try {
             setError("")
             setLoading(true)
-            //localStorage.clear()
+            localStorage.clear()
             await login(emailRef.current.value, passwordRef.current.value)
             console.log(login, "je wordt doorgezonden naar my account");
             history.push("/account")
@@ -27,6 +27,7 @@ function SignIn() {
             setError("login is niet gelukt")
         }
         setLoading(false)
+
     }
 
 

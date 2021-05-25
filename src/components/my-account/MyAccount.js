@@ -14,7 +14,7 @@ function MyAccount() {
             await logout()
             console.log(logout, "je bent uitgelogd van my account");
             history.push("/login")
-
+            //localStorage.clear()
         } catch {
             setError("failed to logout")
         }
@@ -26,12 +26,14 @@ function MyAccount() {
                  <div id="parkingAdam-form-deel" >
                 <br/><br/>
                 <label id="parkinglocationdetails-form">
-                    <h2>Welkom</h2>
+                    <h2>Welkom op MyAccount</h2>
                     <h3>|Gebruiker <br/>
                         |> Email: {currentUser && currentUser.email}</h3>
                     <h4>Met uw account heeft u toegang tot</h4>
                     <h3>Parkeergarages Locaties Detail Gegevens </h3>
                     <h3>Parkeerplaatsen VRIJ Langparkeren</h3>
+                    <h4>Vergunningshouders regeling Gemeente Amsterdam</h4>
+
                 </label>
                      <br/><br/>
                 <button onClick={handleLogout} type="link" id="parkinglocationdetails-form"> |> Logout</button><br/><br/>

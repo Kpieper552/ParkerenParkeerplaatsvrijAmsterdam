@@ -1,12 +1,22 @@
 
-## Applicatie ParkeerParkeerplaatsvrijAmsterdam
-ddd
+## Applicatie
+ParkerenParkeerplaatsvrijAmsterdam
+
 ## De applicatie starten
 1.`npm install`
 2.`npm install router dom`
 3.`npm install react hook form`
 4 `npm install `
 5 `firebase base backend`
+6. `Login firebase`
+   https://console.firebase.google.com/   
+7. `Aanmaak tijdelijk emailadres + inbox voor reset password`
+   https://temp-mail.org/en/
+8. `API Opendata overheid 2 datasets` 
+   Toegang DATA aanmelding via CORS - set Toggle ON
+   https://mybrowseraddon.com/access-control-allow-origin.html
+   Van een API key is bij Opendata overheid geen sprake in de documentatie.
+   
 
 
 

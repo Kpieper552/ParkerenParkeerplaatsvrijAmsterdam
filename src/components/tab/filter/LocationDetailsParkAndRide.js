@@ -34,7 +34,13 @@ function LocationDetailsParkAndRide() {
                             {filteredParking.parkeerlocatie.postcode}
                             {filteredParking.parkeerlocatie.woonplaats}<br /><br />
                             </label><br />
-                            <label id="MoreInfo">{filteredParking.parkeerlocatie.type}<br />
+                            <label id="MoreInfo">{filteredParking.parkeerlocatie.type} <br/>
+                                {/*OPENBAAR VERVOER BLOK-------------------- */}
+                                |-> OV naar CENTRUM <br />
+                                |->{filteredParking.parkeerlocatie.OV_bus}<br />
+                                |->{filteredParking.parkeerlocatie.OV_tram}<br />
+                                |->{filteredParking.parkeerlocatie.OV_metro}<br />
+                                |->{filteredParking.parkeerlocatie.OV_trein}
                             </label>
                         </li>
                     )

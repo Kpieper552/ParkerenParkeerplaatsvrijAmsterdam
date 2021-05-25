@@ -29,7 +29,7 @@ return (
         <div>
             {error && (<span>error </span>)}
             {loading && (<span>Loading...</span>)}
-            <div><h2>Parkeerplaats</h2>
+            <div><h2>Parkeerplaatsen VRIJ Parkeergarages Amsterdam</h2>
                 {parkingLocations && parkingLocations.map((parkingLocation, index) => {
                 return (
                         <li id="parkinglocationdetails" key={parkingLocation.properties.Name+index} >

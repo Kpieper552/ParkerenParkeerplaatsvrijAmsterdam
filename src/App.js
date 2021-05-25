@@ -9,7 +9,6 @@ import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
 import Passwordvergeten from "./pages/passwordvergeten/Passwordvergeten";
 import Registreer from "./pages/Registreer/Registreer";
-import Account from "./pages/Account/Account";
 import ParkerenAmsterdamStadsdelenOostZuidOost from "./pages/ParkerenAmsterdam StadsdelenOostZuidOoost/Parkeren-Amsterdam-Stadsdelen-Oost-ZuidOost";
 import ParkerenAmsterdamCentrum from "./pages/ParkerenAmsterdam Centrum/Parkeren-Amsterdam-Centrum";
 import ParkerenAmsterdamParkenRide from "./pages/ParkerenAmsterdam ParkenRide/Parkeren-Amsterdam-ParkenRide";
@@ -29,9 +28,6 @@ import ParkingZuidTab from "./pages/ParkingZuidTab/ParkingZuidTab";
 import ParkingWestTab from "./pages/ParkingWestTab/ParkingWestTab";
 import Navigation from "./components/navigation/Navigation";
 import ParkingPlaatsenVrijTab from "./pages/ParkingPlaatsenVrijTab/ParkingPlaatsenVrijTab";
-import AccountParkingAmsterdam from "./pages/Account/AccountParkingAmsterdam";
-import AccountParkingAmsterdamFreePlaces from "./pages/Account/AccountParkingAmsterdamFreePlaces";
-import TabBarMenuAccount from "./components/tabbar/TabBarMenuAccount";
 import Amsterdam from "./components/fotoarea/Amsterdam";
 import Parking from "./components/parking/Parking";
 import Content from "./components/content/Content";
@@ -98,7 +94,7 @@ function App() {
                                     <Switch>
                                         <Route exact path="/home">
                                             <ParkingAmsterdamTab/>
-                                         </Route>
+                                         </Route> 
                                         <Route path="/parkingplaatsenvrijtab">
                                             <ParkingPlaatsenVrijTab />
                                         </Route>
@@ -207,33 +203,18 @@ function App() {
                 </Route>
                 {/*PAGE -------------------- */}
                 <PrivateRoute path="/account" >
-                    <Account />
-                    {/*TAB -------------------- */}
-                    <div className="parkingAdam-content">
-                        <TabBarMenuAccount/>
-                        <div className="tab-wrapper">
-                            <Switch>
-                                <PrivateRoute exact path="/account">
-                                    <AccountParkingAmsterdam/>
-                                </PrivateRoute>
-                                <PrivateRoute path="/account/AccountParkingAmsterdamFreePlaces">
-                                    <AccountParkingAmsterdamFreePlaces />
-                                </PrivateRoute>
-                            </Switch>
-                        </div>
-                    </div>
+                     {/*TAB -------------------- */}
                 </PrivateRoute>
             </Switch>
                   <div  className="parkingAdam-header">
                       <Navigation />
                   </div>
                   <div >
-                        <Content1 />
+                       <Content1 /><Amsterdam/>
                   </div>
                   <div className="parkingAdam-container">
                       <ContentFooter/>
                   </div>
-
         </Router>
       </nav>
     </>
