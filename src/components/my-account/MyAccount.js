@@ -32,7 +32,7 @@ function MyAccount() {
                     <h4>Met uw account heeft u toegang tot</h4>
                     <h3>Parkeergarages Locaties Detail Gegevens </h3>
                     <h3>Parkeerplaatsen VRIJ Langparkeren</h3>
-                    <h4>Vergunningshouders regeling Gemeente Amsterdam</h4>
+                    <h5>Vergunningshoudersregeling Gemeente Amsterdam</h5>
 
                 </label>
                      <br/><br/>

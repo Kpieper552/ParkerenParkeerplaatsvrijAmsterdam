@@ -2,8 +2,8 @@ import React  from 'react';
 import '../../App.css';
 import Tile from "../../components/tile/Tile";
 import carparking from "../../assets/carparking.jpg";
-import Content1 from "../../components/content/Content1";
 import { NavLink } from 'react-router-dom';
+import ContentPage from "../../components/content/ContentPage";
 
 function Home() {
     return (
@@ -23,7 +23,7 @@ function Home() {
                      </div>
                     <div id="home-Page-weg">
                         <div>
-                            <Content1/>
+                            <ContentPage/>
                         </div>
                     </div>
                      <div id="home-Page-weg">

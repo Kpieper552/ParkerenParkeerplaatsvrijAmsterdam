@@ -10,6 +10,7 @@ function ContentFooter() {
         <>
             <div id="parkingAdam-content-deel">
                 <h4>PARKEREN PARKEERPLAATS VRIJ AMSTERDAM</h4>
+                <div id="MoreInfo" >©KarinaPieper</div>
             </div>
         </>
     );

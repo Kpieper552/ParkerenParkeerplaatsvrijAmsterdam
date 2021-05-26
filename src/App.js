@@ -29,6 +29,7 @@ import ParkingWestTab from "./pages/ParkingWestTab/ParkingWestTab";
 import Navigation from "./components/navigation/Navigation";
 import ParkingPlaatsenVrijTab from "./pages/ParkingPlaatsenVrijTab/ParkingPlaatsenVrijTab";
 import Amsterdam from "./components/fotoarea/Amsterdam";
+import CarParking from "./components/fotoarea/CarParking"
 import Parking from "./components/parking/Parking";
 import Content from "./components/content/Content";
 import Content1 from "./components/content/Content1";
@@ -132,7 +133,6 @@ function App() {
                     {/*NAVIGATION-------------------- */}
                     <Router>
                         {/*TAB -------------------- */}
-
                             <div className="parkingAdam-content">
                                 <TabBarMenuSecondPart/>
                                 <div className="tab-wrapper">
@@ -210,7 +210,7 @@ function App() {
                       <Navigation />
                   </div>
                   <div >
-                       <Content1 /><Amsterdam/>
+                       <Content1 /><CarParking/>
                   </div>
                   <div className="parkingAdam-container">
                       <ContentFooter/>

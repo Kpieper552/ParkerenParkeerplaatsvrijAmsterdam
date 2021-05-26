@@ -24,13 +24,12 @@ function SignUp() {
                 setLoading(true)
                 await signup(emailRef.current.value, passwordRef.current.value)
                 //console.log(signup, "hallo je bent signup");
-                history.push("/account")
+                history.push("/login")
             } catch {
+                setLoading(false)
                 setError("het is niet gelukt een account aan te maken")
             }
-            setLoading(false)
     }
-
 
     return (
             <>
