@@ -1,6 +1,12 @@
-
 ## Applicatie
 ParkerenParkeerplaatsvrijAmsterdam
+
+De online Parkeerroute naar 
+| Parkeerplaats VRIJ Kort en Lang Parkeren 
+| Actueel beschikbaar in de parkeergarages van Amsterdam 
+| Parkeergarage locatie informatie 
+| Parkeergarage locatie detail informatie 
+| P&R + OV naar CENTRUM | PARK + BIKE |
 
 ## De applicatie starten
 1.`npm install`
@@ -17,6 +23,9 @@ ParkerenParkeerplaatsvrijAmsterdam
    https://mybrowseraddon.com/access-control-allow-origin.html
    Van een API key is bij Opendata overheid geen sprake in de documentatie.
    
+
+
+
 
 
 
