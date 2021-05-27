@@ -18,10 +18,10 @@ function ForgotPassword() {
             setError("")
             setLoading(true)
             await resetPassword(emailRef.current.value)
-            //console.log(resetPassword, "reset")
             setMessage("check je email inbox voor verdere instructies")
 
         } catch {
+            setLoading(false)
             setError("reset password is niet gelukt")
         }
         setLoading(false)

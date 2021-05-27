@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import '../../App.css';
 import { useAuth } from '../../context/SignupContext';
-import { useHistory} from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 function MyAccount() {
     const [error, setError] = useState("")
@@ -23,21 +23,30 @@ function MyAccount() {
     return (
             <>
                 {error && (error) }
-                 <div id="parkingAdam-form-deel" >
                 <br/><br/>
+                 <div id="parkingAdam-form-deel">
+                <br/><br/>
+                 <div id="parkingAdam-content-deel">
+                     <h4>Welkom op My Account </h4>
+                     <h3>{currentUser && currentUser.email}</h3>
+                     <div id="parkingAdam-content-deel">
+                         <h4>Met uw account heeft u toegang tot:</h4>
+                         <h4>Parkeergarages Locaties Detail Gegevens </h4>
+                         <h4>Parkeerplaatsen VRIJ Langparkeren</h4>
+                         <h4>(Vergunningshoudersregeling Gemeente Amsterdam)</h4>
+                     </div>
+                 </div>
+                     <br/><br/>
                 <label id="parkinglocationdetails-form">
-                    <h2>Welkom op MyAccount</h2>
-                    <h3>|Gebruiker <br/>
-                        |> Email: {currentUser && currentUser.email}</h3>
-                    <h4>Met uw account heeft u toegang tot</h4>
-                    <h3>Parkeergarages Locaties Detail Gegevens </h3>
-                    <h3>Parkeerplaatsen VRIJ Langparkeren</h3>
-                    <h5>Vergunningshoudersregeling Gemeente Amsterdam</h5>
-
+                    <h2>Account</h2>
+                    <h4>|Gebruiker <br/>
+                    |> Email:</h4>
+                    <h3>{currentUser && currentUser.email}</h3>
                 </label>
                      <br/><br/>
                 <button onClick={handleLogout} type="link" id="parkinglocationdetails-form"> |> Logout</button><br/><br/>
-                </div><br/><br/>
+                     <br/><br/>
+                </div>
              </>
     );
 }

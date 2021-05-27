@@ -9,7 +9,9 @@ function CarParking() {
 
     return (
         <>
+            <br/>
             <Tile img={carparking} imgDescription={carparking}/>
+            <br/><br/><br/>
         </>
     );
 }

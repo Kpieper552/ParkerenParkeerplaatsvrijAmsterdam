@@ -18,6 +18,16 @@ body {
     justify-content: flex-end;
 
 }
+.parkingAdam-footer {
+    overflow: hidden;
+    position: fixed;
+    bottom:0;
+    background-color: transparent;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+
+}
 .parkingAdam-container {
     position: relative;
     width: 100%;
@@ -55,7 +65,9 @@ button {
 #button-parking {
     background-color: linen;
     display: flex;
-    width: 120px;
+    min-width: 140px;
+    flex-basis: 200px;
+    flex-shrink: 0;
     height: 60px;
     margin-right: 10px;
     margin-left: 10px;
@@ -325,10 +337,10 @@ h5, h4 {
     background-color: #e2c681;
 }
 {/*PAGES LOGIN/REGISTREER/ACCOUNT -------------------- */}
-.error {
+#error {
     color: red;
 }
-.message {
+#message {
     color: green;
 }
 
@@ -342,8 +354,11 @@ h5, h4 {
     border-radius: 5px;
     color: #FFFFFF;
     font-size: 10px;
-    border-bottom: 1px solid green;
-    box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #006bbd;
+    border-top: 3px solid #006bbd;
+    border-right: 3px solid #006bbd;
+    border-left: 3px solid #006bbd;
+    box-shadow: .25rem .15rem 1rem 0 rgba(0,  0, 0, 0.1);
 }
 #parkinglocation-form {
     display: inline-block;
@@ -382,11 +397,13 @@ h5, h4 {
 }
 #parkingAdam-content-deel {
     display: inline-block;
-    background-color: dimgrey;
-    color:linnen;
+    background-color: #696969;
+    color:lightgrey;
     width: 100%;
     height: fit-content;
     align-content: center;
     list-style-type: none;
+    border-top: 2px solid lightgrey;
+    border-bottom: 2px solid lightgrey;
     border-radius: 3px;
 }
