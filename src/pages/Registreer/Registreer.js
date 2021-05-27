@@ -9,7 +9,10 @@ function Registreer() {
         <>
         <h3>Registreer</h3>
         <div>
-            <SignUp/>
+            <div id="parkingAdam-content-deel">
+                <h4>Registreer voor toegang MyAccount </h4>
+                <SignUp/>
+            </div>
         </div>
         </>
 

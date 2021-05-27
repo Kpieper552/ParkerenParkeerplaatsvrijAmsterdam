@@ -1,11 +1,12 @@
 import React from 'react';
 import '../../App.css';
 import Tile from "../../components/tile/Tile";
-import Content1 from "../../components/content/Content1";
 import ParkingLocationParkAndRide from "../../components/tab/filter/ParkingLocationParkAndRide";
 import carparking from "../../assets/carparking.jpg";
 import ParkingLocationParkAndRidePart from "../../components/tab/filter/ParkingLocationParkandRidePart";
 import {NavLink} from "react-router-dom";
+import ContentSubPage from "../../components/content/ContentSubPage";
+
 
 
 
@@ -25,7 +26,7 @@ function ParkerenAmsterdamParkenRide() {
                             <NavLink to="/home"> |> Home</NavLink><br/>
                         </div><br/>
                         <div id="pr-Page-weg">
-                            <div><Content1/></div><br/>
+                            <div><ContentSubPage/></div><br/>
                         </div>
                         <div id="pr-Page-weg"> <br/><br/>
                             <ParkingLocationParkAndRidePart/>

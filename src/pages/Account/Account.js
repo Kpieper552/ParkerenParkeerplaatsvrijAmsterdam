@@ -4,13 +4,14 @@ import MyAccount from "../../components/my-account/MyAccount";
 
 
 
+
 function Account() {
     return (
         <>
             <h3>Account</h3>
             <div>
-                    <MyAccount/>
-            </div>
+                <MyAccount/>
+           </div>
         </>
     );
 }

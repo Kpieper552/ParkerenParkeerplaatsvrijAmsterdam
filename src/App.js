@@ -31,12 +31,13 @@ import ParkingPlaatsenVrijTab from "./pages/ParkingPlaatsenVrijTab/ParkingPlaats
 import Amsterdam from "./components/fotoarea/Amsterdam";
 import CarParking from "./components/fotoarea/CarParking"
 import Parking from "./components/parking/Parking";
-import Content from "./components/content/Content";
-import Content1 from "./components/content/Content1";
-import ContentFooter from "./components/content/ContentFooter";
+import ContentHeader from "./components/content/ContentHeader";
+import ContentSub from "./components/content/ContentSub";
 import ParkingFirst from "./components/parking/ParkingFirst";
 import ParkingSecond from "./components/parking/ParkingSecond";
 import PrivateRoute from "./components/privateroute/PrivateRoute";
+import ContentFooter from "./components/content/ContentFooter";
+
 
 function App() {
     const [error, setError] = useState(false);
@@ -67,7 +68,7 @@ function App() {
                       <Amsterdam/>
                   </div>
                   <div className="parkingAdam-container">
-                      <Content/>
+                      <ContentHeader/>
                   </div>
                   <div className="parkingAdam-container">
                        <Parking/>
@@ -79,7 +80,7 @@ function App() {
                       <ParkingSecond/>
                   </div>
                   <div className="parkingAdam-container">
-                      <Content1/>
+                      <ContentSub/>
                      </div>
             {/*NAVIGATION-------------------- */}
             <Switch>
@@ -203,17 +204,16 @@ function App() {
                 </Route>
                 {/*PAGE -------------------- */}
                 <PrivateRoute path="/account" >
-                     {/*TAB -------------------- */}
                 </PrivateRoute>
-            </Switch>
+             </Switch>
                   <div  className="parkingAdam-header">
                       <Navigation />
                   </div>
                   <div >
-                       <Content1 /><CarParking/>
+                      <CarParking/>
                   </div>
-                  <div className="parkingAdam-container">
-                      <ContentFooter/>
+                  <div className="parkingAdam-footer">
+                   <ContentFooter/>
                   </div>
         </Router>
       </nav>
