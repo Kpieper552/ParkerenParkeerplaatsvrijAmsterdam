@@ -31,10 +31,9 @@ function MyAccount() {
                      <h3>{currentUser && currentUser.email}</h3>
                      <div id="parkingAdam-content-deel">
                          <h4>Met uw account heeft u toegang tot:</h4>
-                         <h4>Parkeergarages Locaties Detail Gegevens </h4>
-                         <h4>Parkeerplaatsen VRIJ Langparkeren</h4>
-                         <h4>(Vergunningshoudersregeling Gemeente Amsterdam)</h4>
-                     </div>
+                         <h3>Parkeergarages Locaties Detail Gegevens </h3>
+                         <h3>Parkeerplaatsen VRIJ Langparkeren</h3>
+                      </div>
                  </div>
                      <br/><br/>
                 <label id="parkinglocationdetails-form">

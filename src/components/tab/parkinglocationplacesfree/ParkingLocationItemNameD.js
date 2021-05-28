@@ -2,8 +2,7 @@ import React, { useState, useEffect }  from 'react';
 import axios from "axios";
 
 
-//tarieven per tarief soort maken via api opendata overheid amsterdam
-function ParkingLocationItemC() {
+function ParkingLocationItemD() {
     const [parkingLocations, setParkingLocations] = useState([]);
     const [error, setError] = useState(false);
     const [loading, toggleLoading] = useState(false);
@@ -30,17 +29,20 @@ function ParkingLocationItemC() {
             {error && (<span>error </span>)}
             {loading && (<span>Loading...</span>)}
             <div>
-                {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("Artis")).map((filteredParkingLocation, index) => (
+                {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("Museumplein")).map((filteredParkingLocation, index) => (
                     <li  key={filteredParkingLocation.properties.Name+index} >
-                            <label >{filteredParkingLocation.properties.Name}</label>
-                                |>VRIJ
-                                <label id="FreeShort">
-                                    {filteredParkingLocation.properties.FreeSpaceShort}</label>
-                        </li>
+                        <label >{filteredParkingLocation.properties.Name}</label><br/><br/>
+                        |>VRIJ Kort parkeren
+                        <label id="FreeShort">
+                            {filteredParkingLocation.properties.FreeSpaceShort}</label>
+                        |>VRIJ Lang parkeren
+                        <label id="FreeLong">
+                            {filteredParkingLocation.properties.FreeSpaceLong}</label>
+                    </li>
                 ))}
             </div>
         </div>
     );
 }
-export default ParkingLocationItemC;
+export default ParkingLocationItemD;
 

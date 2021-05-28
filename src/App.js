@@ -30,11 +30,11 @@ import Navigation from "./components/navigation/Navigation";
 import ParkingPlaatsenVrijTab from "./pages/ParkingPlaatsenVrijTab/ParkingPlaatsenVrijTab";
 import Amsterdam from "./components/fotoarea/Amsterdam";
 import CarParking from "./components/fotoarea/CarParking"
-import Parking from "./components/parking/Parking";
+import Parking from "./components/parkingchoice/Parking";
 import ContentHeader from "./components/content/ContentHeader";
 import ContentSub from "./components/content/ContentSub";
-import ParkingFirst from "./components/parking/ParkingFirst";
-import ParkingSecond from "./components/parking/ParkingSecond";
+import ParkingFirst from "./components/parkingchoice/ParkingFirst";
+import ParkingSecond from "./components/parkingchoice/ParkingSecond";
 import PrivateRoute from "./components/privateroute/PrivateRoute";
 import ContentFooter from "./components/content/ContentFooter";
 
