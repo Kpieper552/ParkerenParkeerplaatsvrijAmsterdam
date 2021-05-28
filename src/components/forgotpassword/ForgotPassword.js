@@ -43,7 +43,7 @@ function ForgotPassword() {
                 </label>
                 <br/><br/>
                 <button default={loading} id="parkinglocationdetails-form" type="submit">
-                    <label>Reset Password</label>
+                    <label>RESET PASSWORD</label>
                 </button><br/><br/>
                 <NavLink to="/login"> Login </NavLink><br/><br/>
                 <NavLink to="/registreer">  Geen Account |> Registreer</NavLink><br/><br/>

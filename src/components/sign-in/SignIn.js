@@ -51,7 +51,7 @@ function SignIn() {
                 </label>
                 <br/><br/>
                 <button default={loading} id="parkinglocationdetails-form" type="submit">
-                    <label  >Login</label>
+                    <label  >LOGIN</label>
                 </button><br/><br/>
                 <NavLink to="/passwordvergeten">  Password vergeten? </NavLink><br/><br/>
                 <NavLink to="/registreer">  Geen Account |> Registreer</NavLink><br/><br/>
