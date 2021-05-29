@@ -1,8 +1,6 @@
 import React, { useState, useEffect }  from 'react';
 import axios from "axios";
 
-
-//tarieven per tarief soort maken via api opendata overheid amsterdam
 function ParkingLocationItemFreeShort() {
     const [parkingLocations, setParkingLocations] = useState([]);
     const [error, setError] = useState(false);
@@ -15,7 +13,7 @@ function ParkingLocationItemFreeShort() {
             try {
                 const response = await axios.get('http://opd.it-t.nl/data/amsterdam/ParkingLocation.json');
                 setParkingLocations(response.data.features);
-                toggleLoading(false);
+                 toggleLoading(false);
             } catch (error) {
                 console.log(error);
 

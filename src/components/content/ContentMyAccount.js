@@ -16,10 +16,10 @@ return (
              <div id="parkingAdam-content-deel">
                 <h3>PARKEREN AMSTERDAM<br/><br/>
                     Aanrijdroutes Amsterdam<br/>
-                    Zuidwestelijke richting: A4/A5 vanuit Den Haag, Schiphol.
-                    Noordwestelijke richting: A9  vanuit Alkmaar Haarlem.
-                    Noordelijke richting: A7/A8 vanuit Hoorn/Zaanstad.
-                    Noordoostelijke richting: A6 vanuit Lelystad/Almere-Stad.
+                    Zuidwestelijke richting: A4/A5 vanuit Den Haag, Schiphol.|
+                    Noordwestelijke richting: A9  vanuit Alkmaar Haarlem.|
+                    Noordelijke richting: A7/A8 vanuit Hoorn/Zaanstad.|
+                    Noordoostelijke richting: A6 vanuit Lelystad/Almere-Stad.|
                     Zuidoostelijke richting: A1 vanuit Amersfoort/Hilversum
                     en A2 vanuit Utrecht<br/>
                 </h3>
@@ -36,11 +36,11 @@ return (
                         Bij P+R RAI kunt u maximaal 24 uur parkeren.<br/><br/>
                         U betaalt 8 euro voor de eerste 24 uur als u inrijdt op:
                         maandag tot en met vrijdag vóór 10.00 uur |
-                        en de volgende 72 uur 1 euro per 24 uur |
+                        de volgende 72 uur 1 euro per 24 uur |
                         maandag tot en met vrijdag vóór 10.00 uur |
                         Na 96 uur betaalt u het duurdere standaard parkeertarief.
                         Dit tarief verschilt per P+R-locatie. <br/><br/>
-                        De voorwaarde is naar het Centrum te gaan met het OV.<br/>
+                        De voorwaarde is naar het Centrum te gaan met het OV.
                         Kijk op locatie details uitgebreid voor meer info via
                         website parkeerlocatie.
                     </h4>
@@ -48,8 +48,15 @@ return (
              <div id="parkingAdam-content-deel">
                     <h3>| Parkeren Centrum en Noord |<br/></h3>
                     <h4>
+                        In het centrum sluiten de parkeergarages op elkaar aan door
+                        onderverdeling in gebieden.
+                        Dit zijn: Museumplein, Burgwallen, Muntplein,
+                        Centraal Station, Oostelijk Havengebied, Jordaan.
+                        Overig en Noord sluiten niet op elkaar aan.
+                        <br/><br/>
                         Locatie uitgelicht Museumplein<br/>
                         Ideaal voor een bezoek aan de musea die Amsterdam rijk is.
+                        Kijk voor meer info website parkeerlocatie.<br/><br/>
                         <ParkingLocationItemNameD/><br/>
                         <ParkingLocationDetailsSingleC/><br/>
                     </h4>
@@ -59,6 +66,8 @@ return (
                     <h4>
                         Locatie uitgelicht Arena<br/>
                         Ideaal voor een bezoek aan een voetbalwedstrijd of concert.
+                        Bij deze P+R locatie kan men gebruik maken van:
+                        Park+Ride & OV of Park & Bike
                         <ParkingLocationItemNameE/><br/>
                         <ParkingLocationDetailsSingleB/><br/>
                     </h4>
@@ -67,6 +76,8 @@ return (
                     <h3>| Parkeren Zuid en West |<br/></h3>
                     <h4>
                         Locatie uitgelicht VU UMC<br/>
+                        Drukbezochte parkeer locatie.
+                        Kijk voor meer info op de website parkeerlocatie.<br/><br/>
                         <ParkingLocationItemNameF/><br/>
                         <ParkingLocationDetailsSingleA/><br/>
                     </h4>
@@ -84,12 +95,12 @@ return (
                     <div id="parkingAdam-content-deel">
                      <h3>
                          LANG PARKEREN<br/><br/>
-                         (langer dan een dag (24 uur)<br/>
+                         Langer dan een dag (24 uur)<br/>
                          Dit is als keuze relevant als u als bezoeker
                          langer in Amsterdam verblijft dan 24 uur.
                          Of als u als inwoner van Amsterdam gebruik wilt maken
                          van de lang parkeren faciliteit in parkeergarages.
-                         Dit is een mogelijkheid voor vergunninghouders.<br/>
+                         Dit is een mogelijkheid voor vergunninghouders.
                          Kijk op locatie details uitgebreid voor de mogelijkheden
                          per locatie (website)<br/>
                     </h3>

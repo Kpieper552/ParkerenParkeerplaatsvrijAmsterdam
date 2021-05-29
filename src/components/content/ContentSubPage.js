@@ -20,11 +20,11 @@ function ContentSubPage() {
                 <br/><br/>
                     Parkeergarages locatie informatie
                <br/><br/>
-               <br/><br/>
+               <br/>
                <NavLink to="/login" activeClassName="activelink">
                <button id="button-subpage"><h6>Parkeer garages Locatie informatie uitgebreid</h6></button>
                </NavLink>
-               <br/><br/>
+               <br/><br/><br/>
             </div>
             </h5>
         </>
