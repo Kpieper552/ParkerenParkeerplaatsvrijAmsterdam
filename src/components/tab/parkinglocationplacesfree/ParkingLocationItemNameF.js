@@ -29,7 +29,7 @@ function ParkingLocationItemF() {
             {error && (<span>error </span>)}
             {loading && (<span>Loading...</span>)}
             <div>
-                {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("VUmc")).map((filteredParkingLocation, index) => (
+                {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("VU")).map((filteredParkingLocation, index) => (
                     <li  key={filteredParkingLocation.properties.Name+index} >
                         <label >{filteredParkingLocation.properties.Name}</label><br/><br/>
                         |>VRIJ Kort parkeren
@@ -37,7 +37,7 @@ function ParkingLocationItemF() {
                             {filteredParkingLocation.properties.FreeSpaceShort}</label>
                         |>VRIJ Lang parkeren
                         <label id="FreeLong">
-                            {filteredParkingLocation.properties.FreeSpaceLong}</label>
+                            {filteredParkingLocation.properties.FreeSpaceLong}</label><br/><br/>
                     </li>
                 ))}
             </div>

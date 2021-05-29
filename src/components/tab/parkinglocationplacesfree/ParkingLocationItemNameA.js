@@ -2,7 +2,6 @@ import React, { useState, useEffect }  from 'react';
 import axios from "axios";
 
 
-//tarieven per tarief soort maken via api opendata overheid amsterdam
 function ParkingLocationItemNameA() {
     const [parkingLocations, setParkingLocations] = useState([]);
     const [error, setError] = useState(false);

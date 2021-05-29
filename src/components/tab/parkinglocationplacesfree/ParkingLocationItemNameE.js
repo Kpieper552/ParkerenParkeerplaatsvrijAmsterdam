@@ -37,7 +37,7 @@ function ParkingLocationItemE() {
                             {filteredParkingLocation.properties.FreeSpaceShort}</label>
                         |>VRIJ Lang parkeren
                         <label id="FreeLong">
-                            {filteredParkingLocation.properties.FreeSpaceLong}</label>
+                            {filteredParkingLocation.properties.FreeSpaceLong}</label><br/><br/>
                     </li>
                 ))}
             </div>

@@ -25,7 +25,7 @@ function LocationDetailsSingleA() {
             <div >
                 {error && (<span>error </span>)}
                 {loading && (<span>Loading...</span>)}
-                {parkings.filter(parking => parking.parkeerlocatie.title.includes("VUmc")).map((filteredParking, index) => {
+                {parkings.filter(parking => parking.parkeerlocatie.title.includes("VU")).map((filteredParking, index) => {
                     return (
                         <li id="parkinglocationdetails" key={filteredParking.parkeerlocatie.adres+index}>
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />

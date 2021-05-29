@@ -25,9 +25,63 @@ function LocationDetailsCentrum() {
             <div >
                 {error && (<span>error </span>)}
                 {loading && (<span>Loading...</span>)}
+                {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1071AP")).map((filteredParking, index) => {
+                     return (
+                     <li id="parkinglocationdetails" key={filteredParking.parkeerlocatie.adres+index}>
+                         <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
+                         <label id="MoreInfo">
+                         {filteredParking.parkeerlocatie.adres} |
+                         {filteredParking.parkeerlocatie.postcode} |
+                         {filteredParking.parkeerlocatie.woonplaats}<br /><br />
+                        </label>
+                         <label id="MoreInfo">
+                         {/*OPMERKINGEN BLOK-------------------- */}
+                         {filteredParking.parkeerlocatie.opmerkingen}
+                        {filteredParking.parkeerlocatie.type}<br /><br />
+                         {/*OPENBAAR VERVOER BLOK-------------------- */}
+                        </label>
+                         </li>
+                       )
+                    })}
+                    {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1072AT")).map((filteredParking, index) => {
+                        return (
+                        <li id="parkinglocationdetails" key={filteredParking.parkeerlocatie.adres+index}>
+                            <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
+                            <label id="MoreInfo">
+                            {filteredParking.parkeerlocatie.adres} |
+                            {filteredParking.parkeerlocatie.postcode} |
+                            {filteredParking.parkeerlocatie.woonplaats}<br /><br />
+                            </label>
+                            <label id="MoreInfo">
+                            {/*OPMERKINGEN BLOK-------------------- */}
+                            {filteredParking.parkeerlocatie.opmerkingen}
+                            {filteredParking.parkeerlocatie.type}<br /><br />
+                            {/*OPENBAAR VERVOER BLOK-------------------- */}
+                            </label>
+                        </li>
+                        )
+                    })}
+                    {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1072NV")).map((filteredParking, index) => {
+                        return (
+                        <li id="parkinglocationdetails" key={filteredParking.parkeerlocatie.adres+index}>
+                            <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
+                            <label id="MoreInfo">
+                            {filteredParking.parkeerlocatie.adres} |
+                            {filteredParking.parkeerlocatie.postcode} |
+                            {filteredParking.parkeerlocatie.woonplaats}<br /><br />
+                            </label>
+                            <label id="MoreInfo">
+                            {/*OPMERKINGEN BLOK-------------------- */}
+                            {filteredParking.parkeerlocatie.opmerkingen}
+                            {filteredParking.parkeerlocatie.type}<br /><br />
+                            {/*OPENBAAR VERVOER BLOK-------------------- */}
+                            </label>
+                            </li>
+                        )
+                    })}
                 {parkings.filter(parking => parking.parkeerlocatie.postcode.includes("1011 MP")).map((filteredParking, index) => {
                     return (
-                        <li id="parkinglocationdetails" key={filteredParking.parkeerlocatie.adres+index}>
+                    <li id="parkinglocationdetails" key={filteredParking.parkeerlocatie.adres+index}>
                             <label id="Name">{filteredParking.parkeerlocatie.title}</label><br />
                             <label id="MoreInfo">
                             {filteredParking.parkeerlocatie.adres} |
