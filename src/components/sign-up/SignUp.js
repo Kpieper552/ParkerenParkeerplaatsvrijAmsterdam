@@ -23,7 +23,6 @@ function SignUp() {
                 setError("")
                 setLoading(true)
                 await signup(emailRef.current.value, passwordRef.current.value)
-                //console.log(signup, "hallo je bent signup");
                 history.push("/login")
             } catch {
                 setLoading(false)

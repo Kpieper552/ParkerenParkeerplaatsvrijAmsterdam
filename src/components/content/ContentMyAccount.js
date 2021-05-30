@@ -1,11 +1,5 @@
 import React from 'react';
 import '../../App.css';
-import ParkingLocationItemNameD from "../tab/parkinglocationplacesfree/ParkingLocationItemNameD";
-import ParkingLocationDetailsSingleC from "../tab/parkinglocationdetails/ParkingLocationDetailsSingleC";
-import ParkingLocationItemNameE from "../tab/parkinglocationplacesfree/ParkingLocationItemNameE";
-import ParkingLocationDetailsSingleA from "../tab/parkinglocationdetails/ParkingLocationDetailsSingleA";
-import ParkingLocationDetailsSingleB from "../tab/parkinglocationdetails/ParkingLocationDetailsSingleB";
-import ParkingLocationItemNameF from "../tab/parkinglocationplacesfree/ParkingLocationItemNameF";
 
 
 function ContentMyAccount() {
@@ -25,7 +19,7 @@ return (
                 </h3>
              </div>
              <div id="parkingAdam-content-deel">
-                 <h3>| Park & Ride |<br/></h3>
+                 <h3>Park & Ride <br/></h3>
                  <h4>
                         Dit zijn goed bereikbare parkeerplaatsen aan de rand van de stad
                         gelang naar de richting waar je vandaan komt. Voordeel P+R is voordelig parkeren<br/><br/>
@@ -41,55 +35,29 @@ return (
                         Na 96 uur betaalt u het duurdere standaard parkeertarief.
                         Dit tarief verschilt per P+R-locatie. <br/><br/>
                         De voorwaarde is naar het Centrum te gaan met het OV.
-                        Kijk op locatie details uitgebreid voor meer info via
+                        Kijk op locatie details informatie voor meer info via
                         website parkeerlocatie.
                     </h4>
              </div>
              <div id="parkingAdam-content-deel">
-                    <h3>| Parkeren Centrum en Noord |<br/></h3>
+                    <h3>Parkeren Centrum<br/></h3>
                     <h4>
                         In het centrum sluiten de parkeergarages op elkaar aan door
                         onderverdeling in gebieden.
                         Dit zijn: Museumplein, Burgwallen, Muntplein,
                         Centraal Station, Oostelijk Havengebied, Jordaan.
-                        Overig en Noord sluiten niet op elkaar aan.
+                        Parkeergebied Overig sluit niet op elkaar aan.
                         <br/><br/>
-                        Locatie uitgelicht Museumplein<br/>
-                        Ideaal voor een bezoek aan de musea die Amsterdam rijk is.
-                        Kijk voor meer info website parkeerlocatie.<br/><br/>
-                        <ParkingLocationItemNameD/><br/>
-                        <ParkingLocationDetailsSingleC/><br/>
                     </h4>
-              </div>
-              <div id="parkingAdam-content-deel">
-                    <h3>| Parkeren Zuidoost en Oost |<br/></h3>
-                    <h4>
-                        Locatie uitgelicht Arena<br/>
-                        Ideaal voor een bezoek aan een voetbalwedstrijd of concert.
-                        Bij deze P+R locatie kan men gebruik maken van:
-                        Park+Ride & OV of Park & Bike
-                        <ParkingLocationItemNameE/><br/>
-                        <ParkingLocationDetailsSingleB/><br/>
-                    </h4>
-               </div>
-               <div id="parkingAdam-content-deel">
-                    <h3>| Parkeren Zuid en West |<br/></h3>
-                    <h4>
-                        Locatie uitgelicht VU UMC<br/>
-                        Drukbezochte parkeer locatie.
-                        Kijk voor meer info op de website parkeerlocatie.<br/><br/>
-                        <ParkingLocationItemNameF/><br/>
-                        <ParkingLocationDetailsSingleA/><br/>
-                    </h4>
-               </div>
-               <div id="parkingAdam-content-deel">
-                   <h3>| Park & Bike |<br/></h3>
+                </div>
+                <div id="parkingAdam-content-deel">
+                   <h3>Park & Bike<br/></h3>
                    <h4>
                          Parkeergarage locaties die de mogelijkheid bieden om een fiets te huren
                          om in de centrumring te gebruiken. Door deze combinatie kun je vaak voordeliger of gratis parkeren.
                          In het centrum zijn hiervoor fiets parkeerlocaties aanwezig die gratis zijn.
                          Per Parkeer locatie (indien faciliteit aanwezig) kunnen de voorwaarden verschillen.
-                         Kijk op locatie details uitgebreid voor meer info via website parkeerlocatie.
+                         Kijk op locatie details informatie voor meer info via website parkeerlocatie.
                      </h4>
                     </div>
                     <div id="parkingAdam-content-deel">
@@ -101,7 +69,7 @@ return (
                          Of als u als inwoner van Amsterdam gebruik wilt maken
                          van de lang parkeren faciliteit in parkeergarages.
                          Dit is een mogelijkheid voor vergunninghouders.
-                         Kijk op locatie details uitgebreid voor de mogelijkheden
+                         Kijk op locatie details informatie voor de mogelijkheden
                          per locatie (website)<br/>
                     </h3>
                  </div>

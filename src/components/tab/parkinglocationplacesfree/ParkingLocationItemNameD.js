@@ -16,8 +16,6 @@ function ParkingLocationItemD() {
                 setParkingLocations(response.data.features);
                 toggleLoading(false);
             } catch (error) {
-                console.log(error);
-
                 setError(true);
                 toggleLoading(false);
             }

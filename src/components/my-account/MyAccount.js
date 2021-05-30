@@ -12,13 +12,10 @@ function MyAccount() {
         setError("")
         try {
             await logout()
-            console.log(logout, "je bent uitgelogd van my account");
             history.push("/login")
-            //localStorage.clear()
         } catch {
             setError("failed to logout")
         }
-        console.log("ik ben uitgelogd")
     }
     return (
             <>

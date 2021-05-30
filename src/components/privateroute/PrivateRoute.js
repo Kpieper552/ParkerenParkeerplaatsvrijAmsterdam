@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../../App.css';
 import { useAuth } from '../../context/SignupContext';
 import { Route, Switch, Redirect } from 'react-router-dom';
@@ -14,19 +14,27 @@ function PrivateRoute({ children, authenticated, ...rest }
     ) {
     const { currentUser } = useAuth()
 
+    useEffect(() => {
+        const timer = setTimeout(() => {
+
+        }, 1000);
+        return () => clearTimeout(timer);
+    }, []);
+
     return    (
         <Route
             {...rest}>
             {currentUser ? children: <Redirect to="/login"/>}
             {authenticated === true ? currentUser :
                 <Switch><Route to="account">
-                    <MyAccount/> <ContentMyAccount/>
+                    <MyAccount/>
                   {/*TAB -------------------- */}
                 <div className="parkingAdam-content">
+                    <ContentMyAccount/>
                     <TabBarMenuAccount/>
                     <div className="tab-wrapper">
                         <Switch>
-                            <Route exact path="/account">
+                            <Route exact path="/account/accountparkingamsterdam">
                                 <AccountParkingAmsterdam/>
                             </Route>
                             <Route path="/account/AccountParkingAmsterdamFreePlaces">
@@ -41,5 +49,3 @@ function PrivateRoute({ children, authenticated, ...rest }
 }
 
 export default PrivateRoute
-//   {authenticated === true ? currentUser : <Switch><Route to="account"><MyAccount/></Route></Switch>}
-//{currentUser ? childern : <Redirect to="/login"/>}

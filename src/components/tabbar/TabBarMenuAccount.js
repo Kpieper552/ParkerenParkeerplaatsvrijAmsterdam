@@ -9,7 +9,7 @@ function TabBarMenuAccount() {
             <ul>
 
                 <li>
-                    <NavLink activeClassName="active" to="/Account">
+                    <NavLink activeClassName="active" to="/Account/AccountParkingAmsterdam">
                         Parkeren Amsterdam
                     </NavLink>
                 </li>

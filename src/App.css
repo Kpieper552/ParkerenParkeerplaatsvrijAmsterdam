@@ -79,11 +79,10 @@ button {
     display: flex;
     width: fit-content;
     height: 100px;
-    margin-top: 200px;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 10px;
-    font-size: 14px;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 3px;
+    font-size: 10px;
     color: lightgrey;
 }
 .tab-wrapper {
@@ -416,6 +415,7 @@ h5 {
     display: inline-block;
     background-color: #696969;
     color:lightgrey;
+    font-size: 10px;
     width: 100%;
     height: fit-content;
     align-content: center;
