@@ -21,11 +21,10 @@ function SignIn() {
             setLoading(true)
             setLoading(false)
             await login(emailRef.current.value, passwordRef.current.value)
-            console.log(login, "je wordt doorgezonden naar my account");
             history.push("/account")
         } catch {
             setLoading(false)
-            setError("login is niet gelukt")
+            setError("login is niet gelukt - password dient te bestaan uit 7 karakters")
         }
 
     }
