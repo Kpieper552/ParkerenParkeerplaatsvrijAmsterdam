@@ -24,7 +24,7 @@ function SignIn() {
             history.push("/account")
         } catch {
             setLoading(false)
-            setError("login is niet gelukt - password dient te bestaan uit 7 karakters")
+            setError("login is niet gelukt | check emailadres | check password - dient te bestaan uit 7 karakters")
         }
 
     }
