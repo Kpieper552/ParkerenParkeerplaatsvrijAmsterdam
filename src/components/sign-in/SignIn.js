@@ -15,7 +15,6 @@ function SignIn() {
 
     async function handleSubmit(e) {
         e.preventDefault()
-
         try {
             setError("")
             setLoading(true)
@@ -26,9 +25,7 @@ function SignIn() {
             setLoading(false)
             setError("login is niet gelukt | check emailadres | check password - dient te bestaan uit 7 karakters")
         }
-
     }
-
 
     return (
         <>
