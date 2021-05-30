@@ -23,14 +23,15 @@ De API datasets die voor deze applicatie gebruikt zijn, zijn afkomstig van OPEND
 2.`npm install router dom`
 3.`npm install react hook form`
 4.`npm install axios`
-5. `npm install --save firebase firebase`
-## De applicatie omvat een
+5. `npm install --save firebase`
+## Authenticatie 
 - `firebase base backend`
 - `Login firebase`
    `https://console.firebase.google.com/` 
    `instructies staan vermeld in de installatiehandleiding`
 - `Aanmaak tijdelijk emailadres + inbox voor reset password`
    `https://temp-mail.org/en/`
+## API DATA
 - `API Opendata overheid 2 datasets` 
    `Toegang DATA aanmelding via CORS - set Toggle ON
    https://mybrowseraddon.com/access-control-allow-origin.html`
