@@ -1,17 +1,16 @@
 import React from 'react';
-import '../../App.css';
+import '../FietsParkeerPlekTab/FietsParkeerPlek.css';
 import Tile from "../../components/tile/Tile";
-import LocationDetailsFiets from "../../components/tab/filter/LocationDetailsFiets";
+import LocationDetailsFiets from "../../components/tab/filterparking/LocationDetailsFiets";
 
 function FietsParkeerPlekTab() {
     return (
         <>
-            <div id="fiets-details"><h2>Fiets Parkeerplekken | Locatie gegevens</h2>
+            <div id="fiets-location-details"><h2>Fiets Parkeerplekken | Locatie gegevens</h2>
                 <div id="tilebox">
                     <Tile children={<LocationDetailsFiets />} />
                 </div>
             </div>
-
         </>
     );
 }

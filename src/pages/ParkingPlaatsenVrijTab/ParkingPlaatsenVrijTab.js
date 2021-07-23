@@ -1,5 +1,5 @@
 import React  from 'react';
-import '../../App.css';
+import '../ParkingPlaatsenVrijTab/ParkingPlaatsenVrijTab.css';
 import Tile from "../../components/tile/Tile";
 import ParkingLocationItemFreeShort from "../../components/tab/parkinglocationplacesfree/ParkingLocationItemFreeShort";
 

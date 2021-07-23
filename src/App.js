@@ -7,7 +7,7 @@ import {
 import './App.css';
 import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
-import Passwordvergeten from "./pages/passwordvergeten/Passwordvergeten";
+import Passwordvergeten from "./pages/Passwordvergeten/Passwordvergeten";
 import Registreer from "./pages/Registreer/Registreer";
 import ParkerenAmsterdamStadsdelenOostZuidOost from "./pages/ParkerenAmsterdam StadsdelenOostZuidOoost/Parkeren-Amsterdam-Stadsdelen-Oost-ZuidOost";
 import ParkerenAmsterdamCentrum from "./pages/ParkerenAmsterdam Centrum/Parkeren-Amsterdam-Centrum";
@@ -26,18 +26,16 @@ import ParkingCentrumTab from "./pages/ParkingCentrumTab/ParkingCentrumTab";
 import TabBarMenuSecondPart from "./components/tabbar/TabBarMenuSecondPart";
 import ParkingZuidTab from "./pages/ParkingZuidTab/ParkingZuidTab";
 import ParkingWestTab from "./pages/ParkingWestTab/ParkingWestTab";
-import Navigation from "./components/navigation/Navigation";
 import ParkingPlaatsenVrijTab from "./pages/ParkingPlaatsenVrijTab/ParkingPlaatsenVrijTab";
 import Amsterdam from "./components/fotoarea/Amsterdam";
 import CarParking from "./components/fotoarea/CarParking"
-import Parking from "./components/parkingchoice/Parking";
+import ParkingChoiceStaytime from "./components/parkingchoice/ParkingChoiceStaytime";
 import ContentHeader from "./components/content/ContentHeader";
 import ContentSub from "./components/content/ContentSub";
-import ParkingFirst from "./components/parkingchoice/ParkingFirst";
-import ParkingSecond from "./components/parkingchoice/ParkingSecond";
+import ParkingChoiceLocationtype from "./components/parkingchoice/ParkingChoiceLocationtype";
+import ParkingSecond from "./components/parkingchoice/ParkingChoiceLocationinfo";
 import PrivateRoute from "./components/privateroute/PrivateRoute";
 import ContentFooter from "./components/content/ContentFooter";
-
 
 function App() {
     const [error, setError] = useState(false);
@@ -62,8 +60,9 @@ function App() {
       <>
          {error && (<span>error </span>)}
             {loading && (<span>loading...</span>)}
-          <nav >
+          <nav>
               <Router>
+                  <header>
                   <div className="parkingAdam-header">
                       <Amsterdam/>
                   </div>
@@ -71,10 +70,10 @@ function App() {
                       <ContentHeader/>
                   </div>
                   <div className="parkingAdam-container">
-                       <Parking/>
+                       <ParkingChoiceStaytime/>
                   </div>
                   <div className="parkingAdam-container">
-                      <ParkingFirst/>
+                      <ParkingChoiceLocationtype/>
                   </div>
                   <div className="parkingAdam-container">
                       <ParkingSecond/>
@@ -82,6 +81,7 @@ function App() {
                   <div className="parkingAdam-container">
                       <ContentSub/>
                      </div>
+                  </header>
             {/*NAVIGATION-------------------- */}
             <Switch>
                 {/*PAGE -------------------- */}
@@ -206,15 +206,17 @@ function App() {
                 <PrivateRoute path="/account" >
                 </PrivateRoute>
              </Switch>
-                  <div  className="parkingAdam-header">
-                      <Navigation />
+                  <footer>
+                  <div className="parkingAdam-container">
+                      <ContentSub/>
                   </div>
                   <div >
                       <CarParking/>
                   </div>
-                  <div className="parkingAdam-footer">
-                   <ContentFooter/>
-                  </div>
+                      <div className="parkingAdam-footer">
+                          <ContentFooter/>
+                      </div>
+                  </footer>
         </Router>
       </nav>
     </>

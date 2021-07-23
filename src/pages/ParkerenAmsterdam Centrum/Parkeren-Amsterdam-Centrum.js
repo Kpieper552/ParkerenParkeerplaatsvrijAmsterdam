@@ -1,8 +1,8 @@
 import React from 'react';
-import '../../App.css';
+import '../ParkerenAmsterdam Centrum/Parkeren-Amsterdam-Centrum.css';
 import Tile from "../../components/tile/Tile";
-import ParkingLocationCentrum from "../../components/tab/filter/ParkingLocationCentrum";
-import ParkingLocationCentrumPart from "../../components/tab/filter/ParkingLocationCentrumPart";
+import ParkingLocationCentrum from "../../components/tab/filterparking/ParkingLocationCentrum";
+import ParkingLocationCentrumPart from "../../components/tab/filterparking/ParkingLocationCentrumPart";
 import carparking from "../../assets/carparking.jpg";
 import {NavLink} from "react-router-dom";
 import ContentSubPage from "../../components/content/ContentSubPage";

@@ -1,0 +1,20 @@
+#zuid-location-details
+{
+    display: inline-block;
+    list-style-type: none;
+    width: fit-content;
+    background-color: darkslategrey;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 10px;
+}
+
+#tilebox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+h2 {
+    margin-left: 25px;
+}

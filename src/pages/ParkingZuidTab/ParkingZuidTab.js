@@ -1,14 +1,14 @@
 import React from 'react';
-import '../../App.css';
+import '../ParkingZuidTab/ParkingZuidTab.css';
 import Tile from "../../components/tile/Tile";
-import LocationDetailsZuid from "../../components/tab/filter/LocationDetailsZuid";
+import LocationDetailsZuid from "../../components/tab/filterparking/LocationDetailsZuid";
 
 
 function ParkingZuidTab() {
     return (
         <>
-            <div id="zuid-details"><h2>Amsterdam Zuid Parkeergarages | Locatie gegevens</h2>
-                <div id="tilebox-tab">
+            <div id="zuid-location-details"><h2>Amsterdam Zuid Parkeergarages | Locatie gegevens</h2>
+                <div id="tilebox">
                     <Tile children={<LocationDetailsZuid />} />
                 </div>
             </div>

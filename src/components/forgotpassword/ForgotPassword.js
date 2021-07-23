@@ -1,5 +1,5 @@
 import React, { useState, useRef,  } from 'react';
-import '../../App.css';
+import '../forgotpassword/ForgotPassword.css';
 import { useAuth } from '../../context/SignupContext';
 import { NavLink } from 'react-router-dom';
 
@@ -27,22 +27,20 @@ function ForgotPassword() {
         setLoading(false)
     }
 
-
     return (
         <>
             {error && (error) }
             {loading && loading}
             {message && (message)}
-            <form id="parkingAdam-form-deel" onSubmit={handleSubmit}>
+            <form id="parkingAdam-form-container" onSubmit={handleSubmit}>
                 <br/><br/>
-                <label id="parkinglocation-form">
-                    <h2>Password Reset
-                        Email</h2>
+                <h2>Password Reset Email</h2>
+                <label id="parkingAdam-form-label">
                     <input type="text" ref={emailRef} required
                            name="email" placeholder="email"/>
                 </label>
                 <br/><br/>
-                <button default={loading} id="parkinglocationdetails-form" type="submit">
+                <button default={loading} id="parkingAdam-form-button" type="submit">
                     <label>RESET PASSWORD</label>
                 </button><br/><br/>
                 <NavLink to="/login"> Login </NavLink><br/><br/>

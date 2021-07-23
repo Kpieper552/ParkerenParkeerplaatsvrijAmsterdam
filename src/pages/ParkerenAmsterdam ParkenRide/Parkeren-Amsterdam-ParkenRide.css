@@ -1,0 +1,22 @@
+#parkandridepage-weg {
+    display: inline-block;
+    background-color: dimgray;
+    width: fit-content;
+    min-height: 400px;
+    max-width: 350px;
+    align-content: space-around;
+    list-style-type: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 10px;
+    border-right: 8px solid white;
+    border-left: 8px solid white;
+    box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+#tilebox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}

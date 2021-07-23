@@ -1,7 +1,8 @@
 import React, { useState, useRef } from 'react';
-import '../../App.css';
 import { useAuth } from '../../context/SignupContext';
 import { useHistory, NavLink } from 'react-router-dom';
+import '../sign-up/SignUp.css';
+
 
 function SignUp() {
     const emailRef = useRef()
@@ -34,28 +35,27 @@ function SignUp() {
             <>
             {error && (error) }
             {loading && loading}
-             <form id="parkingAdam-form-deel" onSubmit={handleSubmit}>
+             <form id="parkingAdam-form-container" onSubmit={handleSubmit}>
                  <br/><br/>
-                        <label id="parkinglocation-form">
-                            <h2>Registeer
-                            Email</h2>
-                            <input type="text" ref={emailRef} required
-                                   name="email" placeholder="email"/>
-                        </label>
-                     <br/><br/>
-                        <label id="parkinglocation-form">
-                            <h2>Password</h2>
+                 <h2>Registeer Email</h2>
+                 <label id="parkingAdam-form-label">
+                     <input type="text" ref={emailRef} required
+                            name="email" placeholder="email"/>
+                 </label>
+                 <br/><br/>
+                 <h2>Password</h2>
+                        <label id="parkingAdam-form-label">
                             <input type="text"  ref={passwordRef} required
                                    name="password" placeholder="wachtwoord"/>
                         </label>
                      <br/><br/>
-                        <label id="parkinglocation-form">
-                            <h2>Confirm Password</h2>
+                 <h2>Confirm Password</h2>
+                        <label id="parkingAdam-form-label">
                             <input type="text" ref={passwordConfirmRef} required
                                    name="password" placeholder="bevestig wachtwoord" />
                         </label>
                      <br/><br/>
-                        <button default={loading} id="parkinglocationdetails-form" type="submit">
+                        <button default={loading} id="parkingAdam-form-button" type="submit">
                             <label  >REGISTREER</label>
                         </button><br/><br/>
                  <NavLink to="/login">  Al een Account |> Ga naar Login</NavLink><br/><br/>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect }  from 'react';
 import axios from "axios";
+import "../parkinglocationplacesfree/ParkingLocationPlacesFree.css";
 
 function ParkingLocationItemFreeShort() {
     const [parkingLocations, setParkingLocations] = useState([]);
@@ -27,7 +28,7 @@ return (
         <div>
             {error && (<span>error </span>)}
             {loading && (<span>Loading...</span>)}
-            <div><h2>Parkeerplaatsen VRIJ Parkeergarages Amsterdam</h2>
+            <div><h2>Parkeerplaatsen VRIJ Parkeergarages Amsterdam Kort Parkeren</h2>
                 {parkingLocations && parkingLocations.map((parkingLocation, index) => {
                 return (
                         <li id="parkinglocationdetails" key={parkingLocation.properties.Name+index} >

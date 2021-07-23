@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import '../../App.css';
+import '../privateroute/PrivateRoute.css';
 import { useAuth } from '../../context/SignupContext';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import MyAccount from "../my-account/MyAccount";
@@ -29,7 +29,7 @@ function PrivateRoute({ children, authenticated, ...rest }
                 <Switch><Route to="account">
                     <MyAccount/>
                   {/*TAB -------------------- */}
-                <div className="parkingAdam-content">
+                <div>
                     <ContentMyAccount/>
                     <TabBarMenuAccount/>
                     <div className="tab-wrapper">

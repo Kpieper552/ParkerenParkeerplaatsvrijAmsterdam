@@ -1,14 +1,11 @@
 import React from 'react';
-import '../../App.css';
+import '../ParkerenAmsterdam ParkenRide/Parkeren-Amsterdam-ParkenRide.css';
 import Tile from "../../components/tile/Tile";
-import ParkingLocationParkAndRide from "../../components/tab/filter/ParkingLocationParkAndRide";
+import ParkingLocationParkAndRide from "../../components/tab/filterparking/ParkingLocationParkAndRide";
 import carparking from "../../assets/carparking.jpg";
-import ParkingLocationParkAndRidePart from "../../components/tab/filter/ParkingLocationParkandRidePart";
+import ParkingLocationParkAndRidePart from "../../components/tab/filterparking/ParkingLocationParkandRidePart";
 import {NavLink} from "react-router-dom";
 import ContentSubPage from "../../components/content/ContentSubPage";
-
-
-
 
 
 
@@ -21,14 +18,14 @@ function ParkerenAmsterdamParkenRide() {
                 <Tile titlearea={"Parkeerplaasten VRIJ "}/>
                 <div id="tilebox">
                     <Tile>
-                        <div id="pr-Page-weg"> <br/><br/>
+                        <div id="parkandridepage-weg"> <br/><br/>
                             <ParkingLocationParkAndRide/>
                             <NavLink to="/home"> |> Home</NavLink><br/>
                         </div><br/>
-                        <div id="pr-Page-weg">
+                        <div id="parkandridepage-weg">
                             <div><ContentSubPage/></div><br/>
                         </div>
-                        <div id="pr-Page-weg"> <br/><br/>
+                        <div id="parkandridepage-weg"> <br/><br/>
                             <ParkingLocationParkAndRidePart/>
                             <NavLink to="/home"> |> Home</NavLink><br/>
                         </div>

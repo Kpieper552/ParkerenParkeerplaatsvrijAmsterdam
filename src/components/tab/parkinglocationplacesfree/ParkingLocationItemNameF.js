@@ -1,6 +1,6 @@
 import React, { useState, useEffect }  from 'react';
 import axios from "axios";
-
+import "../parkinglocationplacesfree/ParkingLocationPlacesFree.css";
 
 function ParkingLocationItemF() {
     const [parkingLocations, setParkingLocations] = useState([]);

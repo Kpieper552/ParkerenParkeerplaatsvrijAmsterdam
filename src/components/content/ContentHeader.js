@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../App.css';
+import '../content/Content.css';
 
 
 
@@ -8,7 +8,7 @@ function ContentHeader() {
 
     return (
         <>
-            <div id="parkingAdam-content-deel">
+            <div id="parkingAdam-content-box">
                 <h4>PARKEREN PARKEERPLAATS VRIJ AMSTERDAM</h4>
             </div>
         </>

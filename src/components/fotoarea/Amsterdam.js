@@ -1,6 +1,5 @@
 import React from 'react';
-//import '../../App.css';
-import Tile from "../../components/tile/Tile";
+import Tile from "../tile/Tile";
 import amsterdam from "../../assets/amsterdam.png";
 
 
