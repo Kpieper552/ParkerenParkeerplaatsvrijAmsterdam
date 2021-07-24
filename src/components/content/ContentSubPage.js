@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../App.css';
+import '../content/Content.css';
 import {NavLink} from "react-router-dom";
 
 
@@ -10,7 +10,7 @@ function ContentSubPage() {
     return (
         <>
             <h5>
-            <div id="parkingAdam-content-deel">
+            <div id="parkingAdam-content-box">
                <br/><br/>
                     Parkeerplaats VRIJ Kort Parkeren (per uur/dag 0-24 uur)
                <br/><br/>
@@ -18,11 +18,11 @@ function ContentSubPage() {
                     Actueel beschikbare plaatsen parkeergarages Amsterdam
                <br/><br/>
                 <br/><br/>
-                    Parkeergarages locatie informatie
+                    Parkeer locatie's informatie
                <br/><br/>
                <br/>
-               <NavLink to="/login" activeClassName="activelink">
-               <button id="button-subpage"><h6>Parkeer garages Locatie informatie uitgebreid</h6></button>
+               <NavLink to="/account" activeClassName="activelink">
+               <button id="button-subpage"><h6>Parkeer locatie's informatie uitgebreid</h6></button>
                </NavLink>
                <br/><br/><br/>
             </div>

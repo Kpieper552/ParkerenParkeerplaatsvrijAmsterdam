@@ -8,12 +8,12 @@ function TabBarMenuFirst() {
             <ul>
                 <li>
                     <NavLink activeClassName="active" to="/Parkeren-Amsterdam-Centrum">
-                         Parkeren Centrum en Noord
+                         Parkeren Centrum en Noord locatie's
                     </NavLink>
                 </li>
                 <li>
                 <NavLink activeClassName="active" to="/FietsParkeerPlekTab">
-                         Fiets parkeerplekken
+                         Fiets parkeerplekken locatie's
                 </NavLink>
             </li>
             </ul>

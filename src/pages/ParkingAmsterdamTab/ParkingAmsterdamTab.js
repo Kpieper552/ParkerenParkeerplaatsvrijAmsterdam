@@ -4,10 +4,6 @@ import Tile from "../../components/tile/Tile";
 import ParkingLocationDetailsAdres from "../../components/tab/parkinglocationdetails/ParkingLocationDetailsAdres";
 
 
-
-
-
-
 function ParkingAmsterdamTab() {
 
     return (
@@ -25,4 +21,3 @@ function ParkingAmsterdamTab() {
 export default ParkingAmsterdamTab;
 
 
-//                        <Tile img={kaart} imgDescription={kaart}/>

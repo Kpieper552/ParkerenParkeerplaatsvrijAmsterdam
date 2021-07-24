@@ -1,8 +1,6 @@
 import React from 'react';
-import '../../App.css';
+import '../Account/Account.css';
 import MyAccount from "../../components/my-account/MyAccount";
-
-
 
 
 function Account() {

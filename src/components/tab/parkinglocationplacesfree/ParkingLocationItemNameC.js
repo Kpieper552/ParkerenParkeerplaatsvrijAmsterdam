@@ -1,8 +1,8 @@
 import React, { useState, useEffect }  from 'react';
 import axios from "axios";
+import "../parkinglocationplacesfree/ParkingLocationPlacesFree.css";
 
 
-//tarieven per tarief soort maken via api opendata overheid amsterdam
 function ParkingLocationItemC() {
     const [parkingLocations, setParkingLocations] = useState([]);
     const [error, setError] = useState(false);

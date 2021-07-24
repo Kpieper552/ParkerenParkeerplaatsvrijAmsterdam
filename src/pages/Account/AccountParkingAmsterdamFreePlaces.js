@@ -1,5 +1,5 @@
 import React  from 'react';
-import '../../App.css';
+import './Account.css';
 import Tile from "../../components/tile/Tile";
 import ParkingLocationItemFreeLong from "../../components/tab/parkinglocationplacesfree/ParkingLocationItemFreeLong";
 
@@ -8,16 +8,13 @@ import ParkingLocationItemFreeLong from "../../components/tab/parkinglocationpla
 function AccountParkingAmsterdamFreePlaces() {
     return (
         <>
-            <div>
-                <div>
-                    <Tile>
-                        <div id="parkingAdam-weg" >
-                            <ParkingLocationItemFreeLong/>
-                            <br/><br/>
-                        </div>
-                    </Tile>
-                </div>
-            </div>
+                    <div>
+                        <Tile>
+                            <div id="parkingAdam-weg">
+                               <ParkingLocationItemFreeLong/>
+                            </div>
+                        </Tile>
+                    </div>
         </>
     );
 }

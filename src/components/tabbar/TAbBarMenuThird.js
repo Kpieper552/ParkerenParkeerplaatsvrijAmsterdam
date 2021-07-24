@@ -8,12 +8,12 @@ function TabBarMenuThird() {
             <ul>
                 <li>
                     <NavLink activeClassName="active" to="/Parkeren-Amsterdam-ParkenRide">
-                        Park & Ride
+                        Park & Ride locatie's
                     </NavLink>
                 </li>
                 <li>
                     <NavLink activeClassName="active" to="/FietsParkeerPlekTab">
-                        Fiets parkeerplekken
+                        Fiets parkeerplekken locatie's
                     </NavLink>
                 </li>
             </ul>

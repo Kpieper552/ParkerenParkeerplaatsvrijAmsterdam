@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../App.css';
+import '../content/Content.css';
 import ParkingLocationItemNameA from "../tab/parkinglocationplacesfree/ParkingLocationItemNameA";
 import ParkingLocationItemNameB from "../tab/parkinglocationplacesfree/ParkingLocationItemNameB";
 import ParkingLocationItemNameC from "../tab/parkinglocationplacesfree/ParkingLocationItemNameC";
@@ -11,9 +11,9 @@ function ContentPage() {
 
     return (
         <>
-            <div id="parkingAdam-content-deel"><br/>
+            <div id="parkingAdam-content-box"><br/>
                 <h3>PARKEREN AMSTERDAM PER LOCATIE</h3>
-                <div id="parkingAdam-content-deel"><br/>
+                <div id="parkingAdam-content-box"><br/>
                 <h4>
                     | TIP 1 | "Dagje winkelen in Amsterdam?" |-> Check Parkeerplaats VRIJ<br/><br/>
                 <ParkingLocationItemNameA/><br/>

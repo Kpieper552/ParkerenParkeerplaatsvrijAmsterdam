@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../App.css';
+import './Account.css';
 import Tile from "../../components/tile/Tile";
 import ParkingLocationDetails from "../../components/tab/parkinglocationdetails/ParkingLocationDetails";
 

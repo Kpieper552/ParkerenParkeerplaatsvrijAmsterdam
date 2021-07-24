@@ -7,7 +7,7 @@ body {
     justify-content: center;
     align-items: center;
 }}
-{/*APP.JS ------------------- */}
+
 .parkingAdam-header {
     overflow: hidden;
     position: fixed;
@@ -16,7 +16,6 @@ body {
     display: flex;
     width: 100%;
     justify-content: flex-end;
-
 }
 .parkingAdam-footer {
     overflow: hidden;
@@ -26,7 +25,6 @@ body {
     display: flex;
     width: 100%;
     justify-content: flex-end;
-
 }
 .parkingAdam-container {
     position: relative;
@@ -37,7 +35,7 @@ body {
     background-color: transparent;
     border-radius: 2px;
 }
-{/*NAVIGATIE ------------------- */}
+
 nav {
     background-color: #e2c681;
     border-radius: 5px;
@@ -46,44 +44,13 @@ nav {
     box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0 16px;
     display: flex;
     justify-content: space-between;
     flex-basis: 300px;
     flex-grow: 0;
     flex-shrink: 0;
-}
-button {
-    background-color: linen;
-    display: flex;
-    width: 40px;
-    height: 40px;
-    font-size: 8px;
-    color: firebrick;
-}
-#button-parking {
-    background-color: linen;
-    display: flex;
-    min-width: 140px;
-    flex-basis: 200px;
-    flex-shrink: 0;
-    height: 60px;
-    margin-right: 10px;
-    margin-left: 10px;
-    font-size: 10px;
-    color: firebrick;
-}
-#button-subpage {
-    background-color: dimgrey;
-    display: flex;
-    width: fit-content;
-    height: 100px;
-    margin-left: 3px;
-    margin-right: 3px;
-    padding: 3px;
-    font-size: 10px;
-    color: lightgrey;
 }
 .tab-wrapper {
     width: 100%;
@@ -92,31 +59,6 @@ button {
     flex-direction: column;
     justify-content: center;
     min-height: 1px;
-}
-
-.form {
-    background-color: green;
-    width: 500px;
-    height: 50px;
-    color: white;
-    border-top: 5px solid white;
-    border-bottom: 5px solid white;
-    box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-{/*HOME.JS ------------------- */}
-#button-page{
-    background-color: #006bbd;
-    display: flex;
-    alignment-baseline: center;
-    max-width: 500px;
-    height: 80px;
-    color: white;
-    border-top: 5px solid white;
-    border-bottom: 5px solid white;
-    box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-
 }
 ul {
     list-style-type: none;
@@ -127,76 +69,6 @@ ul {
     flex-grow: 0;
     flex-shrink: 0;
 }
-{/*PAGES WITH ROAD-------------------- */}
-#parkingAdam-weg {
-    display: inline-block;
-    background-color: dimgray;
-    width: fit-content;
-    min-height: 1200px;
-    max-width: 350px;
-    align-content: space-around;
-    list-style-type: none;
-    border-radius: 5px;
-    color: #FFFFFF;
-    font-size: 10px;
-    border-right: 8px solid white;
-    border-left: 8px solid white;
-    margin-bottom: 10px;
-    box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
-}
-#home-Page-weg, #pr-Page-weg {
-    display: inline-block;
-    background-color: dimgray;
-    width: fit-content;
-    min-height: 400px;
-    max-width: 350px;
-    align-content: space-around;
-    list-style-type: none;
-    border-radius: 5px;
-    color: #FFFFFF;
-    font-size: 10px;
-    border-right: 8px solid white;
-    border-left: 8px solid white;
-    box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
-}
-#parkingAdam-weg-deel {
-    display: inline-block;
-    align-items: center;
-    background-color: #e2c681;
-    height: fit-content;
-    width: 128px;
-    align-content: space-around;
-    list-style-type: none;
-    border-radius: 5px;
-    color: #FFFFFF;
-    border-top: 5px solid green;
-    border-bottom: 5px solid green;
-    font-size: 10px;
-    box-shadow: .20rem .25rem 1rem 0 rgba(0, 0, 0, 0.1);
-}
-.label-weg {
-    background-color: dimgrey;
-    margin-top: 100px;
-    width: fit-content;
-    height: 100px;
-    color: white;
-    font-size: 10px;
-    border-top: 1px solid lightgrey;
-    border-bottom: 1px solid lightgrey;
-    box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
-}
-.label-weg-deel {
-    background-color: darkslategrey;
-    alignment: center;
-    margin-top: 250px;
-    width: fit-content;
-    height: 60px;
-    color: white;
-    font-size: 10px;
-    box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
-}
-{/*app.js PAGES WITH ROAD---end----------------- */}
-
 ul {
     display: inline-block;
     list-style-type: none;
@@ -211,216 +83,22 @@ h3 {
 }
 h2 {
     margin-left: 25px;
-
 }
 h4 {
     font-size: 10px;
     color: linen;
     margin-left: 10px;
     margin-right: 5px;
-
 }
 h5 {
     font-size: 10px;
     color: linen;
     margin-left: 10px;
     margin-right: 5px;
-
-}
-{/*COMPONENTS TAB -------------------- */}
-#Name {
-    color: #FFB619;
-    font-size: 7px;
-    width:5px;
-}
-#Content {
-    color: #e2c681;
-    font-size: 8px;
-    margin-left: 1px;
-    margin-right: 1px;
-}
-#MoreInfo {
-    color: linen;
-    width: 240px;
-    display: flex;
-    flex-basis: 8px;
-    flex-grow: 0;
-    flex-shrink: 0;
-    margin-left: 5px;
-    border-left: 5px solid #ffb619;
-    border-top: #ffb619;
-    box-shadow: .25rem .15rem 1rem 0 rgba(0, 0, 0, 0.1);
-    font-size: 8px;
-}
-#FreeShort, #FreeLong {
-    background-color: #0d0208;
-    min-width: 30px;
-    height: 15px;
-    color: #FFB619;
-    padding: 5px;
-    margin-left: 10px;
-}
-
-#CapShort, #CapLong {
-    background-color: #0d0208;
-    width: 20px;
-    height: 15px;
-    color: #FFB619;
-    padding: 5px;
-    margin-left: 20px;
-}
-{/*COMPONENTS -TAB---------------- */}
-#parkinglocation {
-    display: inline-block;
-    width: 500px;
-    height: fit-content;
-    background-color: #006bbd;
-    border-inline-color: #FFFFFF;
-    border-radius: 12px;
-    border: 5px solid white;
-    color: #FFFFFF;
-    font-size: 10px;
-    padding: 5px;
-    margin-left: 6px;
-    margin-right: 6px;
-    margin-bottom: 3px;
-}
-#parkinglocationdetails {
-    display: inline-block;
-    width: 300px;
-    background-color: #006bbd;
-    border-inline-color: #FFFFFF;
-    border-radius: 11px;
-    border: 1px solid white;
-    color: #FFFFFF;
-    font-size: 10px;
-    padding: 5px;
-    margin-left: 1px;
-    margin-right: 3px;
-    margin-top: 3px;
-    margin-bottom: 15px;
-}
-#parkinglocationfilter {
-    display: inline-block;
-    width: 115px;
-    height: 60px;
-    background-color: #006bbd;
-    border-inline-color: #FFFFFF;
-    border-radius: 12px;
-    border: 1px solid white;
-    color: #FFFFFF;
-    font-size: 10px;
-    padding: 1px;
-    margin-bottom: 1px;
-}
-{/*PAGES -------------------- */}
-#penr, #locationFree, #centrum, #zuidoost, #zuid, #fiets, #west, #noord, #oost {
-    display: block;
-    width: 120px;
-    align-content: space-around;
-    list-style-type: none;
-    background-color: darkslategrey;
-    border-radius: 5px;
-    color: #FFFFFF;
-    font-size: 10px;
-}
-#penr-details, #centrum-details, #zuidoost-details, #zuid-details, #fiets-details, #west-details, #oost-details
-{
-    display: inline-block;
-    list-style-type: none;
-    width: fit-content;
-    background-color: darkslategrey;
-    border-radius: 5px;
-    color: #FFFFFF;
-    font-size: 10px;
-}
-
-#tilebox {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-#tilebox-p {
-    display: flex;
-    alignment: center;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 #pages {
     width: 100%;
     height: 100%;
     display: flex;
     background-color: #e2c681;
-}
-{/*PAGES LOGIN/REGISTREER/ACCOUNT -------------------- */}
-#error {
-    color: red;
-}
-#message {
-    color: green;
-}
-
-#parkingAdam-form-deel {
-    display: inline-block;
-    background-color: #e2c681;
-    width: 100%;
-    min-height: 150px;
-    align-content: center;
-    list-style-type: none;
-    border-radius: 5px;
-    color: #FFFFFF;
-    font-size: 10px;
-    border-bottom: 3px solid #006bbd;
-    border-top: 3px solid #006bbd;
-    border-right: 3px solid #006bbd;
-    border-left: 3px solid #006bbd;
-    box-shadow: .25rem .15rem 1rem 0 rgba(0,  0, 0, 0.1);
-}
-#parkinglocation-form {
-    display: inline-block;
-    width: fit-content;
-    min-width: 200px;
-    height: fit-content;
-    background-color: #006bbd;
-    border-inline-color: #FFFFFF;
-    border-radius: 12px;
-    border: 5px solid white;
-    color: #FFFFFF;
-    font-size: 10px;
-    padding: 5px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 3px;
-}
-#parkinglocationdetails-form {
-    display: inline-block;
-    width: fit-content;
-    min-width: 200px;
-    height: fit-content;
-    flex-basis: 50px;
-    flex-grow: 0;
-    flex-shrink: 0;
-    background-color: #006bbd;
-    border-inline-color: #FFFFFF;
-    border-radius: 11px;
-    border: 1px solid white;
-    color: #FFFFFF;
-    font-size: 10px;
-    padding: 5px;
-    margin-right: 3px;
-    margin-left: 30px;
-    margin-bottom: 1px;
-}
-#parkingAdam-content-deel {
-    display: inline-block;
-    background-color: #696969;
-    color:lightgrey;
-    font-size: 10px;
-    width: 100%;
-    height: fit-content;
-    align-content: center;
-    list-style-type: none;
-    border-top: 1px solid lightgrey;
-    border-bottom: 1px solid lightgrey;
-    border-radius: 3px;
 }

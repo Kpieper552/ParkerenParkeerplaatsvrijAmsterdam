@@ -1,13 +1,13 @@
 import React from 'react';
-import '../../App.css';
+import '../content/Content.css';
 
 
 function ContentMyAccount() {
 
 return (
          <>
-           <div id="parkingAdam-form-deel">
-             <div id="parkingAdam-content-deel">
+           <div id="parkingAdam-content-container">
+             <div id="parkingAdam-content-box">
                 <h3>PARKEREN AMSTERDAM<br/><br/>
                     Aanrijdroutes Amsterdam<br/>
                     Zuidwestelijke richting: A4/A5 vanuit Den Haag, Schiphol.|
@@ -18,7 +18,7 @@ return (
                     en A2 vanuit Utrecht<br/>
                 </h3>
              </div>
-             <div id="parkingAdam-content-deel">
+             <div id="parkingAdam-content-box">
                  <h3>Park & Ride <br/></h3>
                  <h4>
                         Dit zijn goed bereikbare parkeerplaatsen aan de rand van de stad
@@ -39,7 +39,7 @@ return (
                         website parkeerlocatie.
                     </h4>
              </div>
-             <div id="parkingAdam-content-deel">
+             <div id="parkingAdam-content-box">
                     <h3>Parkeren Centrum<br/></h3>
                     <h4>
                         In het centrum sluiten de parkeergarages op elkaar aan door
@@ -50,7 +50,7 @@ return (
                         <br/><br/>
                     </h4>
                 </div>
-                <div id="parkingAdam-content-deel">
+                <div id="parkingAdam-content-box">
                    <h3>Park & Bike<br/></h3>
                    <h4>
                          Parkeergarage locaties die de mogelijkheid bieden om een fiets te huren
@@ -60,7 +60,7 @@ return (
                          Kijk op locatie details informatie voor meer info via website parkeerlocatie.
                      </h4>
                     </div>
-                    <div id="parkingAdam-content-deel">
+                    <div id="parkingAdam-content-box">
                      <h3>
                          LANG PARKEREN<br/><br/>
                          Langer dan een dag (24 uur)<br/>
@@ -72,8 +72,16 @@ return (
                          Kijk op locatie details informatie voor de mogelijkheden
                          per locatie (website)<br/>
                     </h3>
+                    </div>
+                    <div id="parkingAdam-content-box">
+                    <br/><br/>
+                    <h3>
+                        PARKEER LOCATIE GEGEVENS UITGEBREID
+                        Kijk op locatie details informatie voor informatie
+                        per locatie of op website van desbetreffende locatie.<br/>
+                    </h3>
                  </div>
-                <div id="MoreInfo">MyAccount</div>
+                <div id="moreInfo-box">MyAccount</div>
              </div>
         </>
         );

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../App.css';
+import './Registreer.css';
 import SignUp from "../../components/sign-up/SignUp";
 
 
@@ -9,7 +9,7 @@ function Registreer() {
         <>
         <h3>Registreer</h3>
         <div>
-            <div id="parkingAdam-content-deel">
+            <div id="parkingAdam-container-authentication">
                 <h4>Registreer voor toegang MyAccount </h4>
                 <SignUp/>
             </div>

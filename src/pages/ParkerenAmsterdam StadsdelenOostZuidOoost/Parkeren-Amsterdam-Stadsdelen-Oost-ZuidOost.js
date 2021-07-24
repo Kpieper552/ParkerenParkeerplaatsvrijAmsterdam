@@ -1,8 +1,8 @@
 import React from 'react';
-import '../../App.css';
+import '../ParkerenAmsterdam StadsdelenOostZuidOoost/Parkeren-Amsterdam-Stadsdelen-Oost-ZuidOost.css';
 import Tile from "../../components/tile/Tile";
-import ParkingLocationZuidOost from "../../components/tab/filter/ParkingLocationZuidOost";
-import ParkingLocationOost from "../../components/tab/filter/ParkingLocationOost";
+import ParkingLocationZuidOost from "../../components/tab/filterparking/ParkingLocationZuidOost";
+import ParkingLocationOost from "../../components/tab/filterparking/ParkingLocationOost";
 import carparking from "../../assets/carparking.jpg";
 import {NavLink} from "react-router-dom";
 import ContentSubPage from "../../components/content/ContentSubPage";

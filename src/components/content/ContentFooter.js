@@ -1,5 +1,6 @@
 import React from 'react';
-import '../../App.css';
+import '../content/Content.css';
+import {NavLink} from "react-router-dom";
 
 
 
@@ -8,9 +9,10 @@ function ContentFooter() {
 
     return (
         <>
-            <div id="parkingAdam-content-deel">
+            <div id="parkingAdam-content-box">
+                <NavLink to="/home"> <button> | Home  |</button></NavLink><br/>
                 <h4>PARKEREN PARKEERPLAATS VRIJ AMSTERDAM</h4>
-                <div id="MoreInfo" >©KarinaPieper</div>
+                <div id="moreInfo-box" >©KarinaPieper</div><div id="moreInfo-box" > Contact: k.pieper@hotmail.com<br/></div>
             </div>
         </>
     );

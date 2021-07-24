@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import '../../App.css';
+import '../my-account/MyAccount.css';
 import { useAuth } from '../../context/SignupContext';
 import { useHistory } from 'react-router-dom';
 
@@ -21,26 +21,26 @@ function MyAccount() {
             <>
                 {error && (error) }
                 <br/><br/>
-                 <div id="parkingAdam-form-deel">
+                 <div id="parkingAdam-content-container">
                 <br/><br/>
-                 <div id="parkingAdam-content-deel">
-                     <h4>Welkom op My Account </h4>
+                 <div id="parkingAdam-content-box">
+                     <h4>Welkom op My Account van:</h4>
                      <h3>{currentUser && currentUser.email}</h3>
-                     <div id="parkingAdam-content-deel">
+                     <div id="parkingAdam-content-box">
                          <h4>Met uw account heeft u toegang tot:</h4>
-                         <h3>Parkeergarages Locaties Detail Gegevens </h3>
+                         <h3>Parkeerlocatie's gegevens uitgebreid </h3>
                          <h3>Parkeerplaatsen VRIJ Langparkeren</h3>
                       </div>
                  </div>
                      <br/><br/>
-                <label id="parkinglocationdetails-form">
+                <label id="parkingAdam-account-box">
                     <h2>Account</h2>
                     <h4>|Gebruiker <br/>
                     |> Email:</h4>
                     <h3>{currentUser && currentUser.email}</h3>
                 </label>
                      <br/><br/>
-                <button onClick={handleLogout} type="link" id="parkinglocationdetails-form"> |> Logout</button><br/><br/>
+                <button onClick={handleLogout} type="link" id="parkingAdam-account-box"> |> Logout</button><br/><br/>
                      <br/><br/>
                 </div>
              </>
