@@ -33,11 +33,13 @@ function LocationDetailsFiets() {
                             <label id="MoreInfo">
                                 {filteredParking.parkeerlocatie.adres} |
                                 {filteredParking.parkeerlocatie.postcode} |
-                                {filteredParking.parkeerlocatie.woonplaats}<br />
-                            </label><br />
-                            <label id="MoreInfo">{filteredParking.parkeerlocatie.type}<br />
+                                {filteredParking.parkeerlocatie.woonplaats}<br /><br />
+                            </label>
+                            <label id="MoreInfo">
                                 {/*OPMERKINGEN BLOK-------------------- */}
-                                {filteredParking.parkeerlocatie.opmerkingen}<br /><br />
+                                {filteredParking.parkeerlocatie.opmerkingen}
+                                {filteredParking.parkeerlocatie.type}<br /><br />
+                                {/*OPENBAAR VERVOER BLOK-------------------- */}
                             </label>
                         </li>
                     )

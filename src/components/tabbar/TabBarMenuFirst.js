@@ -1,21 +1,17 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import './TabBarMenu.css';
+import LinkTabBar from "../linktabbar/LinkTabBar";
 
 function TabBarMenuFirst() {
     return (
         <nav className="tab-bar">
             <ul>
                 <li>
-                    <NavLink activeClassName="active" to="/Parkeren-Amsterdam-Centrum">
-                         Parkeren Centrum en Noord locatie's
-                    </NavLink>
-                </li>
+                    <LinkTabBar reflink="/Parkeren-Amsterdam-Centrum" titleref="Parkeren Centrum en Noord locatie's" />
+               </li>
                 <li>
-                <NavLink activeClassName="active" to="/FietsParkeerPlekTab">
-                         Fiets parkeerplekken locatie's
-                </NavLink>
-            </li>
+                    <LinkTabBar reflink="/FietsParkeerPlekTab" titleref="Fiets parkeerplekken locatie's" />
+                </li>
             </ul>
         </nav>
     );
