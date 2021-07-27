@@ -1,6 +1,6 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import './TabBarMenu.css';
+import LinkTabBar from "../linktabbar/LinkTabBar";
 
 
 function TabBarMenuZero() {
@@ -9,14 +9,10 @@ function TabBarMenuZero() {
             <ul>
 
                 <li>
-                    <NavLink activeClassName="active" to="/home">
-                        Parkeren Amsterdam locaties
-                    </NavLink>
+                    <LinkTabBar reflink="/home" titleref="Parkeren Amsterdam locaties" />
                 </li>
                 <li>
-                    <NavLink activeClassName="active" to="/ParkingPlaatsenVrijTab">
-                        Kort parkeren Plaatsen VRIJ
-                    </NavLink>
+                    <LinkTabBar reflink="/ParkingPlaatsenVrijTab" titleref="Kort parkeren Plaatsen VRIJ" />
                 </li>
 
             </ul>

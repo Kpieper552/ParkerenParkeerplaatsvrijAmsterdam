@@ -1,6 +1,6 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import './TabBarMenu.css';
+import LinkTabBar from "../linktabbar/LinkTabBar";
 
 
 function TabBarMenuAccount() {
@@ -9,14 +9,10 @@ function TabBarMenuAccount() {
             <ul>
 
                 <li>
-                    <NavLink activeClassName="active" to="/Account/AccountParkingAmsterdam">
-                        Parkeren Amsterdam
-                    </NavLink>
+                    <LinkTabBar reflink="/Account/AccountParkingAmsterdam" titleref="Parkeren Amsterdam" />
                 </li>
                 <li>
-                    <NavLink activeClassName="active" to="/Account/AccountParkingAmsterdamFreePlaces">
-                        Lang Parkeren Plaatsen VRIJ
-                    </NavLink>
+                    <LinkTabBar reflink="/Account/AccountParkingAmsterdamFreePlaces" titleref="Lang Parkeren Plaatsen VRIJ" />
                 </li>
 
             </ul>

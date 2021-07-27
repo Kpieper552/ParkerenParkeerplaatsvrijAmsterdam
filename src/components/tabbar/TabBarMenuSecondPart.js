@@ -1,6 +1,6 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import './TabBarMenu.css';
+import LinkTabBar from "../linktabbar/LinkTabBar";
 
 
 function TabBarMenuSecondPart() {
@@ -8,14 +8,10 @@ function TabBarMenuSecondPart() {
         <nav className="tab-bar">
             <ul>
                 <li>
-                    <NavLink activeClassName="active" to="/Parkeren-Amsterdam-Stadsdelen-Zuid-West">
-                        Amsterdam Zuid locatie gegevens
-                    </NavLink>
+                    <LinkTabBar reflink="/Parkeren-Amsterdam-Stadsdelen-Zuid-West" titleref="Amsterdam Zuid locatie gegevens" />
                 </li>
                 <li>
-                    <NavLink activeClassName="active" to="/ParkingWestTab">
-                        Amsterdam West locatie's
-                    </NavLink>
+                    <LinkTabBar reflink="/ParkingWestTab" titleref="Amsterdam West locatie's" />
                 </li>
             </ul>
         </nav>

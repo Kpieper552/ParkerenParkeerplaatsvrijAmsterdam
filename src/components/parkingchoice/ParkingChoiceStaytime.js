@@ -1,17 +1,15 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import '../parkingchoice/ParkingChoice.css';
+import LinkParkingButton from "../linkparkingbutton/LinkParkingButton";
 
 function ParkingChoiceStaytime() {
     return     (
         <>
-
             <ul >
                 <li>
-                    <NavLink to="/home"><button id="button-parking"><h6>| P |Kort Parkeren | P |</h6></button></NavLink>
+                    <LinkParkingButton reflink="/home" buttontittle="P |Kort Parkeren | P" />
                 </li>
                 <li>
-                    <NavLink to="/login" activeClassName="activelink"><button id="button-parking"><h6>| P | Lang Parkeren | P | </h6></button></NavLink>
+                    <LinkParkingButton reflink="/login" buttontittle="P | Lang Parkeren | P" />
                 </li>
             </ul>
         </>

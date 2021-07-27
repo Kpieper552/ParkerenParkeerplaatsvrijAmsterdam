@@ -1,18 +1,16 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import '../parkingchoice/ParkingChoice.css';
+import LinkParkingButton from "../linkparkingbutton/LinkParkingButton";
 
 function ParkingFirst() {
     return     (
         <>
             <ul >
                 <li>
-                    <NavLink to="/home"><button id="button-parking"><h6>| Parkeerlocatie informate |</h6></button></NavLink>
+                    <LinkParkingButton reflink="/home" buttontittle="Parkeerlocatie informatie" />
                 </li>
                 <li>
-                    <NavLink to="/account" activeClassName="activelink"><button id="button-parking"><h6>| Parkeerlocatie informatie uitgebreid| </h6></button></NavLink>
+                    <LinkParkingButton reflink="/account" buttontittle="Parkeerlocatie informatie uitgebreid" />
                 </li>
-
             </ul>
         </>
     );

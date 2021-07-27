@@ -1,6 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import '../parkingchoice/ParkingChoice.css';
+import LinkParkingButton from "../linkparkingbutton/LinkParkingButton";
 
 function ParkingChoiceLocationtype() {
     return     (
@@ -8,12 +7,11 @@ function ParkingChoiceLocationtype() {
 
             <ul >
                 <li>
-                    <NavLink to="/home"><button id="button-parking"><h6>| Parkeren per stadsdeel |</h6></button></NavLink>
+                    <LinkParkingButton reflink="/home" buttontittle="Parkeren per stadsdeel" />
                 </li>
                 <li>
-                    <NavLink to="/parkeren-amsterdam-parkenride" activeClassName="activelink"><button id="button-parking"><h6>| P&R + OV naar Centrum| </h6></button></NavLink>
+                    <LinkParkingButton reflink="/parkeren-amsterdam-parkenride" buttontittle="P&R + OV naar Centrum" />
                 </li>
-
             </ul>
         </>
     );
