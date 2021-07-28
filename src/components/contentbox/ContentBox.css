@@ -1,0 +1,25 @@
+#parkingAdam-content-box {
+    display: inline-block;
+    background-color: #696969;
+    color:lightgrey;
+    font-size: 10px;
+    width: 100%;
+    height: fit-content;
+    align-content: center;
+    list-style-type: none;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    border-radius: 3px;
+}
+h3 {
+    margin-left: 15px;
+    color: #e2c681;
+}
+
+h4 {
+    font-size: 10px;
+    color: linen;
+    margin-left: 10px;
+    margin-right: 5px;
+
+}

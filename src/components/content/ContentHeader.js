@@ -1,16 +1,11 @@
 import React from 'react';
 import '../content/Content.css';
-
-
-
+import ContentBox from "../contentbox/ContentBox";
 
 function ContentHeader() {
-
     return (
         <>
-            <div id="parkingAdam-content-box">
-                <h4>PARKEREN PARKEERPLAATS VRIJ AMSTERDAM</h4>
-            </div>
+            <ContentBox titlecontentbox="PARKEREN PARKEERPLAATS VRIJ AMSTERDAM"/>
         </>
     );
 }
