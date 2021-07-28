@@ -1,6 +1,7 @@
 import React, { useState, useEffect }  from 'react';
 import axios from "axios";
 import "../parkinglocationplacesfree/ParkingLocationPlacesFree.css";
+import parkingPlacesFreeDataRequest from "../../../helper/parkingPlacesFreeDataRequest";
 
 function ParkingLocationItemNameA() {
     const [parkingLocations, setParkingLocations] = useState([]);
@@ -12,7 +13,7 @@ function ParkingLocationItemNameA() {
             setError(false);
             toggleLoading(true);
             try {
-                const response = await axios.get('http://opd.it-t.nl/data/amsterdam/ParkingLocation.json');
+                const response = await axios.get(parkingPlacesFreeDataRequest());
                 setParkingLocations(response.data.features);
                 toggleLoading(false);
             } catch (error) {

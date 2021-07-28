@@ -1,6 +1,7 @@
 import React, {useState, useEffect}  from 'react';
 import axios from "axios";
 import "../filterparking/FilterParking.css";
+import parkingLocationDataRequest from "../../../helper/parkingLocationDataRequest";
 
 
 function LocationDetailsWest() {
@@ -10,7 +11,7 @@ function LocationDetailsWest() {
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await axios.get('https://open.data.amsterdam.nl/ivv/parkeren/locaties.json');
+                const response = await axios.get(parkingLocationDataRequest());
                 setParkings(response.data.parkeerlocaties);
             } catch (error) {
                 console.log(error);

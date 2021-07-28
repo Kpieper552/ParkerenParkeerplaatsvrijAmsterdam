@@ -1,6 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import axios from 'axios';
 import "../filterparking/FilterParking.css";
+import parkingPlacesFreeDataRequest from "../../../helper/parkingPlacesFreeDataRequest";
 
 
 function ParkingLocationOost() {
@@ -10,7 +11,7 @@ function ParkingLocationOost() {
     useEffect (() => {
         async function fetchData() {
             try {
-                const response = await axios.get('http://opd.it-t.nl/data/amsterdam/ParkingLocation.json');
+                const response = await axios.get(parkingPlacesFreeDataRequest());
                 setParkingLocations(response.data.features);
                 toggleLoading(false);
             } catch (error) {
@@ -35,7 +36,8 @@ function ParkingLocationOost() {
                             |>VRIJ <label id="FreeShort" > {filteredParkingLocation.properties.FreeSpaceShort}</label>
                         </li>
                     )
-                })}<br/><br/>
+                })}
+                <br/><br/>
                 <h4>Oostpoort</h4>
                 {parkingLocations.filter(parkingLocation => parkingLocation.properties.Name.includes("CE-P20")).map((filteredParkingLocation, index) => {
                     return (

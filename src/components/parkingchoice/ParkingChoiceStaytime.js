@@ -9,7 +9,7 @@ function ParkingChoiceStaytime() {
                     <LinkParkingButton reflink="/home" buttontittle="P |Kort Parkeren | P" />
                 </li>
                 <li>
-                    <LinkParkingButton reflink="/login" buttontittle="P | Lang Parkeren | P" />
+                    <LinkParkingButton reflink="/account" buttontittle="P | Lang Parkeren | P" />
                 </li>
             </ul>
         </>
